@@ -17,29 +17,20 @@
     display: flex;
 }
 
-#img-cabecalho{
-    display: flex;
-    gap: 50px;
-    width: 100px;
-    height: 100px;
-}
-
 #usuario{
     display: flex;
     flex-wrap: wrap;
     align-content: right;
     gap: 25px;
-    background-color: #F2EAB7;
     border-radius: 50px;
     padding: 10px;
-    
 }
 
 #link-cabecalho{
     display: flex;
     gap: 30px;
     width: 35px;
-    height: 37px;
+    height: 27px;
 }
 
 #link-cabecalho a{
@@ -48,26 +39,28 @@
 }
 
 #icone-user{
-    background-color: #752E2B;
-    border-radius: 50px;
-    padding: 10px;
-    width: 40px;
+    width: 120px;
+    height: 56;
+    position: relative;
+    left: 100%;
 }
 
-#icone-user2 img{
-    display: flex;
-    gap: 30px;
-    width: 20px;
-    height: 20px;
-}
 
 #img-cabecalho{
     display: flex;
-    align-items: center;
+    width: 70px;
+    position: absolute;
+    top: 10px;
+    right: 90%;
+}
+
+#name-logo{
+    display: flex;
     font-weight: bold;
-    font-size: 32px;
+    align-content: center;
+    font-size: 31px;
     color: #ffffff;
-    gap: 30px;
+    justify-content: center;
 }
 
 #conteudo{
@@ -85,7 +78,7 @@
     margin-top: 100px;
     display: flex;
     position: absolute;
-    margin-left: 650px;
+    margin-left: 700px;
     color: #752E2B;
     text-align: center;
 }
@@ -93,21 +86,34 @@
 hr{
     display: flex;
     padding: 20px;
-    color: #752E2B;
+    border-bottom-color: #752E2B;
     width: 650px;
+    position: relative;
+    left: 455px;
+    bottom: 480px;
 }
 
-#conteudo img{
+#seta-cima{
     align-items: center;
     width: 35px;
     height: 37px;
+    position: relative;
+    top: 85%;
+    color: #752E2B;
+}
+
+#conteudo p{
+    color: #F2EAB7;
+    font-weight: bold;
+    position: relative;
+    top: 180px;
 }
 
 
 #rodape{
     background-color: #c3f2b7;
     width: auto;
-    height: 84px;
+    height: 80px;
     display: flex;
     justify-content: center;
 }
@@ -118,4 +124,6 @@ hr{
     font-size: 28;
     text-align: center;
     height: max-content;
+    position: relative;
+    top: 80%;
 }
