@@ -61,7 +61,9 @@
 h1{
     display: flex;
     position: relative;
-    left: 40%;
+    text-align: center;
+    margin: 0 auto; /* Isso centraliza o elemento na horizontal */
+    width: 20%; /* Ajuste conforme necessário */
 }
 
 main{
