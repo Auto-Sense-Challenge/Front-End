@@ -1,3 +1,11 @@
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    align-content: center;
+}
+
 .cabecalhos{
     background-color: #171F25;
     justify-content: space-around;
@@ -87,7 +95,7 @@ h3{
 .rodape{
     background-color: #752E2B;
     width: auto;
-    height: 80px;
+    height: 90px;
     display: flex;
     justify-content: center;
 }
@@ -95,5 +103,53 @@ h3{
 .rodape p{
     display: flex;
     position: relative;
-    top: 60%;
+    top: 40%;
+}
+
+#main-tamanho{
+    width: 1585px;
+    height: 2816px;
+}
+
+
+.tamanho-img img{
+    width: 325px;
+    height: 450px;
+}
+
+.pessoa-esquerda{
+    display: flex;
+}
+
+.pessoa-direita{
+    display: flex;
+    position: relative;
+    left: 80%;
+}
+
+#dados-erick{
+    display: grid;
+    background-color: #171F25;
+    height: 114px;
+    position: absolute;
+    top: 140%;
+    left: 22.4%;;
+}
+
+#dados-luiz{
+    display: grid;
+    background-color: #171F25;
+    height: 119px;
+    position: absolute;
+    top: 30%;
+    right: 100%;
+}
+
+#dados-vicenzo{
+    display: grid;
+    background-color: #171F25;
+    height: 114px;
+    position: absolute;
+    top: 260%;
+    left: 22.4%;
 }
