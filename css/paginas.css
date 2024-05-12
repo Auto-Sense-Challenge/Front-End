@@ -69,7 +69,9 @@
 h1{
     display: flex;
     position: relative;
-    left: 40%;
+    text-align: center;
+    margin: 0 auto; 
+    width: 20%;
 }
 
 main{
