@@ -20,19 +20,32 @@ body{
     grid-area: cabecalho ;
     background-color: #171F25;
     align-items: center;
-    height: 128px;
+    height: auto;
     padding: 10px;
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 
     & .menus{
-        width: 80px;
+        
+
+        & img{
+            width: 80px;
         height: 80px;
+        }
+    }
+
+    & .logo{
+        flex-grow: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
     }
 
     & .img-logo{
-        justify-content: center;
-        width: auto;
-        height: auto;
+        width: min-content;
+        height: min-content;
 
         & img{
             width: 100px;
@@ -42,29 +55,41 @@ body{
 
     & h4{
         display: flex;
+        height: auto;
+        width: auto;
         font-weight: bold;
         text-align: center;
         font-size: 25px;
         color: #ffffff;
-        position: relative;
-        bottom: 60%;
-        left: 80%;
+
     }
 
-    & h2{
+    & .pagina{
         display: flex;
-        color: #F2EAB7;
-        font-size: 51px;
-        position: relative;
-        left: 30%;
+        flex-grow: auto;
+        position: sticky;
+        left: 45%;
+
+        & h2{
+            color: #F2EAB7;
+            font-size: 51px;
+            text-align: center;
+        }
+    
     }
 
+    
     & .usuario{
-        display: flex;
-        width: 20px;
-        height: 56px;
-        position: relative;
-        left: 68%;
+        flex-grow: auto;
+        position: sticky;
+        left: 100%;
+
+
+        & img{
+            width: 90px;
+            height: 56px;
+        }
+       
     }
 }
 
