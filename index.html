@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
-    <link rel="icon" href="./img/logo.png">
+    <link rel="icon" href="./img/Logo-forma-circular.png">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script src="./js/script.js" defer></script>
 </head>
 <body>
     <header>
@@ -12,19 +14,32 @@
         <img src="./img/logo.png" alt="auto-sense-logo"/>
         <h3>Auto Sense</h3>
         </div>
-        <a id="idAjuda" href="./paginas/ajuda.html"><h3>Ajuda</h3></a>
-        <a id="idSobre" href="./paginas/sobre.html"><h3>Sobre</h3></a>
+        <a id="idAjuda" href="./html/ajuda.html"><h3>Ajuda</h3></a>
+        <a id="idSobre" href="./html/sobre.html"><h3>Sobre</h3></a>
         <img id="usuario" src="./img/user-icon.png" alt="user-icon"/>
     </header>
     <main>
         <h1>Bem Vindo(a)</h1>
+        <hr/>
         <p>Quando seu carro te abandonar, estamos aqui para lhe ajudar
             com o que for necessário. </p>
         <p>Clique aqui</p>
-        <img src="./img/seta-cima.png" alt="arrow"/>
+
+        <a href="#" class="setas" id="seta-cima">
+            <img  src="./img/seta-cima.png" alt="seta-para-cima"/>
+        </a>
+
     </main>
     <footer>
         <p>Copyright © 2024 Auto Sense</p>
     </footer>
+
+    <dialog id="assistencia">
+        <button type="button" class="setas" id="seta-baixo">
+            <img src="./img/seta-baixo.png" alt="seta-para-baixo">
+        </button>
+        <h3>Assistência com o veículo</h3>
+        <p>Caro, cliente caso seu caro esteja apresentando problemas converse com nossa IA que lhe ajudara a achar o problema que seu veículo apresenta além de ajudar nos serviços de guincho e manutençãoe até a devolução do seu veículo.</p>
+    </dialog>
 </body>
 </html>
