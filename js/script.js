@@ -1,4 +1,4 @@
-var hoje = new Date();
+/*var hoje = new Date();
 var horario = hoje.getHours();
 var mensagem;
 var boasVIndas = document.querySelector(h1);
@@ -12,7 +12,7 @@ if (horario > 18){
 }else{
     mensagem = "Boas Vindas";
 }
-boasVIndas.innerText() = mensagem
+boasVIndas.innerText() = mensagem*/
 
 btnAbrir = document.getElementById("seta-cima");
 btnFechar = document.getElementById("seta-baixo");
