@@ -6,17 +6,26 @@
     <title>Index</title>
     <link rel="icon" href="./img/Logo-forma-circular.png">
     <link rel="stylesheet" href="./css/estilo.css">
-    <script src="./js/script.js"></script>
+    <script src="./js/script.js" defer></script>
 </head>
 <body>
-    <header>
-        <div id="auto-senseid">
-        <img src="./img/logo.png" alt="auto-sense-logo"/>
-        <h3>Auto Sense</h3>
+    <header class="cabecalho">
+
+        <div class="logo">
+            <div id="img-logo">
+                <img src="./img/logo.png" alt="auto-sense-logo"/>
+            </div>
+            <h3>Auto Sense</h3>
         </div>
-        <a id="idAjuda" href="./html/ajuda.html"><h3>Ajuda</h3></a>
-        <a id="idSobre" href="./html/sobre.html"><h3>Sobre</h3></a>
-        <img id="usuario" src="./img/user-icon.png" alt="user-icon"/>
+
+        <div class="links-paginas">
+            <a id="idAjuda" href="./html/ajuda.html"><h3>Ajuda</h3></a>
+            <a id="idSobre" href="./html/sobre.html"><h3>Sobre</h3></a>
+        </div>
+        
+        <div class="usuario">
+            <img src="./img/user-icon.png" alt="user-icon"/>
+        </div>
     </header>
     <main>
         <div id="boas-vindas">
@@ -32,7 +41,7 @@
         </a>
 
     </main>
-    <footer>
+    <footer class="rodape">
         <p>Copyright © 2024 Auto Sense</p>
     </footer>
 

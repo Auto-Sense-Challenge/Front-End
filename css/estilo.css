@@ -5,12 +5,125 @@
     padding: 0;
 }
 
-/*Parte de páginas modal*/
-.setas {
-    background: none;
-    border: none;
-    & img {
-        width: 55px;
-        height: 48px
+body{
+    display: grid;
+    height: auto;
+    align-items: start;
+    grid-template-areas: 
+        'cabecalho'
+        'main'
+        'rodape';
+}
+
+.cabecalho{
+    grid-area: cabecalho ;
+    background-color: #171F25;
+    align-items: center;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    & .logo{
+        flex-grow: auto;
+        display: flex;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
     }
+
+    & #img-logo{
+        width: min-content;
+        height: min-content;
+
+        & img{
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    & h3{
+        display: flex;
+        height: auto;
+        width: auto;
+        font-weight: bold;
+        text-align: center;
+        font-size: 25px;
+        color: #ffffff;
+
+    }
+
+    & .links-paginas{
+        display: flex;
+        gap: 10px;
+        flex-grow: auto;
+        position: sticky;
+        left: 70%;
+
+        & a{
+            text-decoration: none;
+        }
+    }
+
+    & .pagina{
+        display: flex;
+        flex-grow: auto;
+        position: sticky;
+        left: 45%;
+
+        & h2{
+            color: #F2EAB7;
+            font-size: 51px;
+            text-align: center;
+        }
+    
+    }
+
+    
+    & .usuario{
+        display: block;
+        flex-grow: auto;
+        position: sticky;
+        left: 100%;
+        
+        & img{
+            width: 120px;
+            height: 56px;
+        }
+       
+    }
+}
+
+main{
+    grid-area: main;
+    background-color: #F2EAB7;
+    align-items: center;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    & .setas{
+        background: none;
+        border: none;
+
+        & img {
+            width: 55px;
+            height: 48px;
+        }
+    }
+}
+
+.rodape{
+    grid-area: rodape;
+    background-color: #F2EAB7;
+    align-items: center;
+    justify-content: center;
+    height: 128px;
+    display: flex;
+    flex-wrap: wrap;
 }
