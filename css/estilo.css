@@ -179,15 +179,286 @@ main{
 }
 
 .rodape{
+
     grid-area: rodape;
     background-color: #F2EAB7;
     align-items: center;
     justify-content: center;
-    height: 128px;
+    height: 117px;
     display: flex;
     flex-wrap: wrap;
 
     & P{
-        font-size: 28px;
+        font-size: 23px;
+        font-weight: bold;
+    }
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width:834px) {
+    
+    .cabecalho{
+        gap: 20px;
+    
+        & .logo{
+            margin-left: 0px;
+            position: relative;
+            left: 30%;
+        }
+
+        & .links-paginas{
+            display: none;
+
+            & a{
+                display: none;
+            }
+        }
+
+        & .usuario{
+            display: block;
+            flex-grow: auto;
+            position: sticky;
+            left: 90%;
+            
+            & img{
+                width: 70px;
+                height: 42px;
+            }
+           
+        }
+    }
+    
+    main{
+        background-size: 100vw 100vh;
+        width: 100vw;
+        height: 99vh;
+        padding: 0px;
+        flex-wrap: wrap;
+    
+        & .fundo{
+            background-size: 100vw 100vh;
+            width: 100vw;
+            height: 100vh;
+            padding: 10px;
+
+            & .conteudo-p{
+                width: 70vw;
+            }
+    
+        }
+    
+    }
+    
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width:1024px) {
+    
+    .cabecalho{
+        gap: 20px;
+    
+        & .links-paginas{
+            display: flex;
+            gap: 50px;
+            flex-grow: auto;
+            position: sticky;
+            left: 65%;
+
+        }
+
+        
+    }
+    
+    main{
+        background-size: 100vw 100vh;
+        width: 100vw;
+        height: 99vh;
+        padding: 0px;
+        flex-wrap: wrap;
+    
+        & .fundo{
+            background-size: 100vw 100vh;
+            width: 100vw;
+            height: 100vh;
+            padding: 10px;
+
+            & #boas-vindas{
+                
+                & h1{
+                    font-size: 45px;
+                }
+            }
+    
+            & .conteudo-p{
+                width: 70vw;
+    
+                & p{
+                    font-size: 25px;
+                }
+            }   
+
+            & .informacao{
+    
+                & p{
+                    font-size: 28px;
+                }
+            }
+
+            & .setas{
+        
+                & img {
+                    width: 58px;
+                    height: 34px;
+                }
+            }
+        }
+    }
+}
+
+/* ----------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width:595px) {
+    
+    .cabecalho{
+        gap: 20px;
+    
+        & #img-logo{
+    
+            & img{
+                width: 60px;
+                height: 76px;
+            }
+        }  
+    }
+    
+    main{
+        background-size: 100vw 100vh;
+        width: 100vw;
+        height: 99vh;
+        padding: 0px;
+        flex-wrap: wrap;
+    
+        & .fundo{
+            background-size: 100vw 100vh;
+            width: 100vw;
+            height: 100vh;
+            padding: 10px;
+
+            & #boas-vindas{
+                
+                & h1{
+                    font-size: 45px;
+                }
+            }
+    
+            & .conteudo-p{
+                width: 70vw;
+    
+                & p{
+                    font-size: 25px;
+                }
+            }   
+
+            & .informacao{
+    
+                & p{
+                    font-size: 28px;
+                }
+            }
+
+            & .setas{
+        
+                & img {
+                    width: 58px;
+                    height: 34px;
+                }
+            }
+        }
+    }
+
+    .rodape{
+        height: 71px;
+
+        & P{
+            font-size: 18px;
+        }
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width:512px) {
+    
+    .cabecalho{
+
+        & .logo{
+            margin-left: 0px;
+            position: relative;
+            left: 30%;
+            width: 180px;
+            height: 47px;
+            gap: 8px;
+
+        }
+    
+        & #img-logo{
+    
+            & img{
+                width: 59px;
+                height: 76px;
+            }
+        }
+
+        & h3{
+            font-size: 14px;
+    
+        }  
+    }
+    
+    main{
+    
+        & .fundo{
+
+            & #boas-vindas{
+                
+                & h1{
+                    font-size: 20px;
+                }
+            }
+    
+            & .conteudo-p{
+                width: 70vw;
+    
+                & p{
+                    font-size: 20px;
+                }
+            }   
+
+            & .informacao{
+    
+                & p{
+                    font-size: 18px;
+                }
+            }
+
+            & .setas{
+        
+                & img {
+                    width: 58px;
+                    height: 34px;
+                }
+            }
+        }
+    }
+
+    .rodape{
+        height: 42px;
+
+        & P{
+            font-size: 14px;
+        }
     }
 }
