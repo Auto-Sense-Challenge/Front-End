@@ -26,12 +26,13 @@ body{
     gap: 20px;
 
     & .logo{
+        margin-left: 30px;
         flex-grow: auto;
         display: flex;
         text-decoration: none;
         justify-content: center;
         align-items: center;
-        gap: 20px;
+        gap: 40px;
 
     }
 
@@ -58,10 +59,10 @@ body{
 
     & .links-paginas{
         display: flex;
-        gap: 10px;
+        gap: 50px;
         flex-grow: auto;
         position: sticky;
-        left: 70%;
+        left: 75%;
 
         & a{
             text-decoration: none;
@@ -87,7 +88,7 @@ body{
         display: block;
         flex-grow: auto;
         position: sticky;
-        left: 100%;
+        left: 90%;
         
         & img{
             width: 120px;
@@ -98,24 +99,83 @@ body{
 }
 
 main{
-    grid-area: main;
-    background-color: #F2EAB7;
-    align-items: center;
-    width: auto;
-    height: auto;
-    padding: 10px;
+    box-sizing: border-box;
+    margin: 0;
+    background-image: url("../img/fundo-main.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 98.9vw;
+    height: 100vh;
+    padding: 0px;
     flex-wrap: wrap;
-    gap: 20px;
 
-    & .setas{
-        background: none;
-        border: none;
+    & .fundo{
+        background-color: rgba(10,23,55,0.7);
+        background-size: auto;
+        width: 98.9vw;
+        height: 100vh;
+        grid-area: main;
+        display: grid;
+        grid-template-rows: auto auto 1fr auto; 
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    
+        & #boas-vindas{
+            height: auto;
+            width: auto;
+            margin-top: 20%;
+            align-self: center;
+            
+            & h1{
+                font-size: 64px;
+                text-align: center;
+                color: #C90A02;
+                font-family: 'Inknut Antiqua';
+            }
+        }
 
-        & img {
-            width: 55px;
-            height: 48px;
+        & hr{
+            border-color: #a50b06;
+        }
+
+        & .conteudo-p{
+            align-self: start;
+            width: 50vw;
+            text-align: center;
+            
+
+            & p{
+                color: #F2EAB7;
+                font-size: 36px;
+            }
+        }
+
+        & .informacao{
+            justify-self: center;
+            align-self: center;
+            width: 40vw;
+            
+
+            & p{
+                text-align: center;
+                color: #9c0904;
+                font-size: 48px;
+                font-family: 'Inknut Antiqua';
+            }
+        }
+    
+        & .setas{
+            align-self: flex-end;
+            justify-self: center;
+    
+            & img {
+                width: 82px;
+                height: 44.68px;
+            }
         }
     }
+
 }
 
 .rodape{
@@ -126,4 +186,8 @@ main{
     height: 128px;
     display: flex;
     flex-wrap: wrap;
+
+    & P{
+        font-size: 28px;
+    }
 }
