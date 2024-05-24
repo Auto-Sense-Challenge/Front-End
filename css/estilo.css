@@ -192,31 +192,15 @@ main{
 @media screen and (max-width:834px) {
     
     .cabecalho{
-        gap: 20px;
-
-        & .menus{
-            
-        }
+        grid-template-columns: 10vw 30vw 10vw;
+        gap: 10px;
     
         & .logo{
-            margin-left: 0px;
-            position: relative;
-            left: 30%;
+           justify-self: left;
         }
 
-        & .links-paginas{
-            display: none;
-
-            & a{
-                display: none;
-            }
-        }
 
         & .usuario{
-            display: block;
-            flex-grow: auto;
-            position: sticky;
-            left: 90%;
             
             & img{
                 width: 70px;
@@ -254,14 +238,13 @@ main{
 @media screen and (max-width:1024px) {
     
     .cabecalho{
+        grid-template-columns: 55vw 30vw 10vw;
         gap: 20px;
 
-        & .menus{
-            display: block;
-        }
+       
 
         & .logo{
-            justify-self: center;
+            justify-self: left;
         }
     
         & .links-paginas{
@@ -325,7 +308,21 @@ main{
 @media screen and (max-width:595px) {
     
     .cabecalho{
+        grid-template-columns: 20vw 58vw 10vw;
         gap: 20px;
+
+        & .menus{
+            display: block;
+
+            & img{
+                width: 70px;
+                height: 70px;
+            }
+        }
+
+        & .links-paginas{
+            display: none;
+    }
     
         & #img-logo{
     
@@ -397,12 +394,7 @@ main{
     .cabecalho{
 
         & .logo{
-            margin-left: 0px;
-            position: relative;
-            left: 30%;
-            width: 180px;
-            height: 47px;
-            gap: 8px;
+            
 
         }
     
@@ -421,13 +413,19 @@ main{
     }
     
     main{
+        width: 99vw;
+        height: 79.9vh;
+        padding: 0px;
+        flex-wrap: wrap;
     
         & .fundo{
+            width: 99vw;
+            height: 79.9vh;
 
             & #boas-vindas{
                 
                 & h1{
-                    font-size: 20px;
+                    font-size: 30px;
                 }
             }
     
@@ -442,7 +440,7 @@ main{
             & .informacao{
     
                 & p{
-                    font-size: 18px;
+                    font-size: 30px;
                 }
             }
 
