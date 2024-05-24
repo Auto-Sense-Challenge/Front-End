@@ -10,18 +10,27 @@
 </head>
 <body>
     <header class="cabecalho">
+        <a href="#" class="menus">
+            <img src="./img/menu-hamburguer.png" alt="menu-hamburguer">
+        </a>
 
         <div class="logo">
             <div id="img-logo">
+                <a ></a>
                 <img src="./img/logo.png" alt="auto-sense-logo"/>
             </div>
-            <h3>Auto Sense</h3>
+            <h3 class="titulo-empresa">Auto Sense</h3>
         </div>
 
-        <div class="links-paginas">
-            <a id="idAjuda" href="./html/ajuda.html"><h3>Ajuda</h3></a>
-            <a id="idSobre" href="./html/sobre.html"><h3>Sobre</h3></a>
-        </div>
+        <nav class="links-paginas">
+            <ul>
+                <li>
+                    <a id="idAjuda" href="./html/ajuda.html"><h3>Ajuda</h3></a>
+                    <a id="idSobre" href="./html/sobre.html"><h3>Sobre</h3></a>
+                    <a id="idSobre" href="./html/veiculo.html"><h3>Veículos</h3></a>
+                </li>
+            </ul>
+        </nav>
         
         <div class="usuario">
             <img src="./img/user-icon.png" alt="user-icon"/>
@@ -50,11 +59,13 @@
     </footer>
 
     <dialog id="assistencia">
-        <button type="button" class="setas" id="seta-baixo">
+        <a href="#" src="./img/seta-baixo.png" alt="seta-para-baxio" class="setas" id="seta-baixo">
             <img src="./img/seta-baixo.png" alt="seta-para-baixo">
-        </button>
+        </a>
+
         <h3>Assistência com o veículo</h3>
         <p>Caro, cliente caso seu caro esteja apresentando problemas converse com nossa IA que lhe ajudara a achar o problema que seu veículo apresenta além de ajudar nos serviços de guincho e manutençãoe até a devolução do seu veículo.</p>
     </dialog>
+
 </body>
 </html>

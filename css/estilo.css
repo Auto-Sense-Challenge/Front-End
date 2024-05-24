@@ -25,6 +25,10 @@ body{
     flex-wrap: wrap;
     gap: 20px;
 
+    & .menus{
+        display: none;
+    }
+
     & .logo{
         margin-left: 30px;
         flex-grow: auto;
