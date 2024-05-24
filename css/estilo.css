@@ -19,14 +19,20 @@ body{
     grid-area: cabecalho ;
     background-color: #171F25;
     align-items: center;
-    height: auto;
+    height: 91px;
     padding: 10px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 65vw 20vw 10vw;
     flex-wrap: wrap;
     gap: 20px;
 
     & .menus{
         display: none;
+        
+        & img{
+            width: 80px;
+            height: 80px;
+        }
     }
 
     & .logo{
@@ -34,9 +40,9 @@ body{
         flex-grow: auto;
         display: flex;
         text-decoration: none;
-        justify-content: center;
+        justify-content: left;
         align-items: center;
-        gap: 40px;
+        gap: 10px;
 
     }
 
@@ -45,12 +51,12 @@ body{
         height: min-content;
 
         & img{
-            width: 100px;
-            height: 100px;
+            width: 71.09px;
+            height: 71.09px;
         }
     }
 
-    & h3{
+    & h4{
         display: flex;
         height: auto;
         width: auto;
@@ -62,41 +68,24 @@ body{
     }
 
     & .links-paginas{
-        display: flex;
-        gap: 50px;
-        flex-grow: auto;
-        position: sticky;
-        left: 75%;
+            display: flex;
+            justify-self: center;
+            gap: 20px;
 
-        & a{
-            text-decoration: none;
+            left: 65%;
+    
+            & a{
+                color: #ffffff;
+                text-decoration: none;
         }
     }
-
-    & .pagina{
-        display: flex;
-        flex-grow: auto;
-        position: sticky;
-        left: 45%;
-
-        & h2{
-            color: #F2EAB7;
-            font-size: 51px;
-            text-align: center;
-        }
-    
-    }
-
-    
+ 
     & .usuario{
-        display: block;
+        justify-self: right;
         flex-grow: auto;
-        position: sticky;
-        left: 90%;
-        
         & img{
-            width: 120px;
-            height: 56px;
+            width: 85.31px;
+            height: 39.81px;
         }
        
     }
@@ -108,19 +97,19 @@ main{
     background-image: url("../img/fundo-main.png");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 98.9vw;
-    height: 100vh;
+    width: 100vw;
+    height: 79.9vh;
     padding: 0px;
     flex-wrap: wrap;
 
     & .fundo{
         background-color: rgba(10,23,55,0.7);
         background-size: auto;
-        width: 98.9vw;
-        height: 100vh;
+        width: 100vw;
+        height: 79.9vh;
         grid-area: main;
         display: grid;
-        grid-template-rows: auto auto 1fr auto; 
+        grid-template-rows: 20vh 10px 30vh 10px 1vh; 
         justify-content: center;
         align-items: center;
         gap: 40px;
@@ -132,7 +121,7 @@ main{
             align-self: center;
             
             & h1{
-                font-size: 64px;
+                font-size: 56px;
                 text-align: center;
                 color: #C90A02;
                 font-family: 'Inknut Antiqua';
@@ -151,7 +140,7 @@ main{
 
             & p{
                 color: #F2EAB7;
-                font-size: 36px;
+                font-size: 25.6px;
             }
         }
 
@@ -164,13 +153,12 @@ main{
             & p{
                 text-align: center;
                 color: #9c0904;
-                font-size: 48px;
+                font-size: 40px;
                 font-family: 'Inknut Antiqua';
             }
         }
     
         & .setas{
-            align-self: flex-end;
             justify-self: center;
     
             & img {
@@ -188,7 +176,7 @@ main{
     background-color: #F2EAB7;
     align-items: center;
     justify-content: center;
-    height: 117px;
+    height: 66.83px;
     display: flex;
     flex-wrap: wrap;
 
@@ -205,6 +193,10 @@ main{
     
     .cabecalho{
         gap: 20px;
+
+        & .menus{
+            
+        }
     
         & .logo{
             margin-left: 0px;
@@ -235,7 +227,7 @@ main{
     }
     
     main{
-        background-size: 100vw 100vh;
+        background-size: 102vw 100vh;
         width: 100vw;
         height: 99vh;
         padding: 0px;
@@ -263,13 +255,19 @@ main{
     
     .cabecalho{
         gap: 20px;
+
+        & .menus{
+            display: block;
+        }
+
+        & .logo{
+            justify-self: center;
+        }
     
         & .links-paginas{
-            display: flex;
             gap: 50px;
             flex-grow: auto;
-            position: sticky;
-            left: 65%;
+            justify-self: right
 
         }
 
@@ -339,7 +337,7 @@ main{
     }
     
     main{
-        background-size: 100vw 100vh;
+        background-size: 101vw 100vh;
         width: 100vw;
         height: 99vh;
         padding: 0px;
