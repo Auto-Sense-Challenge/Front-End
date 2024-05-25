@@ -3,50 +3,78 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>INDEX</title>
-    <link rel="stylesheet" href="./css/estilo.css"/>
-    <link  rel="icon" href="./img/logo.png"/>
-</head>
-<body>
-    <header id="cabecalho-index">
-        <div id="logo">
-            <img id="img-cabecalho" src="./img/logo.png" alt="logo">
-            <p id="name-logo">
-                Auto Sense
-            </p>
+    <title>Index</title>
+    <link rel="icon" href="./img/Logo-forma-circular.png" />
+    <link rel="stylesheet" href="./css/estilo.css" />
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <a href="#" class="menus">
+        <img src="./img/menu-hamburguer.png" alt="menu-hamburguer" />
+      </a>
+
+      <div class="logo">
+        <div id="img-logo">
+          <a href="./index.html">
+            <img src="./img/logo.png" alt="auto-sense-logo" />
+          </a>
         </div>
-        <nav>
-            <ul>
-                <li id="link-cabecalho">
-                    <a href="./paginas/sobre.html"> SOBRE </a>
-                    <a href="./paginas/ajuda.html"> AJUDA </a>
-                    <a href="./paginas/prestadores-servico.html"> PRESTADORES DE SERVIÇO </a>
-                </li>
-            </ul>
-        </nav>
-        <div id="usuario">
-            <img id="icone-user" src="./img/user.png" alt="usuario">
-        </div>
+        <h4 class="titulo-empresa">Auto Sense</h4>
+      </div>
+
+      <div class="links-paginas">
+        <a href="./html/ajuda.html"><h3>Ajuda</h3></a>
+        <a href="./html/sobre.html"><h3>Sobre</h3></a>
+        <a href="./html/veiculo.html"><h3>Veiculos</h3></a>
+      </div>
+
+      <div class="usuario">
+        <img src="./img/user-icon.png" alt="user-icon" />
+      </div>
     </header>
-
     <main>
-        <div id="conteudo-index">
-            <h1 id="Titulo">Bem vindo(a)</h1>
-            <hr>
-            <p>
-             Quando seu carro te abandonar, estamos aqui para lhe ajudar com o que for necessário
-            </p>
-            <img id="seta-cima" src="./img/seta-cima.png" alt="seta-pop-up">
+      <div class="fundo">
+        <div id="boas-vindas">
+          <h1>Bem vindo(a)</h1>
         </div>
-       
+        <hr />
+        <div class="conteudo-p">
+          <p>
+            Quando seu carro te abandonar, estamos aqui para lhe ajudar com o
+            que for necessário.
+          </p>
+        </div>
+        <div class="informacao">
+          <p>Clique aqui</p>
+        </div>
+        <a href="#" class="setas" id="seta-cima">
+          <img src="./img/seta-cima.png" alt="seta-para-cima" />
+        </a>
+      </div>
     </main>
-
-    <footer id="rodape-index">
-        <div id="copyright">
-            <p>
-                Copyright © 2024 Auto Sense
-            </p>
-        </div>
+    <footer class="rodape">
+      <p>Copyright &copy; 2024 Auto Sense</p>
     </footer>
+
+    <dialog id="assistencia">
+      <a
+        href="#"
+        src="./img/seta-baixo.png"
+        alt="seta-para-baxio"
+        class="setas"
+        id="seta-baixo"
+      >
+        <img src="./img/seta-baixo.png" alt="seta-para-baixo" />
+      </a>
+
+      <h3>Assistência com o veículo</h3>
+      <p>
+        Caro, cliente caso seu caro esteja apresentando problemas converse com
+        nossa IA que lhe ajudara a achar o problema que seu veículo apresenta
+        além de ajudar nos serviços de guincho e manutençãoe até a devolução do
+        seu veículo.
+      </p>
+    </dialog>
   </body>
 </html>

@@ -6,8 +6,8 @@
     <title>Veículos</title>
     <link rel="icon" href="../img/logo.png">
     <link rel="stylesheet" href="../css/paginas.css">
+    <link rel="stylesheet" href="../css/veiculo.css">
 </head>
-
 <body>    
     <header class="cabecalho">
         <div class="menus">
@@ -27,36 +27,41 @@
         </div>
       </header>
     <main>
-        <p>Aqui o senhor(a) terá acesso ao status do seu veículo podendo verificar como ele está e assim saber se já foi concertado além de possuir os relatórios feitos pela nossa IA.</p>
-        <h1>Automoveis</h1>
-
+        <div class="texto">
+            <p>Aqui o senhor(a) terá acesso ao status do seu veículo podendo verificar como ele está e assim saber se já foi concertado além de possuir os  relatórios feitos pela nossa IA.</p>
+        </div>
+        <div class="titulo">
+            <h1>Automoveis</h1>
+        </div>
+        <hr/>
         <div id="honda">
             <div id="honda-img">
-                <img src="../img/honda-civic.png" alt="honda-img">
+                <div class="fundo-img">
+                    <img src="../img/honda-civic-2023.png" alt="honda-img">
+                </div>
             </div>
             <div id="honda-txt">
                 <h3>Honda Civic 2023</h3>
                 <p>Pronto para retirar</p>
-                <p>Relátorio em tempo real</p>
+                <p class="relatorio">Relátorio em tempo real</p>
             </div>
         </div>
         <div id="fiat">
-            <div id="fiat-img">
-                <img src="../img/fiat-uno.png" alt="fiat-img">
-            </div>
             <div id="fiat-txt">
                 <h3>Fiat Uno 2015</h3>
                 <p>Em concerto</p>
-                <p>Relátorio em tempo real</p>
+                <p class="relatorio">Relátorio em tempo real</p>
             </div>
-        </div>
-        <div id="botao">
-            <p>Cadastrar novo veículo</p>
+            <div id="fiat-img">
+                <div class="fundo-img">
+                    <img src="../img/fait-uno-2015.png" alt="fiat-img">
+                </div>
+            </div>
         </div>
     </main>
     <footer class="rodape">
         <div>
-            <p>Copyright &copy; 2024 Auto Sense</p>
+            <p>Copyright © 2024 Auto Sense</p>
         </div>
     </footer>
 </body>
