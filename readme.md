@@ -25,8 +25,12 @@ Dentro destes repósitorio estão presentes os seguintes arquivos:
 
 ### Nosso Professor:
 
-###### Marcel Thomé Filho
+<div align="left">
 
-<img src="./img/ale/ale-pistola.png" alt="alexandre-bravo"/>
-<img src="./img/ale/ale-kratos.png" alt="alexandre-guerreiro"/>
-<img src="./img/ale/ale-indignado.png" alt="alexandre-indignado"/>
+  ###### Alexandre Carlos de Jesus
+  
+  <img src="./img/ale/ale-pistola.png" alt="alexandre-bravo" height='200'/>
+  <img src="./img/ale/ale-kratos.png" alt="alexandre-guerreiro" height='200'/>
+  <img src="./img/ale/ale-indignado.png" alt="alexandre-indignado" height='200'/>
+
+</div>
