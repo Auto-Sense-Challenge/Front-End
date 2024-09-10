@@ -17,11 +17,9 @@ Neste repositório está presente o desenvolvimento da entrega do challenge de 2
 ---
 
 Dentro destes repósitorio estão presentes os seguintes arquivos:
-- Um arquivo base que é o da página principal, "index.html";
-- Uma pasta html com os arquivos base das outras páginas html;
-- Uma pasta js com os arquivos arquivos JavaScript utilizados;
-- Uma pasta css com arquivos de estilos das nossas páginas web;
-- Uma pasta de imagens com todas as imagens dos projetos;
+- Este readme para informações gerais;
+- Uma pasta **img-ale**, onde estão todas as 3 imagens utilizadas no readme
+- Uma pasta **auto-sense-react**, que seria o nosso boiler plate que contem todo o nosso projeto realizado em react
 
 ### Nosso Professor:
 
@@ -29,8 +27,8 @@ Dentro destes repósitorio estão presentes os seguintes arquivos:
 
   ###### Alexandre Carlos de Jesus
   
-  <img src="./img/ale/ale-pistola.png" alt="alexandre-bravo" height='200'/>
-  <img src="./img/ale/ale-kratos.png" alt="alexandre-guerreiro" height='200'/>
-  <img src="./img/ale/ale-indignado.png" alt="alexandre-indignado" height='200'/>
+  <img src="./img-ale/ale-pistola.png" alt="alexandre-bravo" height='200'/>
+  <img src="./img-ale/ale-kratos.png" alt="alexandre-guerreiro" height='200'/>
+  <img src="./img-ale/ale-indignado.png" alt="alexandre-indignado" height='200'/>
 
 </div>
