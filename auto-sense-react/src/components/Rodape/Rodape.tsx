@@ -1,3 +1,4 @@
+import git from "/Rodape/git-logo.png"
 import logo from "/auto-logo.png"
 
 export default function Rodape(){
@@ -9,9 +10,7 @@ export default function Rodape(){
                         <img src={logo} alt="auto-sense-logo" />
                         <p>Auto Sense</p>
                     </div>
-                    <img src={logo} alt="" />
-                    <img src="" alt="" />
-                    <img src="" alt="" />
+                    <img src={git} alt="github-logo" />
                 </div>
                 <div>
                     <li>Cadastre-se</li>
