@@ -2,9 +2,12 @@ import { Outlet } from "react-router-dom";
 import Cabecalho from "./components/Cabecalho/Cabecalho";
 import Rodape from "./components/Rodape/Rodape";
 
+// Importe dos estilos das paginas
+import "./style/style.css"
+
 export default function App(){
   return(
-    <body>
+    <body className="Container">
       <Cabecalho/>
       <Outlet/>
       <Rodape/>

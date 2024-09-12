@@ -1,0 +1,30 @@
+:root {
+  --color-font: #fff;
+  --color-background: #98C1D9;
+}
+
+.Container {
+  background-color: var(--color-background);
+}
+
+header {
+  display: grid;
+  grid-template: auto/30vw 40vw 15vw 20vw;
+  gap: 10px;
+}
+header .auto-sense {
+  display: flex;
+  gap: 10px;
+}
+header .auto-sense img {
+  width: 100px;
+  height: 90px;
+}
+header .auto-sense h1 {
+  color: var(--color-font);
+  font-size: 2vw;
+}
+header .menu {
+  display: flex;
+  gap: 10px;
+}/*# sourceMappingURL=style.css.map */
