@@ -88,7 +88,7 @@
 .info-main{
     display: grid;
     height: 400vh;
-    grid-template: 50vw 110vw / auto;
+    grid-template: 50vw 100vw / auto;
 }
 
 .info{
@@ -116,10 +116,43 @@
     justify-content: center;
     background-image: url('./fundo-sobre.png');
     background-repeat: no-repeat;
-    background-position: -90px 20px;
+    background-position: 10px 20px;
+
+    .nos{
+        box-shadow: -20px 19px 4px #6AB2DC;
+    }
+
+    & .dados{
+        position: relative;
+        bottom: 100px;
+        border-radius: 20px;
+        background-color: rgba(57, 57, 57, 0.87);
+        padding: 5px;
+
+        & .nome{
+            color: var(--color-font);
+            text-align: center;
+            font-size: 18px;
+        }
+
+        & .sala-rm{
+            color: var(--color-font);
+            text-align: center;
+            font-size: 15px;
+        }
+
+        & .rede-pessoa{
+            display: flex;
+            position: relative;
+            left: 70px;
+
+            & .linkedin{
+                width: 50px;
+            }
+        }
+    }
 
     & img{
-        backdrop-filter: drop-shadow(-20px 19px 4px #6AB2DC);
         border-radius: 20px;
     }
 }

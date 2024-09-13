@@ -15,51 +15,59 @@ export default function Sobre(){
             </div>
             <div className="pessoas">
                 <div className="pessoa">
-                    <img src={Erick} alt="Erick-img" />
+                    <img className="nos" src={Erick} alt="Erick-img" />
                     <div className="dados">
                         <p className="nome">Erick Alves Xavier dos Santos</p>
                         <p className="sala-rm">1TDSPM / RM556862</p>
-                        <a href="https://github.com/Erick0105">
-                            <img src={Github} alt="logo-Github" />
-                        </a>
-                        <a href="https://www.instagram.com/erick_0105_/">
-                            <img src={Instagram} alt="logo-Instagram" />
-                        </a>
-                        <a href="https://www.linkedin.com/in/erick-alves-295180235/">
-                            <img src={Linkedin} alt="logo-Linkedin" />
-                        </a>
+                        <div className="rede-pessoa">
+                            <a href="https://github.com/Erick0105">
+                                <img src={Github} alt="logo-Github" />
+                            </a>
+                            <a href="https://www.instagram.com/erick_0105_/">
+                                <img src={Instagram} alt="logo-Instagram" />
+                            </a>
+                            <a href="https://www.linkedin.com/in/erick-alves-295180235/">
+                                <img className="linkedin" src={Linkedin} alt="logo-Linkedin" />
+                            </a>
+                        </div>
+                        
                     </div>
                 </div>
                 <div className="pessoa">
-                    <img src={Luiz} alt="Luiz-img" />
+                    <img className="nos" src={Luiz} alt="Luiz-img" />
                     <div className="dados">
                         <p className="nome">Luiz Henrique Neri Reimberg</p>
                         <p className="sala-rm">1TDSPM / RM556864</p>
-                        <a href="https://github.com/LuizHNR">
-                            <img src={Github} alt="logo-Github" />
-                        </a>
-                        <a href="https://instagram.com/loren_lhnr">
-                            <img src={Instagram} alt="logo-Instagram" />
-                        </a>
-                        <a href="https://www.linkedin.com/in/luiz-henrique-neri-reimberg-6ab0032b8/">
-                            <img src={Linkedin} alt="logo-Linkedin" />
-                        </a>
+                        <div className="rede-pessoa">
+                            <a href="https://github.com/LuizHNR">
+                                <img src={Github} alt="logo-Github" />
+                            </a>
+                            <a href="https://instagram.com/loren_lhnr">
+                                <img src={Instagram} alt="logo-Instagram" />
+                            </a>
+                            <a href="https://www.linkedin.com/in/luiz-henrique-neri-reimberg-6ab0032b8/">
+                                <img className="linkedin" src={Linkedin} alt="logo-Linkedin" />
+                            </a>
+                        </div>
+                        
                     </div>
                 </div>
                 <div className="pessoa">
-                    <img src={Vicenzo} alt="Vicenzo-img" />
+                    <img className="nos" src={Vicenzo} alt="Vicenzo-img" />
                     <div className="dados">
                         <p className="nome">Vicenzo Massao de Oliveira</p>
                         <p className="sala-rm">1TDSPM / RM554833</p>
-                        <a href="https://github.com/fFukurou">
-                            <img src={Github} alt="logo-Github" />
-                        </a>
-                        <a href="https://instagram.com/ffukurou_">
-                            <img src={Instagram} alt="logo-Instagram" />
-                        </a>
-                        <a href="https://www.linkedin.com/in/vicenzo-massao-de-oliveira-2a8b35109/">
-                            <img src={Linkedin} alt="logo-Linkedin" />
-                        </a>
+                        <div className="rede-pessoa">
+                            <a href="https://github.com/fFukurou">
+                                <img src={Github} alt="logo-Github" />
+                            </a>
+                            <a href="https://instagram.com/ffukurou_">
+                                <img src={Instagram} alt="logo-Instagram" />
+                            </a>
+                            <a href="https://www.linkedin.com/in/vicenzo-massao-de-oliveira-2a8b35109/">
+                                <img className="linkedin" src={Linkedin} alt="logo-Linkedin" />
+                            </a>
+                        </div>
                     </div>
                 </div>
 
