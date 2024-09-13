@@ -1,15 +1,16 @@
 footer {
   display: grid;
-  grid-template: 8vw 5vw/88.5vw 10vw;
+  grid-template: 8vw 5vw/83.5vw 15vw;
   color: var(--color-font);
+  font-size: 25px;
 }
 footer .esquerda {
   border-bottom: 1px solid #fff;
+  text-decoration: underline;
 }
 footer .esquerda .auto-sense-footer {
   display: flex;
   align-items: center;
-  font-size: 25px;
   gap: 10px;
 }
 footer .esquerda .auto-sense-footer img {
@@ -17,19 +18,18 @@ footer .esquerda .auto-sense-footer img {
   height: 63px;
 }
 footer ul {
-  margin-top: 30px;
+  margin-top: 10px;
   text-align: end;
   list-style: none;
-  font-weight: 700;
+  font-weight: 500;
   border-bottom: 1px solid #fff;
+  text-decoration: underline;
 }
 footer ul a {
   color: var(--color-font);
-  text-decoration: none;
 }
 footer .copy {
   padding: 20px;
   justify-self: center;
-  margin-left: 200px;
-  font-size: 25px;
+  margin-left: 350px;
 }/*# sourceMappingURL=footer.css.map */
