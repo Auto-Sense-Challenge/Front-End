@@ -7,7 +7,7 @@ header {
 header .cabecalho {
   display: grid;
   grid-template: auto/39vw 39vw 10vw;
-  border: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
   gap: 5vw;
 }
 header .cabecalho .auto-sense {
@@ -65,6 +65,7 @@ header .cabecalho .user p {
   rotate: 90deg;
   font-size: 40px;
   color: var(--color-font);
+  cursor: pointer;
 }
 header .menu {
   display: flex;
