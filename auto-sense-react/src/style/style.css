@@ -76,4 +76,41 @@
   left: 50px;
   width: 20vw;
   height: 30vw;
+}
+
+.info-main {
+  display: grid;
+  height: 400vh;
+  grid-template: 50vw 110vw/auto;
+}
+
+.info {
+  display: grid;
+  align-items: center;
+  height: 490px;
+  background: linear-gradient(180deg, #6AB2DC 72%, #98C1D9 100%);
+}
+.info h1 {
+  justify-self: center;
+  font-size: 52px;
+}
+.info p {
+  width: 60vw;
+  text-align: center;
+  justify-self: center;
+  color: var(--color-font);
+  font-size: 32px;
+}
+
+.pessoas {
+  display: grid;
+  justify-content: center;
+  background-image: url("./fundo-sobre.png");
+  background-repeat: no-repeat;
+  background-position: -90px 20px;
+}
+.pessoas img {
+  -webkit-backdrop-filter: drop-shadow(-20px 19px 4px #6AB2DC);
+          backdrop-filter: drop-shadow(-20px 19px 4px #6AB2DC);
+  border-radius: 20px;
 }/*# sourceMappingURL=style.css.map */
