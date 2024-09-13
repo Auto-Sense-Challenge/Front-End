@@ -5,6 +5,7 @@ import Github from "/Sobre/git-logo.png"
 import Instagram from "/Sobre/insta-logo.png"
 import Linkedin from "/Sobre/linkedin-logo.png"
 
+
 export default function Sobre(){
     return(
         <main>

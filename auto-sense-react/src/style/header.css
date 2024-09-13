@@ -76,4 +76,10 @@ header .menu {
 header .menu a {
   color: var(--color-font);
   text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+  h3 {
+    font-size: 60px;
+  }
 }/*# sourceMappingURL=header.css.map */
