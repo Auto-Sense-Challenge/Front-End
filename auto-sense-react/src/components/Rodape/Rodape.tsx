@@ -10,22 +10,20 @@ export default function Rodape(){
                     <div className="auto-sense-footer">
                         <img src={logo} alt="auto-sense-logo-footer" />
                         <p>Auto Sense</p>
-                    </div>
-                
-                    <div className="icone-git-footer">
-                        <img src={git} alt="github-logo" />
+                        <a href="https://github.com/Auto-Sense-Challenge">
+                            <img src={git} alt="github-logo"/>
+                        </a>
                     </div>
                 
                 </div>
                 <ul>
-                    <li>Entre em contato</li>
                     <li><Link to={"/Sobre"}>Quem Somos</Link></li>
-                    <li><Link to="/Cadastro">Cadastre-se</Link></li>    
+                    <li><Link to={"/Cadastro"}>Cadastre-se</Link></li>    
                 </ul>
             </div>
            
             <div className="copy">
-                <p>&copy; 2024 Auto Sense</p>
+                <p>&copy; 2024 Auto Sense. Todos os direitos reservados</p>
             </div>
         </footer>
     );
