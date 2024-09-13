@@ -1,35 +1,19 @@
 :root{
     --color-font: #fff;
     --color-background: #98C1D9;
+    --color-border: #A22C29;
+    --color-bola: rgba(86, 147, 183, 0.31);
 }
 
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
 
 .Container{
     background-color: var(--color-background);
 }
 
-header{
-    display: grid;
-    grid-template:  auto / 30vw 40vw 15vw 20vw;
-    gap: 10px;
-
-    & .auto-sense{
-        display: flex;
-        gap: 10px;
-
-        & img{
-            width: 100px;
-            height: 90px;
-        }
-
-        & h1{
-            color: var(--color-font);
-            font-size: 2vw;
-        }
-    }
-
-    & .menu{
-        display: flex;
-        gap: 10px;
-    }
-}
+@import url('./header.scss');
