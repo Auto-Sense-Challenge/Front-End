@@ -1,0 +1,35 @@
+footer {
+  display: grid;
+  grid-template: 8vw 5vw/88.5vw 10vw;
+  color: var(--color-font);
+}
+footer .esquerda {
+  border-bottom: 1px solid #fff;
+}
+footer .esquerda .auto-sense-footer {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  gap: 10px;
+}
+footer .esquerda .auto-sense-footer img {
+  width: 57px;
+  height: 63px;
+}
+footer ul {
+  margin-top: 30px;
+  text-align: end;
+  list-style: none;
+  font-weight: 700;
+  border-bottom: 1px solid #fff;
+}
+footer ul a {
+  color: var(--color-font);
+  text-decoration: none;
+}
+footer .copy {
+  padding: 20px;
+  justify-self: center;
+  margin-left: 200px;
+  font-size: 25px;
+}/*# sourceMappingURL=footer.css.map */

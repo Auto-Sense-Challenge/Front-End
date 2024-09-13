@@ -1,5 +1,6 @@
 @import url("./variaveis.scss");
 @import url("./header.scss");
+@import url("./footer.scss");
 * {
   font-family: sans-serif;
   box-sizing: border-box;
@@ -9,4 +10,6 @@
 
 .Container {
   background-color: var(--color-background);
+  display: grid;
+  gap: 300px;
 }/*# sourceMappingURL=style.css.map */

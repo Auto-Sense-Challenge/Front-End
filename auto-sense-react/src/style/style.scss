@@ -9,6 +9,11 @@
 
 .Container{
     background-color: var(--color-background);
+    display: grid;
+    gap: 300px;
 }
 
 @import url('./header.scss');
+
+
+@import url('./footer.scss');
