@@ -1,39 +1,47 @@
 footer {
   display: grid;
-  grid-template: 10vw 5vw/83.5vw 15vw;
+  grid-template: 12vw 5vw/auto;
   color: var(--color-font);
   font-size: 25px;
 }
-footer .esquerda {
-  border-bottom: 1px solid #fff;
-  text-decoration: underline;
+footer .cima-footer {
+  display: grid;
+  grid-template: auto/15vw 15vw;
+  padding: 10px;
+  gap: 66vw;
 }
-footer .esquerda .auto-sense-footer {
-  display: flex;
-  align-items: center;
+footer .cima-footer .esquerda {
+  display: grid;
   gap: 10px;
 }
-footer .esquerda .auto-sense-footer img {
+footer .cima-footer .esquerda .auto-sense-footer {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+  gap: 10px;
+}
+footer .cima-footer .esquerda .auto-sense-footer img {
   width: 57px;
   height: 63px;
 }
-footer .esquerda .icone-git-footer {
+footer .cima-footer .esquerda .icone-git-footer {
   position: relative;
   left: 80px;
 }
-footer ul {
+footer .cima-footer ul {
   margin-top: 5px;
   text-align: end;
   list-style: none;
   font-weight: 500;
-  border-bottom: 1px solid #fff;
   text-decoration: underline;
 }
-footer ul a {
+footer .cima-footer ul a {
   color: var(--color-font);
 }
 footer .copy {
+  border-top: 1px solid #fff;
+  text-align: center;
+  width: 97vw;
   padding: 20px;
   justify-self: center;
-  margin-left: 300px;
 }/*# sourceMappingURL=footer.css.map */

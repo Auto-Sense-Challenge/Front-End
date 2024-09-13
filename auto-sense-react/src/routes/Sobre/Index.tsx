@@ -8,7 +8,7 @@ import Linkedin from "/Sobre/linkedin-logo.png"
 
 export default function Sobre(){
     return(
-        <main>
+        <main className="info-main">
             <div className="info">
                 <h1>Quem Somos</h1>
                 <p>Somos estudantes do primeiro ano de Análise e Desenvolvimento de Sistema dentro da FIAP. Criamos nosso sistema chamado Auto Sense com intuito de ajudar na hora que der problema em veículos da população. Oferecendo um canal digital com ChatBot para gerar velocidade e assertividade no diagnóstico do problema do veículo, sem intervenção humana. Problema este que foi apresentado no nosso primeiro challenge do curso proposto pela Porto Seguro.</p>

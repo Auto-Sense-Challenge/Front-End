@@ -85,6 +85,12 @@
     }
 }
 
+.info-main{
+    display: grid;
+    height: 400vh;
+    grid-template: 50vw 20vw / auto;
+}
+
 .info{
     display: grid;
     align-items: center;
