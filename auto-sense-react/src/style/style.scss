@@ -1,9 +1,4 @@
-:root{
-    --color-font: #fff;
-    --color-background: #98C1D9;
-    --color-border: #A22C29;
-    --color-bola: rgba(86, 147, 183, 0.31);
-}
+@import url('./variaveis.scss');
 
 *{
     font-family: sans-serif;

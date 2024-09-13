@@ -4,6 +4,7 @@ import modo  from "/Cabecalho/modo.png"
 import foto from "/Cabecalho/foto-user.png"
 
 export default function Cabecalho(){
+
     return(
         <header>
             <div className="cabecalho">
@@ -11,9 +12,15 @@ export default function Cabecalho(){
                     <img src={logo} alt="auto-sense-logo" />
                     <h1>Auto Sense</h1>
                 </div>
+
                 <div className="mudar-modo">
-                    <img src={modo} alt="mudar-tema-img" />
+                    <label htmlFor="switch">
+                        <button type="submit" className="switch">
+                            <img src={modo} alt="mudar-tema-img" />
+                        </button>
+                    </label>
                 </div>
+
                 <div className="user">
                     <div>
                         <img src={foto} alt="user-foto" />
