@@ -132,7 +132,8 @@
 .pessoas .dados .rede-pessoa {
   display: flex;
   position: relative;
-  left: 70px;
+  gap: 30px;
+  left: 60px;
 }
 .pessoas .dados .rede-pessoa .linkedin {
   width: 50px;
