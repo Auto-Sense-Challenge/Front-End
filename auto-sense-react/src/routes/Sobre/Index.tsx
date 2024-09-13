@@ -19,9 +19,15 @@ export default function Sobre(){
                     <div className="dados">
                         <p className="nome">Erick Alves Xavier dos Santos</p>
                         <p className="sala-rm">1TDSPM / RM556862</p>
-                        <img src={Github} alt="logo-Github" />
-                        <img src={Instagram} alt="logo-Instagram" />
-                        <img src={Linkedin} alt="logo-Linkedin" />
+                        <a href="https://github.com/Erick0105">
+                            <img src={Github} alt="logo-Github" />
+                        </a>
+                        <a href="https://www.instagram.com/erick_0105_/">
+                            <img src={Instagram} alt="logo-Instagram" />
+                        </a>
+                        <a href="https://www.linkedin.com/in/erick-alves-295180235/">
+                            <img src={Linkedin} alt="logo-Linkedin" />
+                        </a>
                     </div>
                 </div>
                 <div className="pessoa">
@@ -29,9 +35,15 @@ export default function Sobre(){
                     <div className="dados">
                         <p className="nome">Luiz Henrique Neri Reimberg</p>
                         <p className="sala-rm">1TDSPM / RM556864</p>
-                        <img src={Github} alt="logo-Github" />
-                        <img src={Instagram} alt="logo-Instagram" />
-                        <img src={Linkedin} alt="logo-Linkedin" />
+                        <a href="https://github.com/LuizHNR">
+                            <img src={Github} alt="logo-Github" />
+                        </a>
+                        <a href="https://instagram.com/loren_lhnr">
+                            <img src={Instagram} alt="logo-Instagram" />
+                        </a>
+                        <a href="https://www.linkedin.com/in/luiz-henrique-neri-reimberg-6ab0032b8/">
+                            <img src={Linkedin} alt="logo-Linkedin" />
+                        </a>
                     </div>
                 </div>
                 <div className="pessoa">
@@ -39,10 +51,15 @@ export default function Sobre(){
                     <div className="dados">
                         <p className="nome">Vicenzo Massao de Oliveira</p>
                         <p className="sala-rm">1TDSPM / RM554833</p>
-                       
-                        <img src={Github} alt="logo-Github" />
-                        <img src={Instagram} alt="logo-Instagram" />
-                        <img src={Linkedin} alt="logo-Linkedin" />
+                        <a href="https://github.com/fFukurou">
+                            <img src={Github} alt="logo-Github" />
+                        </a>
+                        <a href="https://instagram.com/ffukurou_">
+                            <img src={Instagram} alt="logo-Instagram" />
+                        </a>
+                        <a href="https://www.linkedin.com/in/vicenzo-massao-de-oliveira-2a8b35109/">
+                            <img src={Linkedin} alt="logo-Linkedin" />
+                        </a>
                     </div>
                 </div>
 
