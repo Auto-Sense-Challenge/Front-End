@@ -81,7 +81,7 @@
 .info-main {
   display: grid;
   height: 400vh;
-  grid-template: 50vw 20vw/auto;
+  grid-template: 50vw 110vw/auto;
 }
 
 .info {
@@ -105,4 +105,12 @@
 .pessoas {
   display: grid;
   justify-content: center;
+  background-image: url("./fundo-sobre.png");
+  background-repeat: no-repeat;
+  background-position: -90px 20px;
+}
+.pessoas img {
+  -webkit-backdrop-filter: drop-shadow(-20px 19px 4px #6AB2DC);
+          backdrop-filter: drop-shadow(-20px 19px 4px #6AB2DC);
+  border-radius: 20px;
 }/*# sourceMappingURL=style.css.map */
