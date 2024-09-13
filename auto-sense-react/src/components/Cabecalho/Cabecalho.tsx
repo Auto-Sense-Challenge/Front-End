@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "/auto-logo.png"
+import logo from "/Logo-home.png"
 import modo  from "/Cabecalho/modo.png"
 import foto from "/Cabecalho/foto-user.png"
 

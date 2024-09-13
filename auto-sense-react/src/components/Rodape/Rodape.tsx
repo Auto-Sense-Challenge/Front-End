@@ -10,7 +10,11 @@ export default function Rodape(){
                     <img src={logo} alt="auto-sense-logo-footer" />
                     <p>Auto Sense</p>
                 </div>
-                <img src={git} alt="github-logo" />
+                
+                <div className="icone-git-footer">
+                    <img src={git} alt="github-logo" />
+                </div>
+               
             </div>
                 <ul>
                     <li>Entre em contato</li>

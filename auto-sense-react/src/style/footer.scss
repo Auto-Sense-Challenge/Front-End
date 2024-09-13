@@ -1,6 +1,6 @@
 footer{
     display: grid;
-    grid-template:  8vw 5vw / 83.5vw 15vw ;
+    grid-template:  10vw 5vw / 83.5vw 15vw ;
     color: var(--color-font);
     font-size: 25px;
 
@@ -18,10 +18,15 @@ footer{
                 height: 63px;
             }
         }
+
+        & .icone-git-footer{
+            position: relative;
+            left: 80px;
+        }
     }
 
     & ul{
-        margin-top: 10px;
+        margin-top: 5px;
         text-align: end;
         list-style: none;
         font-weight:500;
@@ -36,6 +41,6 @@ footer{
     & .copy{
         padding: 20px;
         justify-self: center;
-        margin-left: 350px;
+        margin-left: 300px;
     }
 }
