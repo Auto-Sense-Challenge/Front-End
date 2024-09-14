@@ -4,11 +4,22 @@ footer {
   color: var(--color-font);
   font-size: 25px;
 }
+@media screen and (max-width: 1024px) {
+  footer {
+    font-size: 20px;
+  }
+}
 footer .cima-footer {
   display: grid;
   grid-template: auto/15vw 15vw;
   padding: 10px;
   gap: 66vw;
+}
+@media screen and (max-width: 1024px) {
+  footer .cima-footer {
+    grid-template: auto/20vw 15vw;
+    gap: 62vw;
+  }
 }
 footer .cima-footer .esquerda {
   display: grid;
@@ -23,6 +34,11 @@ footer .cima-footer .esquerda .auto-sense-footer {
   border-bottom: 1px solid #fff;
   gap: 10px;
 }
+@media screen and (max-width: 1024px) {
+  footer .cima-footer .esquerda .auto-sense-footer {
+    top: 2px;
+  }
+}
 footer .cima-footer .esquerda .auto-sense-footer img {
   width: 57px;
   height: 63px;
@@ -31,12 +47,23 @@ footer .cima-footer .esquerda .icone-git-footer {
   position: relative;
   left: 80px;
 }
+@media screen and (max-width: 1024px) {
+  footer .cima-footer .esquerda .icone-git-footer {
+    bottom: 10px;
+    left: 80px;
+  }
+}
 footer .cima-footer ul {
   margin-top: 70px;
   text-align: end;
   list-style: none;
   font-weight: 500;
   text-decoration: underline;
+}
+@media screen and (max-width: 1024px) {
+  footer .cima-footer ul {
+    margin-top: 20px;
+  }
 }
 footer .cima-footer ul a {
   color: var(--color-font);

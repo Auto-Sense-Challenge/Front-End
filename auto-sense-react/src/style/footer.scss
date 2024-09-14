@@ -1,14 +1,35 @@
+$tamanho: (
+    grande: 1024px,
+    mediano: 768px,
+    pequeno: 425px
+);
+
+@mixin media($breakpoint) {
+    @media screen and (max-width: map-get($tamanho, $breakpoint)) {
+        @content;
+    }
+}
+
 footer{
     display: grid;
     grid-template:  12vw 5vw / auto ;
     color: var(--color-font);
     font-size: 25px;
 
+    @include media(grande){
+        font-size: 20px;
+    }
+
     .cima-footer{
         display: grid;
         grid-template: auto / 15vw 15vw;
         padding: 10px;
         gap: 66vw;
+
+        @include media(grande){
+            grid-template: auto / 20vw 15vw;
+            gap: 62vw;
+        }
 
         & .esquerda{
             display: grid;
@@ -22,16 +43,26 @@ footer{
                 height: 60px;
                 border-bottom: 1px solid #fff;
                 gap: 10px;
+
+                @include media(grande){
+                    top: 2px;
+                }
     
                 & img{
                     width: 57px;
                     height: 63px;
+                    
                 }
             }
     
             & .icone-git-footer{
                 position: relative;
                 left: 80px;
+
+                @include media(grande){
+                    bottom: 10px;
+                    left: 80px;
+                }
             }
         }
     
@@ -41,6 +72,10 @@ footer{
             list-style: none;
             font-weight:500;
             text-decoration: underline;
+
+            @include media(grande){
+                margin-top: 20px;
+            }
     
             & a{
                 color: var(--color-font);

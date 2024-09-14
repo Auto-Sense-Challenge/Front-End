@@ -151,8 +151,10 @@ header{
 
             }
 
-            & p{
+            & button{
                 rotate: 90deg;
+                background-color: transparent;
+                border: 0;
                 font-size: 40px;
                 color: var(--color-font);
                 cursor: pointer;
