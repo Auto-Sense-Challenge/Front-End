@@ -8,13 +8,21 @@ import { useState } from "react";
 export default function Cabecalho(){
 
     const [navAberto, setNavAberto] = useState(false);
+    const [userAberto, setUserAberto] = useState(false);
 
     const mudarNav = () => {
         setNavAberto(false);
         if(!navAberto){
             setNavAberto(true)
         }
-      };
+    };
+
+    const mudarOpcoes = () => {
+        setUserAberto(false);
+        if(!userAberto){
+            setUserAberto(true)
+        }
+    };
     
     return(
         <header>
@@ -42,7 +50,9 @@ export default function Cabecalho(){
                     <div>
                         <img src={foto} alt="user-foto" />
                     </div>
-                    <p>&gt;</p>
+                    <button onClick={()=> mudarOpcoes()}>
+                        <p>&gt;</p>
+                    </button>
                 </div>
                 
                 <dialog open={navAberto} className="nav-dialog">
@@ -51,8 +61,21 @@ export default function Cabecalho(){
                         <Link to={"/Sobre"}>Sobre</Link>
                         <Link to={"/Perguntas"}>Perguntas</Link>
                         <Link to={"/Cadastro"}>Cadastro</Link>
-                        <Link to={"/Veiculos"}>Veiculos</Link>
                     </nav>
+                </dialog>
+
+                <dialog open={userAberto} className="op-dialog">
+                    <img src={foto} alt="user-foto" />
+                    <h5>Olá, Bem vindo(a)</h5>
+                    <div className="op-cadastros">
+                        <Link to={"/Cadastro/Usuario"}>Cadastrar Usuário</Link>
+                        <Link to={"/Cadastro/Mecanico"}>Cadastrar Mecânico</Link>
+                        <Link to={"/Login"}>Login</Link>
+                    </div>
+                    <div className="outras">
+                        <Link to={"Perguntas"}>Ajuda</Link>
+                        <Link to={"Sobre"}>Sobre</Link>
+                    </div>
                 </dialog>
             </div>
         </header>
