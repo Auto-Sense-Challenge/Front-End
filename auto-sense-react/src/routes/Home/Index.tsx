@@ -5,7 +5,6 @@ export default function Home(){
         <main className="main-conteudo">
             <aside className="main-esquerda">
                 <h2>Bem Vindo(a)</h2>
-                <hr/>
                 <p>Quando seu carro te abandonar, estaremos aqui para lhe ajudar com o que for necessário</p>
             </aside>
 
