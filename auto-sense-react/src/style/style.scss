@@ -31,6 +31,11 @@ $tamanho: (
 .main-conteudo{
     display: grid;
     grid-template: auto / 70vw 20vw;
+
+    @include media(mediano){
+        height: 150vw;
+        grid-template: 100vw / auto
+    }
 }
 .main-esquerda{
     display: grid;
@@ -48,6 +53,19 @@ $tamanho: (
         height: 1000px;
     }
 
+    @include media(mediano){
+        left: 0;
+        border-radius: 200px;
+        width: 768px;
+        height: 1000px;
+    }
+
+    @include media(pequeno){
+        border-radius: 100px;
+        width: 425px;
+        height: 600px;
+    }
+
     & h2{
         position: relative;
         text-align: center;
@@ -62,6 +80,28 @@ $tamanho: (
             left: 550px;
             height: 6vw;
             font-size: 50px;
+        }
+
+        @include media(mediano){
+            left: 200px;
+            width: 50vw;
+            height: 20vw;
+            top: 200px;
+        }
+
+        @include media(pequeno){
+            left: 150px;
+            width: 50vw;
+            height: 20vw;
+            top: 200px;
+        }
+
+        @include media(pequeno){
+            left: 100px;
+            width: 60vw;
+            height: 25vw;
+            top: 100px;
+            font-size: 40px;
         }
     }
 
@@ -81,6 +121,19 @@ $tamanho: (
             top: 80px;
             font-size: 40px;
         }
+
+        @include media(mediano){
+            left: 250px;
+            width: 40vw;
+            top: 30vw;
+        }
+
+        @include media(pequeno){
+            left: 150px;
+            width: 40vw;
+            font-size: 30px;
+            top: 30vw;
+        }
     }
 
 }
@@ -90,6 +143,10 @@ $tamanho: (
     top: 100px;
     right: 100px;
     height: 30vw;
+
+    @include media(mediano){
+        display: none;
+    }
 
     @include media(grande){
         top: 300px;

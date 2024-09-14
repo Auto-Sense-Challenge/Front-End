@@ -19,6 +19,12 @@
   display: grid;
   grid-template: auto/70vw 20vw;
 }
+@media screen and (max-width: 768px) {
+  .main-conteudo {
+    height: 150vw;
+    grid-template: 100vw/auto;
+  }
+}
 
 .main-esquerda {
   display: grid;
@@ -37,6 +43,21 @@
     height: 1000px;
   }
 }
+@media screen and (max-width: 768px) {
+  .main-esquerda {
+    left: 0;
+    border-radius: 200px;
+    width: 768px;
+    height: 1000px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .main-esquerda {
+    border-radius: 100px;
+    width: 425px;
+    height: 600px;
+  }
+}
 .main-esquerda h2 {
   position: relative;
   text-align: center;
@@ -52,6 +73,31 @@
     left: 550px;
     height: 6vw;
     font-size: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-esquerda h2 {
+    left: 200px;
+    width: 50vw;
+    height: 20vw;
+    top: 200px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .main-esquerda h2 {
+    left: 150px;
+    width: 50vw;
+    height: 20vw;
+    top: 200px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .main-esquerda h2 {
+    left: 100px;
+    width: 60vw;
+    height: 25vw;
+    top: 100px;
+    font-size: 40px;
   }
 }
 .main-esquerda p {
@@ -72,12 +118,32 @@
     font-size: 40px;
   }
 }
+@media screen and (max-width: 768px) {
+  .main-esquerda p {
+    left: 250px;
+    width: 40vw;
+    top: 30vw;
+  }
+}
+@media screen and (max-width: 425px) {
+  .main-esquerda p {
+    left: 150px;
+    width: 40vw;
+    font-size: 30px;
+    top: 30vw;
+  }
+}
 
 .main-direita {
   position: relative;
   top: 100px;
   right: 100px;
   height: 30vw;
+}
+@media screen and (max-width: 768px) {
+  .main-direita {
+    display: none;
+  }
 }
 @media screen and (max-width: 1024px) {
   .main-direita {
