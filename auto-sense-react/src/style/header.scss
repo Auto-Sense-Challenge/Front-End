@@ -24,11 +24,31 @@ header{
     padding: 20px;
     gap: 5px;
 
+    @include media(mediano){
+        grid-template:  8vw / auto ;
+        padding: 10px;
+    }
+
+    @include media(pequeno){
+        grid-template:  15vw / auto ;
+    }
+
+
     & .cabecalho{
         display: grid;
         grid-template: auto / 39vw 5vw 25vw 10vw;
         border-bottom: 1px solid var(--color-border);
         gap: 5vw;
+
+        @include media(mediano){
+            grid-template: auto / 40vw 20vw 15vw 20vw;
+            gap: 0;
+        }
+
+        @include media(pequeno){
+            grid-template: auto / 25vw 30vw 15vw 25vw;
+            gap: 0;
+        }
 
         & .auto-sense{
             display: grid;
@@ -42,9 +62,17 @@ header{
 
                 @include media(grande){
                     position: relative;
-                    bottom: 10px;
+                    bottom: 20px;
                     width: 70px;
                     height: 70px;
+                }
+
+                @include media(mediano){
+                    bottom: 20px;
+                }
+
+                @include media(pequeno){
+                    right: 25px;
                 }
             }
     
@@ -54,6 +82,16 @@ header{
 
                 @include media(grande){
                     font-size: 40px;
+                }
+
+                @include media(mediano){
+                    position: relative;
+                    bottom:5px;
+                    font-size: 30px;
+                }
+
+                @include media(pequeno){
+                    font-size: 20px;
                 }
 
             }
@@ -74,6 +112,15 @@ header{
                 height: 60px;
             }
 
+            @include media(mediano){
+                position: relative;
+                height: 50px;
+            }
+
+            @include media(pequeno){
+                height: 50px;
+            }
+
             & button{
                 background-color: var(--background-color);
                 transform: scale(0.9);
@@ -82,6 +129,16 @@ header{
 
                 @include media(grande){
                     transform: scale(0.8);
+                }
+
+                @include media(mediano){
+                    position: relative;
+                    bottom: 5px;
+                    transform: scale(0.7);
+                }
+
+                @include media(pequeno){
+                    transform: scale(0.6);
                 }
 
             }
@@ -104,6 +161,15 @@ header{
                 width: 100px;
             }
 
+            @include media(mediano){
+                height: 40px;
+                width: 80px;
+            }
+
+            @include media(pequeno){
+                width: 70px;
+            }
+
             & .switch{
                 width: 50px;
                 height: 50px;
@@ -118,6 +184,13 @@ header{
 
                 @include media(grande){
                     top: 1px;
+                }
+
+                @include media(mediano){
+                    position: absolute;
+                    top: -5px;
+                    left: 1px;
+                    transform: scale(0.6);
                 }
 
                 & img{
@@ -142,10 +215,22 @@ header{
                 height: 50px;
             }
 
+            @include media(mediano){
+                height: 40px;
+                width: 80px;
+            }
+
             & img{
 
                 @include media(grande){
                     position: relative;
+                    bottom: 5px;
+                }
+
+                @include media(mediano){
+                    position: relative;
+                    width: 30px;
+                    height: 30px;
                     bottom: 5px;
                 }
 
@@ -158,6 +243,12 @@ header{
                 font-size: 40px;
                 color: var(--color-font);
                 cursor: pointer;
+
+                @include media(mediano){
+                    position: relative;
+                    right: 3px;
+                    font-size: 30px;
+                }
             }
         }
     }
@@ -173,6 +264,11 @@ header{
             left: 200px;
         }
 
+        @include media(mediano){
+            bottom: 20px;
+            left: 70px;
+        }
+
         & .menu{
             @include flexCenter();
             gap: 70px;
@@ -180,6 +276,10 @@ header{
 
             @include media(grande){
                 font-size: 30px;
+            }
+
+            @include media(mediano){
+                font-size: 25px;
             }
             
             & a{

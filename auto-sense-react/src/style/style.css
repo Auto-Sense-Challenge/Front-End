@@ -22,7 +22,15 @@
 @media screen and (max-width: 768px) {
   .main-conteudo {
     height: 150vw;
+    width: 700px;
     grid-template: 100vw/auto;
+  }
+}
+@media screen and (max-width: 425px) {
+  .main-conteudo {
+    height: 150vw;
+    width: 400px;
+    grid-template: 10vw/auto;
   }
 }
 
@@ -47,14 +55,14 @@
   .main-esquerda {
     left: 0;
     border-radius: 200px;
-    width: 768px;
+    width: 740px;
     height: 1000px;
   }
 }
 @media screen and (max-width: 425px) {
   .main-esquerda {
     border-radius: 100px;
-    width: 425px;
+    width: 415px;
     height: 600px;
   }
 }

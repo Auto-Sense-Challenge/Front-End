@@ -5,11 +5,34 @@ header {
   padding: 20px;
   gap: 5px;
 }
+@media screen and (max-width: 768px) {
+  header {
+    grid-template: 8vw/auto;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 425px) {
+  header {
+    grid-template: 15vw/auto;
+  }
+}
 header .cabecalho {
   display: grid;
   grid-template: auto/39vw 5vw 25vw 10vw;
   border-bottom: 1px solid var(--color-border);
   gap: 5vw;
+}
+@media screen and (max-width: 768px) {
+  header .cabecalho {
+    grid-template: auto/40vw 20vw 15vw 20vw;
+    gap: 0;
+  }
+}
+@media screen and (max-width: 425px) {
+  header .cabecalho {
+    grid-template: auto/25vw 30vw 15vw 25vw;
+    gap: 0;
+  }
 }
 header .cabecalho .auto-sense {
   display: grid;
@@ -24,9 +47,19 @@ header .cabecalho .auto-sense img {
 @media screen and (max-width: 1024px) {
   header .cabecalho .auto-sense img {
     position: relative;
-    bottom: 10px;
+    bottom: 20px;
     width: 70px;
     height: 70px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .cabecalho .auto-sense img {
+    bottom: 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  header .cabecalho .auto-sense img {
+    right: 25px;
   }
 }
 header .cabecalho .auto-sense h1 {
@@ -36,6 +69,18 @@ header .cabecalho .auto-sense h1 {
 @media screen and (max-width: 1024px) {
   header .cabecalho .auto-sense h1 {
     font-size: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .cabecalho .auto-sense h1 {
+    position: relative;
+    bottom: 5px;
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 425px) {
+  header .cabecalho .auto-sense h1 {
+    font-size: 20px;
   }
 }
 header .cabecalho .btn-nav {
@@ -54,6 +99,17 @@ header .cabecalho .btn-nav {
     height: 60px;
   }
 }
+@media screen and (max-width: 768px) {
+  header .cabecalho .btn-nav {
+    position: relative;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 425px) {
+  header .cabecalho .btn-nav {
+    height: 50px;
+  }
+}
 header .cabecalho .btn-nav button {
   background-color: var(--background-color);
   transform: scale(0.9);
@@ -63,6 +119,18 @@ header .cabecalho .btn-nav button {
 @media screen and (max-width: 1024px) {
   header .cabecalho .btn-nav button {
     transform: scale(0.8);
+  }
+}
+@media screen and (max-width: 768px) {
+  header .cabecalho .btn-nav button {
+    position: relative;
+    bottom: 5px;
+    transform: scale(0.7);
+  }
+}
+@media screen and (max-width: 425px) {
+  header .cabecalho .btn-nav button {
+    transform: scale(0.6);
   }
 }
 header .cabecalho .mudar-modo {
@@ -83,6 +151,17 @@ header .cabecalho .mudar-modo {
     width: 100px;
   }
 }
+@media screen and (max-width: 768px) {
+  header .cabecalho .mudar-modo {
+    height: 40px;
+    width: 80px;
+  }
+}
+@media screen and (max-width: 425px) {
+  header .cabecalho .mudar-modo {
+    width: 70px;
+  }
+}
 header .cabecalho .mudar-modo .switch {
   width: 50px;
   height: 50px;
@@ -98,6 +177,14 @@ header .cabecalho .mudar-modo .switch {
 @media screen and (max-width: 1024px) {
   header .cabecalho .mudar-modo .switch {
     top: 1px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .cabecalho .mudar-modo .switch {
+    position: absolute;
+    top: -5px;
+    left: 1px;
+    transform: scale(0.6);
   }
 }
 header .cabecalho .mudar-modo .switch img {
@@ -120,9 +207,23 @@ header .cabecalho .user {
     height: 50px;
   }
 }
+@media screen and (max-width: 768px) {
+  header .cabecalho .user {
+    height: 40px;
+    width: 80px;
+  }
+}
 @media screen and (max-width: 1024px) {
   header .cabecalho .user img {
     position: relative;
+    bottom: 5px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .cabecalho .user img {
+    position: relative;
+    width: 30px;
+    height: 30px;
     bottom: 5px;
   }
 }
@@ -133,6 +234,13 @@ header .cabecalho .user button {
   font-size: 40px;
   color: var(--color-font);
   cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  header .cabecalho .user button {
+    position: relative;
+    right: 3px;
+    font-size: 30px;
+  }
 }
 header .nav-dialog {
   position: relative;
@@ -146,6 +254,12 @@ header .nav-dialog {
     left: 200px;
   }
 }
+@media screen and (max-width: 768px) {
+  header .nav-dialog {
+    bottom: 20px;
+    left: 70px;
+  }
+}
 header .nav-dialog .menu {
   display: flex;
   justify-self: center;
@@ -155,6 +269,11 @@ header .nav-dialog .menu {
 @media screen and (max-width: 1024px) {
   header .nav-dialog .menu {
     font-size: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .nav-dialog .menu {
+    font-size: 25px;
   }
 }
 header .nav-dialog .menu a {

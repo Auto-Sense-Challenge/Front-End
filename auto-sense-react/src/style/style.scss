@@ -34,7 +34,14 @@ $tamanho: (
 
     @include media(mediano){
         height: 150vw;
+        width: 700px;
         grid-template: 100vw / auto
+    }
+
+    @include media(pequeno){
+        height: 150vw;
+        width: 400px;
+        grid-template: 10vw / auto
     }
 }
 .main-esquerda{
@@ -56,13 +63,13 @@ $tamanho: (
     @include media(mediano){
         left: 0;
         border-radius: 200px;
-        width: 768px;
+        width: 740px;
         height: 1000px;
     }
 
     @include media(pequeno){
         border-radius: 100px;
-        width: 425px;
+        width: 415px;
         height: 600px;
     }
 

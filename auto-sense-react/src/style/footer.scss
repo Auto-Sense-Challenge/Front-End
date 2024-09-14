@@ -14,21 +14,44 @@ footer{
     display: grid;
     grid-template:  12vw 5vw / auto ;
     color: var(--color-font);
+    box-sizing: border-box;
     font-size: 25px;
 
     @include media(grande){
         font-size: 20px;
     }
 
+    @include media(mediano){
+        grid-template:  17vw 8vw / auto ;
+    }
+
+    @include media(pequeno){
+        grid-template:  30vw 10vw / auto ;
+        font-size: 20px;
+    }
+
+
     .cima-footer{
         display: grid;
         grid-template: auto / 15vw 15vw;
+        box-sizing: border-box;
         padding: 10px;
         gap: 66vw;
 
         @include media(grande){
             grid-template: auto / 20vw 15vw;
             gap: 62vw;
+        }
+
+        @include media(mediano){
+            grid-template: auto / 25vw 20vw;
+            gap: 50vw;
+        }
+
+        @include media(pequeno){
+            grid-template: auto / 20vw 30vw;
+            padding: 0;
+            gap: 50vw;
         }
 
         & .esquerda{
@@ -63,6 +86,11 @@ footer{
                     bottom: 10px;
                     left: 80px;
                 }
+
+                @include media(pequeno){
+                    bottom: 10px;
+                    left: 40px;
+                }
             }
         }
     
@@ -75,6 +103,15 @@ footer{
 
             @include media(grande){
                 margin-top: 20px;
+            }
+
+            @include media(mediano){
+                margin-top: 30px;
+            }
+
+            @include media(pequeno){
+                width: 100px;
+                margin-top: 10px;
             }
     
             & a{
@@ -91,5 +128,14 @@ footer{
         width: 97vw;
         padding: 20px;
         justify-self: center;
+        
+        @include media(mediano){
+            width: 90vw;
+        }
+
+        @include media(pequeno){
+            width: 100vw;
+            justify-self: left;
+        }
     }
 }
