@@ -245,7 +245,7 @@ header .cabecalho .user button {
 header .nav-dialog {
   position: relative;
   bottom: 60px;
-  left: 300px;
+  left: 450px;
   background-color: var(--background-color);
   border: 0px;
 }
@@ -279,6 +279,50 @@ header .nav-dialog .menu {
 header .nav-dialog .menu a {
   color: var(--color-font);
   text-decoration: none;
+}
+header .op-dialog {
+  background-color: var(--color-dialog);
+  border: 0;
+  width: 410px;
+  height: 589px;
+  top: 10vw;
+  justify-self: end;
+}
+header .op-dialog a {
+  color: var(--color-font);
+  text-align: left;
+  font-size: 26px;
+  margin-left: 20px;
+  text-decoration: none;
+}
+header .op-dialog .op-user {
+  display: grid;
+  text-align: center;
+  padding: 10px;
+  gap: 3vw;
+}
+header .op-dialog .op-user img {
+  position: relative;
+  top: 20px;
+  width: 75px;
+  height: 75px;
+  align-self: center;
+  justify-self: center;
+}
+header .op-dialog .op-user h5 {
+  font-size: 24px;
+  color: var(--color-font);
+}
+header .op-dialog .op-user .op-cadastros {
+  display: grid;
+  gap: 20px;
+  width: 24vw;
+  padding-bottom: 40px;
+  border-bottom: 2px solid var(--color-border);
+}
+header .op-dialog .op-user .outras {
+  display: grid;
+  gap: 20px;
 }
 header a:hover {
   transition: 0.5s;

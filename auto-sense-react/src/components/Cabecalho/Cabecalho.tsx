@@ -65,16 +65,18 @@ export default function Cabecalho(){
                 </dialog>
 
                 <dialog open={userAberto} className="op-dialog">
-                    <img src={foto} alt="user-foto" />
-                    <h5>Olá, Bem vindo(a)</h5>
-                    <div className="op-cadastros">
-                        <Link to={"/Cadastro-Usuario"}>Cadastrar Usuário</Link>
-                        <Link to={"/Cadastro-Mecanico"}>Cadastrar Mecânico</Link>
-                        <Link to={"/Login"}>Login</Link>
-                    </div>
-                    <div className="outras">
-                        <Link to={"Perguntas"}>Ajuda</Link>
-                        <Link to={"Sobre"}>Sobre</Link>
+                    <div className="op-user">
+                        <img src={foto} alt="user-foto" />
+                        <h5>Olá, Bem vindo(a)</h5>
+                        <div className="op-cadastros">
+                            <Link to={"/Cadastro-Usuario"}>Cadastrar Usuário</Link>
+                            <Link to={"/Cadastro-Mecanico"}>Cadastrar Mecânico</Link>
+                            <Link to={"/Login"}>Login</Link>
+                        </div>
+                        <div className="outras">
+                            <Link to={"Perguntas"}>Ajuda</Link>
+                            <Link to={"Sobre"}>Sobre</Link>
+                        </div>
                     </div>
                 </dialog>
             </div>

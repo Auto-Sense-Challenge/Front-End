@@ -256,7 +256,7 @@ header{
     & .nav-dialog{
         position: relative;
         bottom: 60px;
-        left: 300px;
+        left: 450px;
         background-color: var(--background-color);
         border: 0px;
 
@@ -287,6 +287,60 @@ header{
                 text-decoration: none;
             }
         }
+    }
+
+    & .op-dialog{
+        background-color: var(--color-dialog);
+        border: 0;
+        width: 410px;
+        height: 589px;
+        top: 10vw;
+        justify-self: end;
+
+        & a{
+            color: var(--color-font);
+            text-align: left;
+            font-size: 26px;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+
+        & .op-user{
+            display: grid;
+            text-align: center;
+            padding: 10px;
+            gap: 3vw;
+
+            & img{
+                position: relative;
+                top: 20px;
+                width: 75px;
+                height: 75px;
+                align-self: center;
+                justify-self: center;
+            }
+
+            & h5{
+                font-size: 24px;
+                color: var(--color-font);
+            }
+
+            & .op-cadastros{
+                display: grid;
+                gap: 20px;
+                width: 24vw;
+                padding-bottom: 40px;
+                border-bottom: 2px solid var(--color-border);
+            }
+    
+            & .outras{
+                display: grid;
+                gap: 20px;
+    
+            }
+        }
+
+        
     }
 
     a:hover{
