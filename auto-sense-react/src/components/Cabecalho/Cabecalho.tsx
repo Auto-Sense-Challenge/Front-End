@@ -68,8 +68,8 @@ export default function Cabecalho(){
                     <img src={foto} alt="user-foto" />
                     <h5>Olá, Bem vindo(a)</h5>
                     <div className="op-cadastros">
-                        <Link to={"/Cadastro/Usuario"}>Cadastrar Usuário</Link>
-                        <Link to={"/Cadastro/Mecanico"}>Cadastrar Mecânico</Link>
+                        <Link to={"/Cadastro-Usuario"}>Cadastrar Usuário</Link>
+                        <Link to={"/Cadastro-Mecanico"}>Cadastrar Mecânico</Link>
                         <Link to={"/Login"}>Login</Link>
                     </div>
                     <div className="outras">
