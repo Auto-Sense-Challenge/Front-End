@@ -21,9 +21,22 @@ header .cabecalho .auto-sense img {
   width: 100px;
   height: 90px;
 }
+@media screen and (max-width: 1024px) {
+  header .cabecalho .auto-sense img {
+    position: relative;
+    bottom: 10px;
+    width: 70px;
+    height: 70px;
+  }
+}
 header .cabecalho .auto-sense h1 {
   color: var(--color-font);
   font-size: 60px;
+}
+@media screen and (max-width: 1024px) {
+  header .cabecalho .auto-sense h1 {
+    font-size: 40px;
+  }
 }
 header .cabecalho .btn-nav {
   justify-self: center;
@@ -34,11 +47,23 @@ header .cabecalho .btn-nav {
   padding: 10px;
   gap: 20px;
 }
+@media screen and (max-width: 1024px) {
+  header .cabecalho .btn-nav {
+    margin-top: 0px;
+    padding: 5px;
+    height: 60px;
+  }
+}
 header .cabecalho .btn-nav button {
   background-color: var(--background-color);
   transform: scale(0.9);
   border: none;
   cursor: pointer;
+}
+@media screen and (max-width: 1024px) {
+  header .cabecalho .btn-nav button {
+    transform: scale(0.8);
+  }
 }
 header .cabecalho .mudar-modo {
   margin-top: 20px;
@@ -51,6 +76,13 @@ header .cabecalho .mudar-modo {
   border-radius: 150px;
   position: relative;
 }
+@media screen and (max-width: 1024px) {
+  header .cabecalho .mudar-modo {
+    margin-top: 0px;
+    height: 50px;
+    width: 100px;
+  }
+}
 header .cabecalho .mudar-modo .switch {
   width: 50px;
   height: 50px;
@@ -62,6 +94,11 @@ header .cabecalho .mudar-modo .switch {
   left: var(--lado);
   transition: 0.5s;
   cursor: pointer;
+}
+@media screen and (max-width: 1024px) {
+  header .cabecalho .mudar-modo .switch {
+    top: 1px;
+  }
 }
 header .cabecalho .mudar-modo .switch img {
   width: 40px;
@@ -77,6 +114,18 @@ header .cabecalho .user {
   display: flex;
   justify-self: center;
 }
+@media screen and (max-width: 1024px) {
+  header .cabecalho .user {
+    margin-top: 0px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  header .cabecalho .user img {
+    position: relative;
+    bottom: 5px;
+  }
+}
 header .cabecalho .user p {
   rotate: 90deg;
   font-size: 40px;
@@ -90,22 +139,32 @@ header .nav-dialog {
   background-color: var(--background-color);
   border: 0px;
 }
+@media screen and (max-width: 1024px) {
+  header .nav-dialog {
+    left: 100px;
+  }
+}
 header .nav-dialog .menu {
   display: flex;
   justify-self: center;
   gap: 70px;
   font-size: 32px;
 }
+@media screen and (max-width: 1024px) {
+  header .nav-dialog .menu {
+    font-size: 30px;
+  }
+}
 header .nav-dialog .menu a {
   color: var(--color-font);
   text-decoration: none;
 }
 header a:hover {
+  transition: 0.5s;
   font-size: 40px;
 }
-
 @media screen and (max-width: 1024px) {
-  h3 {
-    font-size: 60px;
+  header a:hover {
+    font-size: 35px;
   }
 }/*# sourceMappingURL=header.css.map */

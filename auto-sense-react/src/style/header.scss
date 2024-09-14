@@ -3,6 +3,20 @@
     justify-self: center;
 }
 
+$tamanho: (
+    grande: 1024px,
+    mediano: 768px,
+    pequeno: 425px
+);
+
+
+@mixin media($breakpoint) {
+    @media screen and (max-width: map-get($tamanho, $breakpoint)) {
+        @content;
+    }
+}
+
+
 header{
     display: grid;
     grid-template:  7vw / auto ;
@@ -25,11 +39,23 @@ header{
             & img{
                 width: 100px;
                 height: 90px;
+
+                @include media(grande){
+                    position: relative;
+                    bottom: 10px;
+                    width: 70px;
+                    height: 70px;
+                }
             }
     
             & h1{
                 color: var(--color-font);
                 font-size: 60px;
+
+                @include media(grande){
+                    font-size: 40px;
+                }
+
             }
         }
 
@@ -42,11 +68,22 @@ header{
             padding: 10px;
             gap: 20px;
 
+            @include media(grande){
+                margin-top: 0px;
+                padding: 5px;
+                height: 60px;
+            }
+
             & button{
                 background-color: var(--background-color);
                 transform: scale(0.9);
                 border: none;
                 cursor: pointer;
+
+                @include media(grande){
+                    transform: scale(0.8);
+                }
+
             }
         }
 
@@ -61,6 +98,12 @@ header{
             border-radius: 150px;
             position: relative;
 
+            @include media(grande){
+                margin-top: 0px;
+                height: 50px;
+                width: 100px;
+            }
+
             & .switch{
                 width: 50px;
                 height: 50px;
@@ -72,6 +115,10 @@ header{
                 left: var(--lado);
                 transition: .5s;
                 cursor: pointer;
+
+                @include media(grande){
+                    top: 1px;
+                }
 
                 & img{
                     width: 40px;
@@ -90,6 +137,20 @@ header{
             gap: 20px;
             @include flexCenter();
 
+            @include media(grande){
+                margin-top: 0px;
+                height: 50px;
+            }
+
+            & img{
+
+                @include media(grande){
+                    position: relative;
+                    bottom: 5px;
+                }
+
+            }
+
             & p{
                 rotate: 90deg;
                 font-size: 40px;
@@ -104,13 +165,20 @@ header{
         bottom: 60px;
         left: 300px;
         background-color: var(--background-color);
-
         border: 0px;
+
+        @include media(grande){
+            left: 100px;
+        }
 
         & .menu{
             @include flexCenter();
             gap: 70px;
             font-size: 32px;
+
+            @include media(grande){
+                font-size: 30px;
+            }
             
             & a{
                 color: var(--color-font);
@@ -120,15 +188,15 @@ header{
     }
 
     a:hover{
+        transition: 0.5s;
         font-size: 40px;
+
+        @include media(grande){
+            font-size: 35px;
+        }
     }
  
 }
 
 // ----------------------------------------------------------------------------------------------------------------------------------
 
-@media screen and (max-width: 1024px) {
-    h3{
-        font-size: 60px;
-    }
-}
