@@ -1,3 +1,4 @@
+@import url('https://fonts.cdnfonts.com/css/inknut-antiqua');
 @import url('./variaveis.scss');
 
 *{
@@ -156,6 +157,55 @@
     & img{
         border-radius: 20px;
     }
+}
+
+.main-perguntas{
+    display: grid;
+    grid-template: 10vw 20vw 20vw 20vw 20vw / auto;
+    gap: 20vw;
+    justify-self: center;
+}
+
+.h1-perguntas{
+    border-bottom: 3px solid var(--color-border);
+    width: 90vw;
+    text-align: center;
+    font-family: 'Inknut Antiqua', sans-serif;
+    font-size: 51px;
+}
+
+.perguntas{
+    display: grid;
+    grid-template: 5vw 10vw / 70vw 10vw;
+    font-size: 40px;
+    border-bottom: 1px solid #000;
+    gap: 10vw;
+    height: 70px;
+
+    & .rotate-button{
+        color: #A22C29;
+        cursor: pointer;
+        background-color: transparent;
+        font-weight: 700;
+        border: none;
+        font-size: 60px;
+        transition: transform 0.1s ease;
+    }
+
+    & .rotate-button:active{
+        transform: rotate(90deg);
+    }
+
+    & dialog{
+        position: relative;
+        background: linear-gradient(90deg, var(--color-background-pergunta) 66.5%, var(--color-border) 100%);
+        width: 80vw;
+        padding: 60px;
+        border-radius: 20px;
+        border: 0px;
+        bottom: 9vw;
+    }
+
 }
 
 
