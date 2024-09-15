@@ -379,6 +379,12 @@
   color: var(--color-font);
   height: 100vh;
 }
+@media screen and (max-width: 425px) {
+  .main-cadastro {
+    grid-template: 40vw 10vw/auto;
+    height: 150vh;
+  }
+}
 .main-cadastro .conteudo-cadastro {
   display: grid;
 }
@@ -392,6 +398,11 @@
   text-align: center;
   font-size: 30px;
 }
+@media screen and (max-width: 425px) {
+  .main-cadastro p {
+    font-size: 25px;
+  }
+}
 
 .aside-cadastro {
   display: grid;
@@ -399,9 +410,19 @@
   text-align: center;
   gap: 17vw;
 }
+@media screen and (max-width: 425px) {
+  .aside-cadastro {
+    grid-template: 90vw 50vw/auto;
+  }
+}
 .aside-cadastro aside {
   display: grid;
   grid-template: 20vw 20vw/auto;
+}
+@media screen and (max-width: 768px) {
+  .aside-cadastro aside {
+    grid-template: 65vw 10vw/auto;
+  }
 }
 .aside-cadastro aside a {
   font-size: 30px;
