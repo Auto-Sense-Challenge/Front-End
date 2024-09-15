@@ -77,6 +77,15 @@ export default function CadastroUser(){
           />
           <label>*Campo Obrigatório</label>
         </div>
+        <div>
+          <label>Idade</label>
+          <input type="number" 
+          name="number" 
+          value={formData.idade}
+          onChange={handleChange}
+          placeholder="Digite Aqui..."
+          />
+        </div>
         <button type="submit">Enviar</button>
       </form>
     </main>
