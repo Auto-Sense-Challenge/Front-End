@@ -30,7 +30,7 @@ $tamanho: (
 
 .main-conteudo{
     display: grid;
-    grid-template: auto / 70vw 20vw;
+    grid-template: auto / 60vw 35vw;
 
     @include media(mediano){
         height: 150vw;
@@ -146,10 +146,8 @@ $tamanho: (
 }
 
 .main-direita{
-    position: relative;
-    top: 100px;
-    right: 100px;
-    height: 30vw;
+    justify-self: center;
+    align-self: center;
 
     @include media(mediano){
         display: none;
@@ -161,6 +159,7 @@ $tamanho: (
     }
 
     & div{
+        position: relative;
         width: 25vw;
         height: 35vw;
         top: 50px;
@@ -172,10 +171,15 @@ $tamanho: (
 
     & img{
         position: absolute;
-        top: 110px;
-        left: 50px;
+        margin-left: 40px;
+        top:550px;
         width: 20vw;
         height: 20vw;
+
+        @include media(grande){
+            top: 600px;
+            right: 12vw;
+        }
     }
 }
 
