@@ -269,6 +269,10 @@ header{
             left: 70px;
         }
 
+        @include media(pequeno){
+            left: 10px;
+        }
+
         & .menu{
             @include flexCenter();
             gap: 70px;
@@ -280,6 +284,12 @@ header{
 
             @include media(mediano){
                 font-size: 25px;
+            }
+
+            @include media(pequeno){
+                display: grid;
+                grid-template: 1px 5vw / 60vw 10vw;
+                gap: 30px;
             }
             
             & a{
@@ -343,12 +353,14 @@ header{
         
     }
 
-    a:hover{
-        transition: 0.5s;
-        font-size: 40px;
-
-        @include media(grande){
-            font-size: 35px;
+    a{
+        transition: 0.8s;
+        &:hover{
+            font-size: 40px;
+    
+            @include media(grande){
+                font-size: 35px;
+            }
         }
     }
  

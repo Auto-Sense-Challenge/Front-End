@@ -158,7 +158,6 @@
   }
 }
 .main-direita div {
-  position: relative;
   width: 25vw;
   height: 35vw;
   top: 50px;
@@ -185,12 +184,27 @@
   height: 400vh;
   grid-template: 50vw 100vw/auto;
 }
+@media screen and (max-width: 768px) {
+  .info-main {
+    grid-template: 100vw 185vw/auto;
+  }
+}
+@media screen and (max-width: 425px) {
+  .info-main {
+    grid-template: 250vw 400vw/auto;
+  }
+}
 
 .info {
   display: grid;
   align-items: center;
   height: 490px;
   background: linear-gradient(180deg, #6AB2DC 72%, #98C1D9 100%);
+}
+@media screen and (max-width: 425px) {
+  .info {
+    height: 600px;
+  }
 }
 .info h1 {
   justify-self: center;
@@ -203,6 +217,16 @@
   color: var(--color-font);
   font-size: 32px;
 }
+@media screen and (max-width: 768px) {
+  .info p {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .info p {
+    width: 80vw;
+  }
+}
 
 .pessoas {
   display: grid;
@@ -210,6 +234,16 @@
   background-image: url("./fundo-sobre.png");
   background-repeat: no-repeat;
   background-position: 10px 20px;
+}
+@media screen and (max-width: 768px) {
+  .pessoas {
+    background-position: -300px 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .pessoas {
+    background-position: -500px 20px;
+  }
 }
 .pessoas .nos {
   box-shadow: -20px 19px 4px #6AB2DC;
@@ -250,6 +284,20 @@
   gap: 20vw;
   justify-self: center;
 }
+@media screen and (max-width: 768px) {
+  .main-perguntas {
+    grid-template: 10vw 60vw 60vw 60vw 60vw/auto;
+    height: 300vw;
+    gap: 10vw;
+  }
+}
+@media screen and (max-width: 425px) {
+  .main-perguntas {
+    grid-template: 25vw 85vw 90vw 85vw 85vw/auto;
+    height: 450vw;
+    gap: 10vw;
+  }
+}
 
 .h1-perguntas {
   border-bottom: 3px solid var(--color-border);
@@ -257,6 +305,16 @@
   text-align: center;
   font-family: "Inknut Antiqua", sans-serif;
   font-size: 51px;
+}
+@media screen and (max-width: 768px) {
+  .h1-perguntas {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .h1-perguntas {
+    font-size: 20px;
+  }
 }
 
 .perguntas {
@@ -266,6 +324,17 @@
   border-bottom: 1px solid #000;
   gap: 10vw;
   height: 70px;
+}
+@media screen and (max-width: 768px) {
+  .perguntas {
+    grid-template: 5vw 50vw/70vw 10vw;
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .perguntas {
+    font-size: 20px;
+  }
 }
 .perguntas .rotate-button {
   color: #A22C29;
@@ -287,4 +356,59 @@
   border-radius: 20px;
   border: 0px;
   bottom: 9vw;
+}
+@media screen and (max-width: 768px) {
+  .perguntas dialog {
+    bottom: 5vw;
+    width: 90vw;
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .perguntas dialog {
+    top: 10px;
+    height: 75vw;
+    font-size: 20px;
+  }
+}
+
+.main-cadastro {
+  display: grid;
+  grid-template: 20vw 10vw/auto;
+  background: linear-gradient(180deg, #6AB2DC 72%, #98C1D9 100%);
+  color: var(--color-font);
+  height: 100vh;
+}
+.main-cadastro .conteudo-cadastro {
+  display: grid;
+}
+.main-cadastro .conteudo-cadastro h1 {
+  justify-content: center;
+  color: #000;
+  text-align: center;
+  font-size: 50px;
+}
+.main-cadastro p {
+  text-align: center;
+  font-size: 30px;
+}
+
+.aside-cadastro {
+  display: grid;
+  grid-template: auto/40vw 40vw;
+  text-align: center;
+  gap: 17vw;
+}
+.aside-cadastro aside {
+  display: grid;
+  grid-template: 20vw 20vw/auto;
+}
+.aside-cadastro aside a {
+  font-size: 30px;
+  color: var(--color-font);
+  transition: 1s;
+}
+.aside-cadastro aside a:hover {
+  font-size: 35px;
+  color: var(--color-border);
 }/*# sourceMappingURL=style.css.map */

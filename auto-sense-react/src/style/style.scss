@@ -159,7 +159,6 @@ $tamanho: (
     }
 
     & div{
-        position: relative;
         width: 25vw;
         height: 35vw;
         top: 50px;
@@ -187,6 +186,14 @@ $tamanho: (
     display: grid;
     height: 400vh;
     grid-template: 50vw 100vw / auto;
+
+    @include media(mediano){
+        grid-template: 100vw 185vw / auto;
+    }
+
+    @include media(pequeno){
+        grid-template: 250vw 400vw / auto;
+    }
 }
 
 .info{
@@ -194,6 +201,10 @@ $tamanho: (
     align-items: center;
     height: 490px;
     background: linear-gradient(180deg, #6AB2DC 72%, #98C1D9 100%);
+
+    @include media(pequeno){
+        height: 600px;
+    }
 
     & h1{
         justify-self: center;
@@ -206,6 +217,14 @@ $tamanho: (
         justify-self: center;
         color: var(--color-font);
         font-size: 32px;
+
+        @include media(mediano){
+            font-size: 25px;
+        }
+
+        @include media(pequeno){
+            width: 80vw;
+        }
     }
 }
 
@@ -215,6 +234,14 @@ $tamanho: (
     background-image: url('./fundo-sobre.png');
     background-repeat: no-repeat;
     background-position: 10px 20px;
+
+    @include media(mediano){
+        background-position: -300px 20px;
+    }
+
+    @include media(pequeno){
+        background-position: -500px 20px;
+    }
 
     .nos{
         box-shadow: -20px 19px 4px #6AB2DC;
@@ -261,6 +288,18 @@ $tamanho: (
     grid-template: 10vw 20vw 20vw 20vw 20vw / auto;
     gap: 20vw;
     justify-self: center;
+
+    @include media(mediano){
+        grid-template: 10vw 60vw 60vw 60vw 60vw / auto;
+        height: 300vw;
+        gap: 10vw;
+    }
+
+    @include media(pequeno){
+        grid-template: 25vw 85vw 90vw 85vw 85vw / auto;
+        height: 450vw;
+        gap: 10vw;
+    }
 }
 
 .h1-perguntas{
@@ -269,6 +308,14 @@ $tamanho: (
     text-align: center;
     font-family: 'Inknut Antiqua', sans-serif;
     font-size: 51px;
+
+    @include media(mediano){
+        font-size: 30px;
+    }
+
+    @include media(pequeno){
+        font-size: 20px;
+    }
 }
 
 .perguntas{
@@ -278,6 +325,15 @@ $tamanho: (
     border-bottom: 1px solid #000;
     gap: 10vw;
     height: 70px;
+
+    @include media(mediano){
+        grid-template: 5vw 50vw / 70vw 10vw;
+        font-size: 25px;
+    }
+
+    @include media(pequeno){
+        font-size: 20px;
+    }
 
     & .rotate-button{
         color: #A22C29;
@@ -301,8 +357,71 @@ $tamanho: (
         border-radius: 20px;
         border: 0px;
         bottom: 9vw;
+
+        @include media(mediano){
+            bottom: 5vw;
+            width: 90vw;
+            font-size: 30px;
+        }
+
+        @include media(pequeno){
+            top: 10px;
+            height: 75vw;
+            font-size: 20px;
+        }
     }
 
 }
+
+.main-cadastro{
+    display: grid;
+    grid-template: 20vw 10vw / auto;
+    background: linear-gradient(180deg, #6AB2DC 72%, #98C1D9 100%);
+    color: var(--color-font);
+    height: 100vh;
+
+    & .conteudo-cadastro{
+        display: grid;
+        
+        & h1{
+            justify-content: center;
+            color: #000;
+            text-align: center;
+            font-size: 50px;
+        }
+
+    }
+
+    & p{
+        text-align: center;
+        font-size: 30px;
+    }
+    
+}
+
+.aside-cadastro{
+    display: grid;
+    grid-template: auto / 40vw 40vw;
+    text-align: center;
+    gap: 17vw;
+
+    & aside{
+        display: grid;
+        grid-template: 20vw 20vw / auto;
+
+        & a{
+            font-size: 30px;
+            color: var(--color-font);
+            transition: 1s;
+
+            &:hover{
+                font-size: 35px;
+                color: var(--color-border);
+            }
+        }
+    }
+}
+
+
 
 @import url('./footer.scss');
