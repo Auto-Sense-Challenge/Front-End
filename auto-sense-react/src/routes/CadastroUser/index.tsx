@@ -1,27 +1,30 @@
 import { useState } from "react";
 
 export default function CadastroUser(){
-  // Definindo o estado inicial do formulário
+
+
+  // Define os dados iniciais do formulario
   const [formData, setFormData] = useState({
     nome: '',
     email: '',
-    senha: ''
+    senha: '',
+    idade: 0 
   });
 
-  // Função para lidar com mudanças nos inputs
+  // Aqui não entendi muito bem ainda, mas meio q lida com as mudanças dos dados
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
+    const { name, value, type } = e.target;
+
     setFormData({
       ...formData,
-      [name]: value
+      [name]: type === 'number' ? parseInt(value) : value
     });
   };
 
-  // Função para lidar com o envio do formulário
+  //! Aqui lida com o formulario e tals quando
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log('Dados enviados:', formData);
-    // Aqui você pode adicionar a lógica para enviar os dados a uma API ou realizar outras ações
+    e.preventDefault();//* Evita q a página reinicie
+    //? Aqui pode colocar mais coisas tipo API ou abrir um modal(Vai ser o que vou fazer)
   };
 
   return (
