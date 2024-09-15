@@ -1,4 +1,4 @@
-import Logo from "/Logo-home.png"
+import logoDireito from "/logo-direito.png"
 
 export default function Home(){
     return(
@@ -9,8 +9,7 @@ export default function Home(){
             </aside>
 
             <div className="main-direita">
-                <div>.</div>
-                <img src={Logo} alt="auto-sense-logo" />
+                <img src={logoDireito} alt="logo-direito" />
             </div>
         </main>
     );
