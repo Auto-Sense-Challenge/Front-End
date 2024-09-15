@@ -5,7 +5,8 @@ export default function CadastroUser(){
 
   // Define os dados iniciais do formulario
   const [formData, setFormData] = useState({
-    nome: '',
+    cpf: "",
+    user: '',
     email: '',
     senha: '',
     idade: 0 
@@ -21,42 +22,63 @@ export default function CadastroUser(){
     });
   };
 
-  //! Aqui lida com o formulario e tals quando
+  //! Aqui lida com o formulario e tals quando envio ele
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();//* Evita q a página reinicie
     //? Aqui pode colocar mais coisas tipo API ou abrir um modal(Vai ser o que vou fazer)
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label>Nome:</label>
-        <input 
-          type="text" 
-          name="nome" 
-          value={formData.nome} 
-          onChange={handleChange} 
-        />
-      </div>
-      <div>
-        <label>Email:</label>
-        <input 
-          type="email" 
-          name="email" 
-          value={formData.email} 
-          onChange={handleChange} 
-        />
-      </div>
-      <div>
-        <label>Senha:</label>
-        <input 
-          type="password" 
-          name="senha" 
-          value={formData.senha} 
-          onChange={handleChange} 
-        />
-      </div>
-      <button type="submit">Enviar</button>
-    </form>
+    <main>
+      <h2>Cadastro</h2>
+      <p>Preencha seus dados para cadastrar</p>
+      <form onSubmit={handleSubmit}>
+        <div>
+          <label>CPF - Digite apenas números</label>
+          <input type="number" //Tira as setinhas do tipo number Luiz
+          name="cpf"
+          value={formData.cpf}
+          onChange={handleChange}
+          placeholder="Digite Aqui.."
+          required
+          />
+          <label>*Campo Obrigatório</label>
+        </div>
+        <div>
+          <label>Nome de Usuário</label>
+          <input type="text" 
+          name="user"
+          value={formData.user}
+          onChange={handleChange}
+          placeholder="Digite Aqui..."
+          required
+          />
+          <label>*Campo Obrigatório</label>
+        </div>
+        <div>
+          <label>E-mail</label>
+          <input type="email" 
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+          placeholder="Digite Aqui..."
+          required
+          />
+          <label>*Campo Obrigatório</label>
+        </div>
+        <div>
+          <label>Senha</label>
+          <input type="password" 
+          name="senha"
+          value={formData.senha}
+          onChange={handleChange}
+          placeholder="Digite Aqui..."
+          required
+          />
+          <label>*Campo Obrigatório</label>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
   );
 }
