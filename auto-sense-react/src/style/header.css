@@ -336,8 +336,10 @@ header .op-dialog .op-user .outras {
   display: grid;
   gap: 20px;
 }
+header a {
+  transition: 0.8s;
+}
 header a:hover {
-  transition: 0.5s;
   font-size: 40px;
 }
 @media screen and (max-width: 1024px) {

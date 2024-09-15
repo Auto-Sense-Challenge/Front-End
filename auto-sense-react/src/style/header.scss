@@ -353,12 +353,14 @@ header{
         
     }
 
-    a:hover{
-        transition: 0.5s;
-        font-size: 40px;
-
-        @include media(grande){
-            font-size: 35px;
+    a{
+        transition: 0.8s;
+        &:hover{
+            font-size: 40px;
+    
+            @include media(grande){
+                font-size: 35px;
+            }
         }
     }
  

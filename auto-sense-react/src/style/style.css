@@ -370,4 +370,45 @@
     height: 75vw;
     font-size: 20px;
   }
+}
+
+.main-cadastro {
+  display: grid;
+  grid-template: 20vw 10vw/auto;
+  background: linear-gradient(180deg, #6AB2DC 72%, #98C1D9 100%);
+  color: var(--color-font);
+  height: 100vh;
+}
+.main-cadastro .conteudo-cadastro {
+  display: grid;
+}
+.main-cadastro .conteudo-cadastro h1 {
+  justify-content: center;
+  color: #000;
+  text-align: center;
+  font-size: 50px;
+}
+.main-cadastro p {
+  text-align: center;
+  font-size: 30px;
+}
+
+.aside-cadastro {
+  display: grid;
+  grid-template: auto/40vw 40vw;
+  text-align: center;
+  gap: 17vw;
+}
+.aside-cadastro aside {
+  display: grid;
+  grid-template: 20vw 20vw/auto;
+}
+.aside-cadastro aside a {
+  font-size: 30px;
+  color: var(--color-font);
+  transition: 1s;
+}
+.aside-cadastro aside a:hover {
+  font-size: 35px;
+  color: var(--color-border);
 }/*# sourceMappingURL=style.css.map */
