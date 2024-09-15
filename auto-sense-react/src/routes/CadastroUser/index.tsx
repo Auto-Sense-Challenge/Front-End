@@ -5,11 +5,11 @@ export default function CadastroUser(){
 
   // Define os dados iniciais do formulario
   const [formData, setFormData] = useState({
-    cpf: "",
+    cpf: '',
     user: '',
     email: '',
     senha: '',
-    idade: 0 
+    idade: '' 
   });
 
   // Aqui não entendi muito bem ainda, mas meio q lida com as mudanças dos dados
@@ -39,7 +39,7 @@ export default function CadastroUser(){
           name="cpf"
           value={formData.cpf}
           onChange={handleChange}
-          placeholder="Digite Aqui.."
+          placeholder="Digite aqui seu cpf"
           required
           />
           <label>*Campo Obrigatório</label>
@@ -50,7 +50,7 @@ export default function CadastroUser(){
           name="user"
           value={formData.user}
           onChange={handleChange}
-          placeholder="Digite Aqui..."
+          placeholder="Digite aqui algum nome de usuário"
           required
           />
           <label>*Campo Obrigatório</label>
@@ -61,7 +61,7 @@ export default function CadastroUser(){
           name="email"
           value={formData.email}
           onChange={handleChange}
-          placeholder="Digite Aqui..."
+          placeholder="Digite aqui seu e-mail de contato"
           required
           />
           <label>*Campo Obrigatório</label>
@@ -72,10 +72,19 @@ export default function CadastroUser(){
           name="senha"
           value={formData.senha}
           onChange={handleChange}
-          placeholder="Digite Aqui..."
+          placeholder="Digite aqui alguma senha"
           required
           />
           <label>*Campo Obrigatório</label>
+        </div>
+        <div>
+          <label>Idade</label>
+          <input type="number" 
+          name="number" 
+          value={formData.idade}
+          onChange={handleChange}
+          placeholder="Digite sua idade"
+          />
         </div>
         <button type="submit">Enviar</button>
       </form>
