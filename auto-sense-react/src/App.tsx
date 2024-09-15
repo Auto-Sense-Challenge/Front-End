@@ -3,7 +3,7 @@ import Cabecalho from "./components/Cabecalho/Cabecalho";
 import Rodape from "./components/Rodape/Rodape";
 
 // Importe dos estilos das paginas
-import "./style/style.css"
+import "./style/style.scss";
 
 export default function App(){
   return(
