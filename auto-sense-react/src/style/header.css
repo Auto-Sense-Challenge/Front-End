@@ -260,6 +260,11 @@ header .nav-dialog {
     left: 70px;
   }
 }
+@media screen and (max-width: 425px) {
+  header .nav-dialog {
+    left: 10px;
+  }
+}
 header .nav-dialog .menu {
   display: flex;
   justify-self: center;
@@ -274,6 +279,13 @@ header .nav-dialog .menu {
 @media screen and (max-width: 768px) {
   header .nav-dialog .menu {
     font-size: 25px;
+  }
+}
+@media screen and (max-width: 425px) {
+  header .nav-dialog .menu {
+    display: grid;
+    grid-template: 1px 5vw/60vw 10vw;
+    gap: 30px;
   }
 }
 header .nav-dialog .menu a {
