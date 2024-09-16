@@ -99,16 +99,28 @@ $tamanho: (
 .main-user-cadastro{
     @include tela-cadastro();
     height: 200vh;
+
+    @include media(grande){
+        height: 130vh;
+    }
 }
 
 .main-cadastro-mec{
     @include tela-cadastro();
     height: 250vh;
+
+    @include media(grande){
+        height: 160vh;
+    }
 }
 
 .main-login{
     @include tela-cadastro();
     height: 130vh;
+
+    @include media(grande){
+        height: 85vh;
+    }
 
     @include media(pequeno){
         height: 140vh;

@@ -132,6 +132,13 @@ $tamanho: (
         justify-self: center;
         align-self: center;
 
+        & img{
+
+            @include media(grande){
+                width: 40vw;
+            }
+        }
+
         @include media(mediano){
             display: none;
         }

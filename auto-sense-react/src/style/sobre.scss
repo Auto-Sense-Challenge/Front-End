@@ -15,6 +15,11 @@ $tamanho: (
     height: 400vh;
     grid-template: 50vw 100vw / auto;
 
+    @include media(grande){
+        grid-template: 90vw 150vw / auto;
+        height: 300vh;
+    }
+
     @include media(mediano){
         grid-template: 100vw 185vw / auto;
     }
@@ -28,6 +33,10 @@ $tamanho: (
         align-items: center;
         height: 490px;
         background: linear-gradient(180deg, #6AB2DC 72%, #98C1D9 100%);
+
+        @include media(grande){
+            height: 600px;
+        }
     
         @include media(pequeno){
             height: 600px;
@@ -61,6 +70,10 @@ $tamanho: (
         background-image: url('./fundo-sobre.png');
         background-repeat: no-repeat;
         background-position: 10px 20px;
+
+        @include media(grande){
+            background-position: -190px 20px;
+        }
     
         @include media(mediano){
             background-position: -300px 20px;

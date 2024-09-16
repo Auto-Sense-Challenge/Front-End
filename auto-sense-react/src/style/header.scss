@@ -40,6 +40,7 @@ header{
         border-bottom: 1px solid var(--color-border);
         gap: 5vw;
 
+
         @include media(mediano){
             grid-template: auto / 40vw 20vw 15vw 20vw;
             gap: 0;

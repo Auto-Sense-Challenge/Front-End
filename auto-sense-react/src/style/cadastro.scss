@@ -59,6 +59,10 @@ $tamanho: (
         display: grid;
         grid-template: 20vw 20vw / auto;
 
+        @include media(grande){
+            grid-template: 40vw 30vw / auto;
+        }
+
         @include media(mediano){
             grid-template: 65vw 10vw / auto;
         }
