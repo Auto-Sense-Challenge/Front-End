@@ -24,9 +24,9 @@ export default function Login(){
   };
 
   return (
-    <main className="main-user-cadastro">
-      <h2>Cadastro</h2>
-      <p>Preencha seus dados para cadastrar</p>
+    <main className="main-login">
+      <h2>Login</h2>
+      <p>Preencha seus dados para se logar</p>
       <form onSubmit={handleSubmit}>
         <div>
           <label className="label-info">E-mail</label>
@@ -37,6 +37,7 @@ export default function Login(){
           placeholder="Digite aqui seu cpf - Digite apenas números"
           required
           />
+          <label className="label-campo">*Campo Obrigatório</label>
         </div>
         <div>
           <label className="label-info">Senha</label>
@@ -47,6 +48,7 @@ export default function Login(){
           placeholder="Digite aqui sua senha"
           required
           />
+          <label className="label-campo">*Campo Obrigatório</label>
         </div>
         <button type="submit">Logar</button>
       </form>

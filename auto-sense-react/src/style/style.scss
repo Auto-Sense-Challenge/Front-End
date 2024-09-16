@@ -14,83 +14,6 @@
     gap: 60px;
 }
 
-$tamanho: (
-    grande: 1024px,
-    mediano: 768px,
-    pequeno: 425px
-);
-
-@mixin media($breakpoint) {
-    @media screen and (max-width: map-get($tamanho, $breakpoint)) {
-        @content;
-    }
-}
-
-@mixin tela-cadastro(){
-    display: grid;
-    border-radius: 50px;
-    box-shadow: 31px 39px 4px var(--color-bola) ;
-    width: max-content;
-    grid-template: 10vw 5vw 10vw / auto;
-    padding: 40px;
-    justify-self: center;
-    background-color: var(--color-background-pergunta);
-
-    & h2{
-        margin-top: 50px;
-        font-size: 48px;
-    }
-
-    & p{
-        font-size: 30px;
-    }
-
-    & div{
-        display: grid;
-        grid-template: 2vw 3vw 5vw /auto;
-        gap: 20px;
-
-        & .label-info{
-            font-size: 36px;
-            color: var(--color-font);
-        }
-
-        & input{
-            border: 0;
-            font-size: 20px;
-            border-radius: 10px;
-        }
-
-        & .label-campo{
-            font-size: 16px;
-            color: var(--color-border);
-        }
-    }
-
-    & button{
-        margin-left: 150px;
-        margin-top: 200px;
-        width: 200px;
-        height: 50px;
-        font-size: 20px;
-        border-radius: 10px;
-        border: 0;
-        background-color: var(--color-border);
-        color: var(--color-font);
-        cursor: pointer;
-    }
-}
-
-.main-user-cadastro{
-    @include tela-cadastro();
-    height: 200vh;
-}
-
-.main-cadastro-mec{
-    @include tela-cadastro();
-    height: 250vh;
-}
-
 @import url('./header.scss');
 
 @import url('./home.scss');
@@ -100,5 +23,7 @@ $tamanho: (
 @import url('./pergunta.scss');
 
 @import url('./cadastro.scss');
+
+@import url('./cad-user-mec-login.scss');
 
 @import url('./footer.scss');

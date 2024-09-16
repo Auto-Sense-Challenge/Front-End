@@ -74,3 +74,8 @@ $tamanho: (
     @include tela-cadastro();
     height: 250vh;
 }
+
+.main-login{
+    @include tela-cadastro();
+    height: 130vh;
+}
