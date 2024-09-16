@@ -21,7 +21,8 @@ $tamanho: (
     }
 
     @include media(mediano){
-        grid-template: 100vw 185vw / auto;
+        height: 350vh;
+        grid-template: 100vw 200vw / auto;
     }
 
     @include media(pequeno){
@@ -37,7 +38,7 @@ $tamanho: (
         @include media(grande){
             height: 600px;
         }
-    
+
         @include media(pequeno){
             height: 600px;
         }
