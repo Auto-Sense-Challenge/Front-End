@@ -12,7 +12,7 @@ $tamanho: (
 
 .main-conteudo{
     display: grid;
-    grid-template: auto / 60vw 35vw;
+    grid-template: auto / 55vw 30vw;
 
     @include media(mediano){
         height: 150vw;
@@ -128,6 +128,7 @@ $tamanho: (
     }
 
     & .main-direita{
+        width: 20vw;
         justify-self: center;
         align-self: center;
     
