@@ -26,23 +26,23 @@ export default function CadastroMec(){
   };
 
   return (
-    <main>
+    <main className="main-cadastro-mec">
       <h2>Cadastro</h2>
       <p>Preencha seus dados para cadastrar</p>
       <form onSubmit={handleSubmit}>
         <div>
-          <label>CPF - Digite apenas números</label>
+          <label className="label-info">CPF</label>
           <input type="number" //Tira as setinhas do tipo number Luiz
           name="cpf"
           value={formData.cpf}
           onChange={handleChange}
-          placeholder="Digite aqui seu cpf"
+          placeholder="Digite aqui seu cpf - Digite apenas números"
           required
           />
-          <label>*Campo Obrigatório</label>
+          <label className="label-campo">*Campo Obrigatório</label>
         </div>
         <div>
-          <label>Nome de Usuário</label>
+          <label className="label-info">Nome de Usuário</label>
           <input type="text" 
           name="user"
           value={formData.user}
@@ -50,10 +50,10 @@ export default function CadastroMec(){
           placeholder="Digite aqui algum nome de usuário"
           required
           />
-          <label>*Campo Obrigatório</label>
+          <label className="label-campo">*Campo Obrigatório</label>
         </div>
         <div>
-          <label>E-mail</label>
+          <label className="label-info">E-mail</label>
           <input type="email" 
           name="email"
           value={formData.email}
@@ -61,10 +61,10 @@ export default function CadastroMec(){
           placeholder="Digite aqui seu email de contato"
           required
           />
-          <label>*Campo Obrigatório</label>
+          <label className="label-campo">*Campo Obrigatório</label>
         </div>
         <div>
-          <label>Senha</label>
+          <label className="label-info">Senha</label>
           <input type="password" 
           name="senha"
           value={formData.senha}
@@ -72,10 +72,10 @@ export default function CadastroMec(){
           placeholder="Digite aqui sua senha"
           required
           />
-          <label>*Campo Obrigatório</label>
+          <label className="label-campo">*Campo Obrigatório</label>
         </div>
         <div>
-          <label>Telefone</label>
+          <label className="label-info">Telefone</label>
           <input type="number" 
           name="telefone"
           value={formData.telefone}
@@ -83,10 +83,10 @@ export default function CadastroMec(){
           placeholder="XX XXXXXXXXX"
           required
           />
-          <label>*Campo Obrigatório</label>
+          <label className="label-campo">*Campo Obrigatório</label>
         </div>
         <div>
-          <label>Endereço</label>
+          <label className="label-info">Endereço</label>
           <input type="text" 
           name="endereco"
           value={formData.endereco}
@@ -94,10 +94,10 @@ export default function CadastroMec(){
           placeholder="Digite aqui seu Endereço com número e complemento"
           required
           />
-          <label>*Campo Obrigatório</label>
+          <label className="label-campo">*Campo Obrigatório</label>
         </div>
         <div>
-          <label>Descrição</label>
+          <label className="label-info">Descrição</label>
           <input type="text" 
           name="descricao"
           value={formData.descricao}
@@ -105,7 +105,7 @@ export default function CadastroMec(){
           placeholder="Digite aqui uma descrição sobre sua Oficina"
           required
           />
-          <label>*Campo Obrigatório</label>
+          <label className="label-campo">*Campo Obrigatório</label>
         </div>
         <button type="submit">Enviar</button>
       </form>

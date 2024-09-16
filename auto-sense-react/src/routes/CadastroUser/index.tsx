@@ -29,23 +29,23 @@ export default function CadastroUser(){
   };
 
   return (
-    <main>
+    <main className="main-user-cadastro">
       <h2>Cadastro</h2>
       <p>Preencha seus dados para cadastrar</p>
       <form onSubmit={handleSubmit}>
         <div>
-          <label>CPF - Digite apenas números</label>
+          <label className="label-info">CPF</label>
           <input type="number" //Tira as setinhas do tipo number Luiz
           name="cpf"
           value={formData.cpf}
           onChange={handleChange}
-          placeholder="Digite aqui seu cpf"
+          placeholder="Digite aqui seu cpf - Digite apenas números"
           required
           />
-          <label>*Campo Obrigatório</label>
+          <label className="label-campo">*Campo Obrigatório</label>
         </div>
         <div>
-          <label>Nome de Usuário</label>
+          <label className="label-info">Nome de Usuário</label>
           <input type="text" 
           name="user"
           value={formData.user}
@@ -53,10 +53,10 @@ export default function CadastroUser(){
           placeholder="Digite aqui algum nome de usuário"
           required
           />
-          <label>*Campo Obrigatório</label>
+          <label className="label-campo">*Campo Obrigatório</label>
         </div>
         <div>
-          <label>E-mail</label>
+          <label className="label-info">E-mail</label>
           <input type="email" 
           name="email"
           value={formData.email}
@@ -64,10 +64,10 @@ export default function CadastroUser(){
           placeholder="Digite aqui seu e-mail de contato"
           required
           />
-          <label>*Campo Obrigatório</label>
+          <label className="label-campo">*Campo Obrigatório</label>
         </div>
         <div>
-          <label>Senha</label>
+          <label className="label-info">Senha</label>
           <input type="password" 
           name="senha"
           value={formData.senha}
@@ -75,10 +75,10 @@ export default function CadastroUser(){
           placeholder="Digite aqui alguma senha"
           required
           />
-          <label>*Campo Obrigatório</label>
+          <label className="label-campo">*Campo Obrigatório</label>
         </div>
         <div>
-          <label>Idade</label>
+          <label className="label-info">Idade</label>
           <input type="number" 
           name="number" 
           value={formData.idade}
