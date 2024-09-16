@@ -12,7 +12,7 @@ export default function Rodape(){
                         <p>Auto Sense</p>
                     </div>
                     <div className="icone-git-footer">
-                        <a href="https://github.com/Auto-Sense-Challenge">
+                        <a href="https://github.com/Auto-Sense-Challenge" target="_blank">
                             <img src={git} alt="github-logo"/>
                         </a>
                     </div>

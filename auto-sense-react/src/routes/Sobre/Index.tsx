@@ -20,13 +20,13 @@ export default function Sobre(){
                         <p className="nome">Erick Alves Xavier dos Santos</p>
                         <p className="sala-rm">1TDSPM / RM556862</p>
                         <div className="rede-pessoa">
-                            <a href="https://github.com/Erick0105">
+                            <a href="https://github.com/Erick0105" target="_blank">
                                 <img src={Github} alt="logo-Github" />
                             </a>
-                            <a href="https://www.instagram.com/erick_0105_/">
+                            <a href="https://www.instagram.com/erick_0105_/" target="_blank">
                                 <img src={Instagram} alt="logo-Instagram" />
                             </a>
-                            <a href="https://www.linkedin.com/in/erick-alves-295180235/">
+                            <a href="https://www.linkedin.com/in/erick-alves-295180235/" target="_blank">
                                 <img className="linkedin" src={Linkedin} alt="logo-Linkedin" />
                             </a>
                         </div>
@@ -39,13 +39,13 @@ export default function Sobre(){
                         <p className="nome">Luiz Henrique Neri Reimberg</p>
                         <p className="sala-rm">1TDSPM / RM556864</p>
                         <div className="rede-pessoa">
-                            <a href="https://github.com/LuizHNR">
+                            <a href="https://github.com/LuizHNR" target="_blank">
                                 <img src={Github} alt="logo-Github" />
                             </a>
-                            <a href="https://instagram.com/loren_lhnr">
+                            <a href="https://instagram.com/loren_lhnr" target="_blank">
                                 <img src={Instagram} alt="logo-Instagram" />
                             </a>
-                            <a href="https://www.linkedin.com/in/luiz-henrique-neri-reimberg-6ab0032b8/">
+                            <a href="https://www.linkedin.com/in/luiz-henrique-neri-reimberg-6ab0032b8/" target="_blank">
                                 <img className="linkedin" src={Linkedin} alt="logo-Linkedin" />
                             </a>
                         </div>
@@ -58,13 +58,13 @@ export default function Sobre(){
                         <p className="nome">Vicenzo Massao de Oliveira</p>
                         <p className="sala-rm">1TDSPM / RM554833</p>
                         <div className="rede-pessoa">
-                            <a href="https://github.com/fFukurou">
+                            <a href="https://github.com/fFukurou" target="_blank">
                                 <img src={Github} alt="logo-Github" />
                             </a>
-                            <a href="https://instagram.com/ffukurou_">
+                            <a href="https://instagram.com/ffukurou_" target="_blank">
                                 <img src={Instagram} alt="logo-Instagram" />
                             </a>
-                            <a href="https://www.linkedin.com/in/vicenzo-massao-de-oliveira-2a8b35109/">
+                            <a href="https://www.linkedin.com/in/vicenzo-massao-de-oliveira-2a8b35109/" target="_blank">
                                 <img className="linkedin" src={Linkedin} alt="logo-Linkedin" />
                             </a>
                         </div>
