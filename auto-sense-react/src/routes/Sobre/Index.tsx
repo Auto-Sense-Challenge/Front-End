@@ -3,7 +3,6 @@ import Luiz from "/Sobre/img-Luiz.png"
 import Vicenzo from "/Sobre/img-Vicenzo.png"
 import Github from "/Sobre/git-logo.png"
 import Instagram from "/Sobre/insta-logo.png"
-import Linkedin from "/Sobre/linkedin-logo.png"
 
 
 export default function Sobre(){
@@ -26,9 +25,12 @@ export default function Sobre(){
                             <a href="https://www.instagram.com/erick_0105_/" target="_blank">
                                 <img src={Instagram} alt="logo-Instagram" />
                             </a>
+<<<<<<< HEAD
                             <a href="https://www.linkedin.com/in/erick-alves-295180235/" target="_blank">
                                 <img className="linkedin" src={Linkedin} alt="logo-Linkedin" />
                             </a>
+=======
+>>>>>>> e596db946592909a30bfffbbafb4aeb2fe443eab
                         </div>
                         
                     </div>
@@ -45,9 +47,12 @@ export default function Sobre(){
                             <a href="https://instagram.com/loren_lhnr" target="_blank">
                                 <img src={Instagram} alt="logo-Instagram" />
                             </a>
+<<<<<<< HEAD
                             <a href="https://www.linkedin.com/in/luiz-henrique-neri-reimberg-6ab0032b8/" target="_blank">
                                 <img className="linkedin" src={Linkedin} alt="logo-Linkedin" />
                             </a>
+=======
+>>>>>>> e596db946592909a30bfffbbafb4aeb2fe443eab
                         </div>
                         
                     </div>
@@ -64,9 +69,12 @@ export default function Sobre(){
                             <a href="https://instagram.com/ffukurou_" target="_blank">
                                 <img src={Instagram} alt="logo-Instagram" />
                             </a>
+<<<<<<< HEAD
                             <a href="https://www.linkedin.com/in/vicenzo-massao-de-oliveira-2a8b35109/" target="_blank">
                                 <img className="linkedin" src={Linkedin} alt="logo-Linkedin" />
                             </a>
+=======
+>>>>>>> e596db946592909a30bfffbbafb4aeb2fe443eab
                         </div>
                     </div>
                 </div>
