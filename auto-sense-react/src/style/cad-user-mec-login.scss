@@ -20,6 +20,15 @@ $tamanho: (
     justify-self: center;
     background-color: var(--color-background-pergunta);
 
+    @include media(mediano){
+        grid-template: 20vw 10vw 30vw / auto;
+    }
+
+    @include media(pequeno){
+        width: 90vw;
+        grid-template: 40vw 20vw 40vw / auto;
+    }
+
     & h2{
         margin-top: 50px;
         font-size: 48px;
@@ -27,12 +36,24 @@ $tamanho: (
 
     & p{
         font-size: 30px;
+
+        @include media(pequeno){
+            font-size: 25px;
+        }
     }
 
     & div{
         display: grid;
         grid-template: 2vw 3vw 5vw /auto;
         gap: 20px;
+
+        @include media(mediano){
+            grid-template: 5vw 5vw 5vw /auto;
+        }
+
+        @include media(pequeno){
+            grid-template: 8vw 8vw 8vw /auto;
+        }
 
         & .label-info{
             font-size: 36px;
@@ -43,6 +64,11 @@ $tamanho: (
             border: 0;
             font-size: 20px;
             border-radius: 10px;
+
+            @include media(pequeno){
+                width: 75vw;
+                font-size: 16px;
+            }
         }
 
         & .label-campo{
@@ -62,6 +88,11 @@ $tamanho: (
         background-color: var(--color-border);
         color: var(--color-font);
         cursor: pointer;
+
+        @include media(pequeno){
+            margin-left: 50px;
+            margin-top: 270px
+        }
     }
 }
 
@@ -78,4 +109,8 @@ $tamanho: (
 .main-login{
     @include tela-cadastro();
     height: 130vh;
+
+    @include media(pequeno){
+        height: 140vh;
+    }
 }

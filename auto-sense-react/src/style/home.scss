@@ -45,7 +45,7 @@ $tamanho: (
         @include media(mediano){
             left: 0;
             border-radius: 200px;
-            width: 740px;
+            width: 760px;
             height: 1000px;
         }
     
@@ -131,6 +131,14 @@ $tamanho: (
         width: 20vw;
         justify-self: center;
         align-self: center;
+
+        @include media(mediano){
+            display: none;
+        }
+
+        @include media(pequeno){
+            display: none;
+        }
     
     }
 }
