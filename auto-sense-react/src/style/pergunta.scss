@@ -37,15 +37,17 @@ $tamanho: (
 .h1-perguntas{
     border-bottom: 3px solid var(--color-border);
     width: 90vw;
+    margin-top: 30px;
     text-align: center;
     font-family: 'Inknut Antiqua', sans-serif;
-    font-size: 51px;
+    font-size: 35px;
 
     @include media(grande){
         font-size: 40px;
     }
 
     @include media(mediano){
+        margin-top: 5px;
         font-size: 30px;
     }
 
@@ -57,7 +59,7 @@ $tamanho: (
 .perguntas{
     display: grid;
     grid-template: 5vw 10vw / 70vw 10vw;
-    font-size: 40px;
+    font-size: 30px;
     border-bottom: 1px solid #000;
     gap: 10vw;
     height: 70px;
@@ -81,7 +83,7 @@ $tamanho: (
         background-color: transparent;
         font-weight: 700;
         border: none;
-        font-size: 60px;
+        font-size: 50px;
         transition: transform 0.1s ease;
     }
 
