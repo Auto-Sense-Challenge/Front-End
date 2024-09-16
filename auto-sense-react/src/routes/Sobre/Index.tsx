@@ -3,7 +3,6 @@ import Luiz from "/Sobre/img-Luiz.png"
 import Vicenzo from "/Sobre/img-Vicenzo.png"
 import Github from "/Sobre/git-logo.png"
 import Instagram from "/Sobre/insta-logo.png"
-import Linkedin from "/Sobre/linkedin-logo.png"
 
 
 export default function Sobre(){
@@ -26,9 +25,6 @@ export default function Sobre(){
                             <a href="https://www.instagram.com/erick_0105_/">
                                 <img src={Instagram} alt="logo-Instagram" />
                             </a>
-                            <a href="https://www.linkedin.com/in/erick-alves-295180235/">
-                                <img className="linkedin" src={Linkedin} alt="logo-Linkedin" />
-                            </a>
                         </div>
                         
                     </div>
@@ -45,9 +41,6 @@ export default function Sobre(){
                             <a href="https://instagram.com/loren_lhnr">
                                 <img src={Instagram} alt="logo-Instagram" />
                             </a>
-                            <a href="https://www.linkedin.com/in/luiz-henrique-neri-reimberg-6ab0032b8/">
-                                <img className="linkedin" src={Linkedin} alt="logo-Linkedin" />
-                            </a>
                         </div>
                         
                     </div>
@@ -63,9 +56,6 @@ export default function Sobre(){
                             </a>
                             <a href="https://instagram.com/ffukurou_">
                                 <img src={Instagram} alt="logo-Instagram" />
-                            </a>
-                            <a href="https://www.linkedin.com/in/vicenzo-massao-de-oliveira-2a8b35109/">
-                                <img className="linkedin" src={Linkedin} alt="logo-Linkedin" />
                             </a>
                         </div>
                     </div>
