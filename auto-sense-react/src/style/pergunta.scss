@@ -1,0 +1,128 @@
+$tamanho: (
+    grande: 1024px,
+    mediano: 768px,
+    pequeno: 425px
+);
+
+@mixin media($breakpoint) {
+    @media screen and (max-width: map-get($tamanho, $breakpoint)) {
+        @content;
+    }
+}
+
+.main-perguntas{
+    display: grid;
+    grid-template: 10vw 20vw 20vw 20vw 20vw / auto;
+    gap: 20vw;
+    justify-self: center;
+
+    @include media(grande){
+        grid-template: 10vw 50vw 50vw 50vw 50vw / auto;
+        gap: 10vh;
+    }
+
+    @include media(mediano){
+        grid-template: 10vw 60vw 60vw 60vw 60vw / auto;
+        height: 300vw;
+        gap: 10vw;
+    }
+
+    @include media(pequeno){
+        grid-template: 25vw 85vw 90vw 85vw 85vw / auto;
+        height: 450vw;
+        gap: 10vw;
+    }
+}
+
+.h1-perguntas{
+    border-bottom: 3px solid var(--color-border);
+    width: 90vw;
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Inknut Antiqua', sans-serif;
+    font-size: 35px;
+
+    @media screen and (min-width: 1920px){
+        font-size: 50px;
+    }
+
+    @include media(grande){
+        font-size: 40px;
+    }
+
+    @include media(mediano){
+        margin-top: 5px;
+        font-size: 30px;
+    }
+
+    @include media(pequeno){
+        font-size: 20px;
+    }
+}
+
+.perguntas{
+    display: grid;
+    grid-template: 5vw 10vw / 70vw 10vw;
+    font-size: 30px;
+    border-bottom: 1px solid #000;
+    gap: 10vw;
+    height: 70px;
+
+    @media screen and (min-width: 1920px){
+        font-size: 40px;
+    }
+
+    @include media(grande){
+        font-size: 30px;
+    }
+
+    @include media(mediano){
+        grid-template: 5vw 50vw / 70vw 10vw;
+        font-size: 25px;
+    }
+
+    @include media(pequeno){
+        font-size: 20px;
+    }
+
+    & .rotate-button{
+        color: #A22C29;
+        cursor: pointer;
+        background-color: transparent;
+        font-weight: 700;
+        border: none;
+        font-size: 50px;
+        transition: transform 0.1s ease;
+    }
+
+    & .rotate-button:active{
+        transform: rotate(90deg);
+    }
+
+    & dialog{
+        position: relative;
+        background: linear-gradient(90deg, var(--color-background-pergunta) 66.5%, var(--color-border) 100%);
+        width: 90vw;
+        padding: 60px;
+        border-radius: 20px;
+        border: 0px;
+        bottom: 9vw;
+
+        @include media(grande){
+            bottom: 5vw;
+            font-size: 40px;
+        }
+
+        @include media(mediano){
+            bottom: 5vw;
+            font-size: 30px;
+        }
+
+        @include media(pequeno){
+            top: 10px;
+            height: 75vw;
+            font-size: 20px;
+        }
+    }
+
+}
