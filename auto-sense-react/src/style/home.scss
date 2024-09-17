@@ -14,6 +14,11 @@ $tamanho: (
     display: grid;
     grid-template: auto / 55vw 30vw;
 
+    @media screen and (min-width: 1920px){
+        grid-template: auto / 45vw 40vw;
+        
+    }
+
     @include media(mediano){
         height: 150vw;
         width: 700px;
@@ -36,6 +41,11 @@ $tamanho: (
         background: linear-gradient(218.89deg, #6AB2DC 1.36%, #98C1D9 30.52%, #A22C29 81.24%);
         border-radius: 400px;
         gap: 10px;
+
+        @media screen and (min-width: 1920px){
+            width: 1404px;
+            height: 1000px;
+        }
     
         @include media(grande){
             width: 1024px;
@@ -133,6 +143,10 @@ $tamanho: (
         align-self: center;
 
         & img{
+
+            @media screen and (min-width: 1920px){
+                width: 40vw;
+            }
 
             @include media(grande){
                 width: 40vw;

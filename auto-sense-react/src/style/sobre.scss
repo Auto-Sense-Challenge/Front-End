@@ -15,6 +15,11 @@ $tamanho: (
     height: 400vh;
     grid-template: 50vw 100vw / auto;
 
+    @media screen and (min-width: 1920px){
+        grid-template: 50vw 100vw / auto;
+        height: 290vh;
+    }
+
     @include media(grande){
         grid-template: 90vw 150vw / auto;
         height: 300vh;
@@ -35,6 +40,10 @@ $tamanho: (
         height: 490px;
         background: linear-gradient(180deg, #6AB2DC 72%, #98C1D9 100%);
 
+        @media screen and (min-width: 1920px){
+            height: 600px;
+        }
+
         @include media(grande){
             height: 600px;
         }
@@ -46,6 +55,10 @@ $tamanho: (
         & h1{
             justify-self: center;
             font-size: 52px;
+
+            @media screen and (min-width: 1920px){
+                font-size: 60px;
+            }
         }
     
         & p{
@@ -54,6 +67,10 @@ $tamanho: (
             justify-self: center;
             color: var(--color-font);
             font-size: 32px;
+
+            @media screen and (min-width: 1920px){
+                font-size: 40px;
+            }
     
             @include media(mediano){
                 font-size: 25px;
@@ -72,6 +89,10 @@ $tamanho: (
         background-repeat: no-repeat;
         background-position: 10px 20px;
 
+        @media screen and (min-width: 1920px){
+            background-position: 200px 20px;
+        }
+
         @include media(grande){
             background-position: -190px 20px;
         }
@@ -86,6 +107,10 @@ $tamanho: (
     
         .nos{
             box-shadow: -20px 19px 4px #6AB2DC;
+
+            @media screen and (min-width: 1920px){
+                width: 600px;
+            }
         }
     
         & .dados{
@@ -94,17 +119,30 @@ $tamanho: (
             border-radius: 20px;
             background-color: rgba(57, 57, 57, 0.87);
             padding: 5px;
+
+            @media screen and (min-width: 1920px){
+                bottom: 250px;
+                height: 250px;
+            }
     
             & .nome{
                 color: var(--color-font);
                 text-align: center;
                 font-size: 18px;
+
+                @media screen and (min-width: 1920px){
+                    font-size: 40px;
+                }
             }
     
             & .sala-rm{
                 color: var(--color-font);
                 text-align: center;
                 font-size: 15px;
+
+                @media screen and (min-width: 1920px){
+                    font-size: 30px;
+                }
             }
     
             & .rede-pessoa{
@@ -112,6 +150,18 @@ $tamanho: (
                 position: relative;
                 gap: 30px;
                 left: 90px;
+
+                @media screen and (min-width: 1920px){
+                    top: 30px;
+                    left: 150px;
+                }
+                
+                & img{
+
+                    @media screen and (min-width: 1920px){
+                        width: 120px;
+                    }
+                }
             }
     
         }

@@ -261,6 +261,10 @@ header{
         background-color: var(--background-color);
         border: 0px;
 
+        @media screen and (min-width: 1920px){
+            left: 550px;
+        }
+
         @include media(grande){
             left: 200px;
         }
@@ -278,6 +282,10 @@ header{
             @include flexCenter();
             gap: 70px;
             font-size: 32px;
+
+            @media screen and (min-width: 1920px){
+                font-size: 40px;
+            }
 
             @include media(grande){
                 font-size: 30px;
@@ -308,12 +316,22 @@ header{
         top: 10vw;
         justify-self: end;
 
+        @media screen and (min-width: 1920px){
+            top: 8vw;
+            width: 500px;
+            height: 700px;
+        }
+
         & a{
             color: var(--color-font);
             text-align: left;
             font-size: 26px;
             margin-left: 20px;
             text-decoration: none;
+
+            @media screen and (min-width: 1920px){
+                font-size: 30px;
+            }
         }
 
         & .op-user{
@@ -334,6 +352,10 @@ header{
             & h5{
                 font-size: 24px;
                 color: var(--color-font);
+
+                @media screen and (min-width: 1920px){
+                    font-size: 30px;
+                }
             }
 
             & .op-cadastros{

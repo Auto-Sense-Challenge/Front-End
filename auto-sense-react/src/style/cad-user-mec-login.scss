@@ -32,10 +32,18 @@ $tamanho: (
     & h2{
         margin-top: 50px;
         font-size: 48px;
+
+        @media screen and (min-width: 1920px){
+            font-size: 60px;
+        }
     }
 
     & p{
         font-size: 30px;
+
+        @media screen and (min-width: 1920px){
+            font-size: 40px;
+        }
 
         @include media(pequeno){
             font-size: 25px;
@@ -58,12 +66,20 @@ $tamanho: (
         & .label-info{
             font-size: 36px;
             color: var(--color-font);
+
+            @media screen and (min-width: 1920px){
+                font-size: 50px;
+            }
         }
 
         & input{
             border: 0;
             font-size: 20px;
             border-radius: 10px;
+
+            @media screen and (min-width: 1920px){
+                font-size: 30px;
+            }
 
             @include media(pequeno){
                 width: 75vw;
@@ -74,6 +90,10 @@ $tamanho: (
         & .label-campo{
             font-size: 16px;
             color: var(--color-border);
+
+            @media screen and (min-width: 1920px){
+                font-size: 25px;
+            }
         }
     }
 
@@ -89,6 +109,12 @@ $tamanho: (
         color: var(--color-font);
         cursor: pointer;
 
+        @media screen and (min-width: 1920px){
+            font-size: 30px;
+            margin-left: 250px;
+            margin-top: 300px
+        }
+
         @include media(pequeno){
             margin-left: 50px;
             margin-top: 270px
@@ -100,6 +126,10 @@ $tamanho: (
     @include tela-cadastro();
     height: 200vh;
 
+    @media screen and (min-width: 1920px){
+        height: 140vh;
+    }
+
     @include media(grande){
         height: 130vh;
     }
@@ -109,6 +139,10 @@ $tamanho: (
     @include tela-cadastro();
     height: 250vh;
 
+    @media screen and (min-width: 1920px){
+        height: 170vh;
+    }
+
     @include media(grande){
         height: 160vh;
     }
@@ -117,6 +151,10 @@ $tamanho: (
 .main-login{
     @include tela-cadastro();
     height: 130vh;
+
+    @media screen and (min-width: 1920px){
+        height: 90vh;
+    }
 
     @include media(grande){
         height: 85vh;

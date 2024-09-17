@@ -30,6 +30,11 @@ $tamanho: (
             color: #000;
             text-align: center;
             font-size: 50px;
+
+            @media screen and (min-width: 1920px){
+                margin-top: 30px;
+                font-size: 70px;
+            }
         }
 
     }
@@ -37,6 +42,10 @@ $tamanho: (
     & p{
         text-align: center;
         font-size: 30px;
+
+        @media screen and (min-width: 1920px){
+            font-size: 40px;
+        }
 
         @include media(pequeno){
             font-size: 25px;
@@ -71,6 +80,10 @@ $tamanho: (
             font-size: 30px;
             color: var(--color-font);
             transition: 1s;
+            
+            @media screen and (min-width: 1920px){
+                font-size: 45px;
+            }
 
             &:hover{
                 font-size: 35px;
