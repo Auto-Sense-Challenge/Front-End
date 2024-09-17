@@ -3,11 +3,11 @@ import { useState } from "react";
 export default function CadastroMec(){
 
   const [formData, setFormData] = useState({
-    cpf: '',
+    cpf: 0,
     user: '',
     email: '',
     senha: '',
-    telefone: '',
+    telefone: 0,
     endereco: '',
     descricao: '', 
   });

@@ -5,11 +5,11 @@ export default function CadastroUser(){
 
   // Define os dados iniciais do formulario
   const [formData, setFormData] = useState({
-    cpf: '',
+    cpf: 0,
     user: '',
     email: '',
     senha: '',
-    idade: '' 
+    idade: 0 
   });
 
   // Aqui não entendi muito bem ainda, mas meio q lida com as mudanças dos dados
