@@ -55,7 +55,7 @@ $tamanho: (
         @include media(mediano){
             left: 0;
             border-radius: 200px;
-            width: 760px;
+            width: 100vw;
             height: 1000px;
         }
     
@@ -143,6 +143,7 @@ $tamanho: (
         align-self: center;
 
         & img{
+            width: 30vw;
 
             @media screen and (min-width: 1920px){
                 width: 40vw;
