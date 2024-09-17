@@ -15,6 +15,10 @@ Neste repositório está presente o desenvolvimento da entrega do challenge de 2
 - Luiz Henrique - <a href="https://github.com/LuizHNR">LuizHNR</a> - Rm 556864
 
 ---
+#### Video
+Link do video - <a href="https://youtu.be/3Nl6MMSSagE">Clique aqui para ver</a>
+
+---
 
 Dentro destes repósitorio estão presentes os seguintes arquivos:
 - Este readme para informações gerais;
