@@ -7,6 +7,7 @@ import AutoLogo from "@/img/auto-logo.png"
 import Menu from "@/img/menu-img.png"
 import UserFoto from "@/img/foto-user.png"
 import Nav from '../Nav/Nav'
+import Opcoes from '../Opcoes/Opcoes'
 
 export default function Header() {
 
@@ -57,19 +58,7 @@ export default function Header() {
         </dialog>
 
         <dialog open={opcoesStatus} className='dialogOpcoes'>
-            <div className="opcoesUser">
-                <Image src={UserFoto} alt="foto-usuario"/>
-                <h5>Olá, Bem vindo(a)</h5>
-                <div className="op-cadastros">
-                    <Link href="/cadastrar/usuario">Cadastrar Usuário</Link>
-                    <Link href="/cadastrar/mecanico">Cadastrar Mecânico</Link>
-                    <Link href="/login">Login</Link>
-                </div>
-                <div className="paginas">
-                    <Link href="/ajuda">Ajuda</Link>
-                    <Link href="/sobre">Sobre</Link>
-                </div>
-            </div>
+            <Opcoes/>
         </dialog>
     </header>
   )
