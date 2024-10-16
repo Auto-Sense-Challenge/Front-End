@@ -4,8 +4,7 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import Image from 'next/image'
 import AutoLogo from "@/img/auto-logo.png"
-import Menu from "@/img/menu-img.png"
-import UserFoto from "@/img/foto-user.png"
+import { TbMenuOrder as Menu, TbArrowBadgeDownFilled as Seta, TbUserFilled as User} from "react-icons/tb";
 import Nav from '../Nav/Nav'
 import Opcoes from '../Opcoes/Opcoes'
 
@@ -16,6 +15,7 @@ export default function Header() {
 
     const mudarNav = () => {
         setNavStatus(false);
+        setOpcoesStatus(false);
         if(!navStatus){
             setNavStatus(true)
         }
@@ -23,6 +23,7 @@ export default function Header() {
 
     const mudarOpcoes = () => {
         setOpcoesStatus(false);
+        setNavStatus(false);
         if(!opcoesStatus){
             setOpcoesStatus(true)
         }
@@ -39,17 +40,17 @@ export default function Header() {
 
         <div className='abrirMenu'>
             <button onClick={() => mudarNav()}>
-                <Image src={Menu} alt='Img-menu'/>
+                <Menu/>
             </button>
         </div>
 
         <div className='user'>
             <div className="fotoUser">
-                <Image src={UserFoto} alt="foto-usuario"/>
+                <User/>
             </div>
 
             <button onClick={() => mudarOpcoes()}>
-                <p>&gt;</p>
+                <Seta /> {/*Caso consiga faz com que o botão fique para baixo acho que é com useState talvez*/}
             </button>
         </div>
 

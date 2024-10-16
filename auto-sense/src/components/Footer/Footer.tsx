@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import React from 'react'
 import AutoLogo from "@/img/auto-logo.png"
-import GitLogo from "@/img/gitHub-logo.png"
 import Link from 'next/link'
+import { FaGithub as Github} from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -19,7 +19,7 @@ export default function Footer() {
 
                 <div className="abaixo">
                     <a href="https://github.com/Auto-Sense-Challenge">
-                        <Image src={GitLogo} alt='Auto-Sense-logo'/>
+                        <Github/>
                     </a>
                 </div>
             </aside>

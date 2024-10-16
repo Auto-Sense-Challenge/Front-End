@@ -3,9 +3,7 @@ import React from 'react'
 import ImgErick from '@/img/foto-erick.png'
 import ImgLuiz from '@/img/foto-luiz.png'
 import ImgVicenzo from '@/img/foto-vicenzo.png'
-import GitLogo from '@/img/gitHub-logo.png'
-import InstaLogo from '@/img/insta-logo.png'
-import LinkedinLogo from '@/img/linkedin-logo.png'
+import { FaGithub as Github, FaLinkedin as Linkedin, FaInstagram as Instagram} from "react-icons/fa";
 
 
 export default function Sobre() {
@@ -23,14 +21,14 @@ export default function Sobre() {
               <h5>Erick Alves Xavier dos Santos</h5>
               <p>1TDSPM / RM556862</p>
               <div className="redesLogos">
-                <a href="#">
-                  <Image src={GitLogo} alt='github-logo'/>
+                <a href="https://github.com/Erick0105">
+                  <Github/>
                 </a>
-                <a href="#">
-                  <Image src={InstaLogo} alt='intagram-logo'/>
+                <a href="https://www.instagram.com/erick_0105_/">
+                  <Instagram/>
                 </a>
-                <a href="#">
-                  <Image src={LinkedinLogo} alt='linkedin-logo'/>
+                <a href="https://www.linkedin.com/in/erick-alves-295180235/">
+                  <Linkedin/>
                 </a>
               </div>
             </div>
@@ -42,14 +40,14 @@ export default function Sobre() {
               <h5>Luiz Henrique Neri Reimberg</h5>
               <p>1TDSPM / RM556864</p>
               <div className="redesLogos">
-                <a href="#">
-                  <Image src={GitLogo} alt='github-logo'/>
+                <a href="https://github.com/LuizHNR">
+                  <Github/>
                 </a>
-                <a href="#">
-                  <Image src={InstaLogo} alt='intagram-logo'/>
+                <a href="https://instagram.com/loren_lhnr">
+                  <Instagram/>
                 </a>
-                <a href="#">
-                  <Image src={LinkedinLogo} alt='linkedin-logo'/>
+                <a href="https://www.linkedin.com/in/luiz-henrique-neri-reimberg-6ab0032b8/">
+                  <Linkedin/>
                 </a>
               </div>
             </div>
@@ -61,14 +59,14 @@ export default function Sobre() {
               <h5>Vicenzo Massao de Oliveira</h5>
               <p>1TDSPM / RM554833</p>
               <div className="redesLogos">
-                <a href="#">
-                  <Image src={GitLogo} alt='github-logo'/>
+                <a href="https://github.com/fFukurou">
+                  <Github/>
                 </a>
-                <a href="#">
-                  <Image src={InstaLogo} alt='intagram-logo'/>
+                <a href="https://instagram.com/ffukurou_">
+                  <Instagram/>
                 </a>
-                <a href="#">
-                  <Image src={LinkedinLogo} alt='linkedin-logo'/>
+                <a href="https://www.linkedin.com/in/vicenzo-massao-de-oliveira-2a8b35109/">
+                  <Linkedin/>
                 </a>
               </div>
             </div>
