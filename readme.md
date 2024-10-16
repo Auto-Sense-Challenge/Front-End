@@ -30,7 +30,6 @@ Dentro destes repósitorio estão presentes os seguintes arquivos:
   <img src="./img-ale/ale-pistola.png" alt="alexandre-bravo" width='200' height='150'/>
   <img src="./img-ale/ale-kratos.png" alt="alexandre-guerreiro" width='200' height='150'/>
   <img src="./img-ale/ale-indignado.png" alt="alexandre-indignado" width='200' height='150'/>
-  <img src="./img-ale/ale-indignado.png" alt="alexandre-indignado" width='200' height='150'/>
   <img src="./img-ale/chup-chup.png" alt="chup-chup" width='200' height='150'/>
 
 </div>
