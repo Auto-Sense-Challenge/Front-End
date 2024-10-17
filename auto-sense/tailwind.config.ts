@@ -15,14 +15,22 @@ const config: Config = {
         foreground: "var(--foreground)",
         bgColor: "#98C1D9",
         borda: "#752E2B",
+        bgGrad: "#6AB2DC",
+        bgGrad2: "#A22C29",
+        bgDia: "#6AB2DC"
       },
       spacing:{
-        '99': '480px',
+        '99': '470px',
         '100': '520px',
         '110': '40vw',
+        '115': '50vw',
         '120': '100vw',
+        '125': '60vw',
         '130': '70vw',
       },
+      borderRadius: {
+        '4xl': '400px',
+      }
     },
   },
   plugins: [nextui()],

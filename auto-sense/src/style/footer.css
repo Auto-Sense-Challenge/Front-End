@@ -5,7 +5,7 @@
 @layer components{
 
     footer{
-        @apply grid gap-8;
+        @apply grid gap-8 bg-bgColor;
 
         & .ptCima{
             @apply flex gap-130;

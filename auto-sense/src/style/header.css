@@ -3,13 +3,9 @@
 @tailwind utilities;
 
 @layer components{
-
-    * {
-        @apply bg-bgColor;
-    }
     
     header{
-        @apply flex flex-col h-52;
+        @apply flex flex-col h-52 bg-bgColor;
 
         & .superior{
             @apply flex items-center gap-100 p-4 border-b-2 border-borda flex-wrap;
@@ -55,12 +51,12 @@
         @apply bg-bgColor;
 
         & ul{
-            @apply flex justify-center text-4xl text-white gap-20 w-120 py-3 flex-wrap;
+            @apply flex justify-center text-4xl text-white gap-20 w-130 py-3 flex-wrap;
         }
     }
 
     .opcoesUser{
-        @apply flex flex-col absolute left-99 bg-bgColor py-5 h-auto w-80 gap-10;
+        @apply flex flex-col absolute left-99 bg-bgDia py-5 h-auto w-80 gap-10 opacity-90;
 
         & .userOp{
             @apply relative left-36 text-5xl p-1 bg-white rounded-3xl;

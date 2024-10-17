@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+    .home{
+        @apply flex h-125 gap-96 bg-bgColor;
+
+        & .texto{
+            @apply relative right-10 h-125 justify-between items-center bg-gradient-to-r from-bgGrad2 to-bgGrad rounded-r-4xl pl-10 pr-20;
+
+            & .titulo{
+                @apply text-center mt-40 text-6xl underline;
+            }
+
+            & .intro{
+                @apply text-center mt-20 text-5xl w-99 text-white;
+            }
+        }
+
+        & .imagem{
+            @apply flex items-center ;
+
+        }
+    }
+
+    
+}

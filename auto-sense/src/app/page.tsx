@@ -1,10 +1,11 @@
 import Image from 'next/image'
 import React from 'react'
-import LogoAuto from '@/img/auto-logo.png'
+import LogoAuto from '@/img/logo-home.png'
+import '@/style/home.css';
 
 export default function Home() {
   return (
-    <main>
+    <main className='home'>
       <aside className='texto'>
         <div className="titulo">
           <h1>Bem Vindo(a)</h1>
