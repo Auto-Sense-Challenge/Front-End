@@ -7,6 +7,7 @@ import AutoLogo from "@/img/auto-logo.png"
 import { TbMenuOrder as Menu, TbArrowBadgeDownFilled as Seta, TbUserFilled as User} from "react-icons/tb";
 import Nav from '../Nav/Nav'
 import Opcoes from '../Opcoes/Opcoes'
+import "@/style/header.css";
 
 export default function Header() {
 
@@ -31,36 +32,41 @@ export default function Header() {
 
   return (
     <header>
-        <div className='logo'>
-            <Link href="/">
-                <Image src={AutoLogo} alt='Auto-sense-logo'/>
-                <h2>Auto sense</h2>
-            </Link>
-        </div>
-
-        <div className='abrirMenu'>
-            <button onClick={() => mudarNav()}>
-                <Menu/>
-            </button>
-        </div>
-
-        <div className='user'>
-            <div className="fotoUser">
-                <User/>
+        <div className='superior'>
+            <div className='logo'>
+                <Link href="/">
+                    <Image src={AutoLogo} alt='Auto-sense-logo'/>
+                    <h2>Auto sense</h2>
+                </Link>
             </div>
 
-            <button onClick={() => mudarOpcoes()}>
-                <Seta /> {/*Caso consiga faz com que o botão fique para baixo acho que é com useState talvez*/}
-            </button>
+            <div className='abrirMenu'>
+                <button onClick={() => mudarNav()}>
+                    <Menu/>
+                </button>
+            </div>
+
+            <div className='user'>
+                <div className="fotoUser">
+                    <User/>
+                </div>
+
+                <button onClick={() => mudarOpcoes()}>
+                    <Seta /> {/*Caso consiga faz com que o botão fique para baixo acho que é com useState talvez*/}
+                </button>
+            </div>
+        </div>
+        
+        <div className='inferior'>
+            <dialog open={navStatus} className='dialogNav'>
+                <Nav/>
+            </dialog>
+
+            <dialog open={opcoesStatus} className='dialogOpcoes'>
+                <Opcoes/>
+            </dialog>
         </div>
 
-        <dialog open={navStatus} className='dialogNav'>
-            <Nav/>
-        </dialog>
-
-        <dialog open={opcoesStatus} className='dialogOpcoes'>
-            <Opcoes/>
-        </dialog>
     </header>
   )
 }

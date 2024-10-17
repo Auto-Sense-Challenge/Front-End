@@ -13,6 +13,13 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        bgColor: "#98C1D9",
+        borda: "#752E2B",
+      },
+      spacing:{
+        '100': '520px',
+        '110': '80vw',
+        '120': '100vw',
       },
     },
   },

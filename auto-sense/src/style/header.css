@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    
+    header{
+        @apply flex flex-col h-52;
+
+        & .superior{
+            @apply flex items-center gap-100 p-4 bg-bgColor border-b-2 border-borda flex-wrap;
+
+            & .logo{
+            
+                & a{
+                    @apply flex text-4xl w-auto flex-wrap;
+    
+                    & image{
+                        @apply h-24 w-24;
+                    }
+    
+                    & h2{
+                        @apply flex items-center text-white font-semibold;
+                    }
+                }
+            }
+
+            & .abrirMenu{
+
+                & button{
+                    @apply text-6xl text-white border-1 rounded-full border-borda;
+                }
+            }
+
+            & .user{
+                @apply flex text-5xl gap-6 border-1 rounded-full border-borda p-2 ;
+
+                & .fotoUser{
+                    @apply bg-white rounded-full;
+                }
+
+                & button{
+                    @apply text-white;
+                }
+            }
+        }
+        
+    }
+
+    nav{
+        @apply bg-bgColor;
+
+        & ul{
+            @apply flex justify-center text-4xl text-white gap-20 w-120 py-3 flex-wrap;
+        }
+    }
+
+    .opcoesUser{
+        @apply flex flex-col ml-110 bg-bgColor h-80 w-80 gap-10;
+
+        & .userOp{
+            @apply text-2xl;
+        }
+
+        & h5{
+            @apply flex justify-center text-2xl text-white;
+        }
+
+        & .op-cadastros{
+            @apply flex flex-col;
+        }
+
+        & a{
+            @apply text-2xl ml-5 text-white;
+        }
+    }
+}
