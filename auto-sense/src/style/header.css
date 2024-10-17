@@ -56,10 +56,10 @@
     }
 
     .opcoesUser{
-        @apply flex flex-col ml-110 bg-bgColor h-80 w-80 gap-10;
+        @apply flex flex-col absolute left-99 bg-bgColor py-5 h-auto w-80 gap-10;
 
         & .userOp{
-            @apply text-2xl;
+            @apply relative left-36 text-5xl p-1 bg-white rounded-3xl;
         }
 
         & h5{
@@ -71,7 +71,12 @@
         }
 
         & a{
-            @apply text-2xl ml-5 text-white;
+            @apply text-2xl pb-7 ml-5 text-white;
+        }
+
+        & hr{
+            @apply w-64 ml-7 border-1 border-red-800;
         }
     }
+
 }

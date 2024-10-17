@@ -13,6 +13,7 @@ export default function Opcoes() {
           <Link href="/cadastros/mecanico">Cadastrar Mecânico</Link>
           <Link href="/login">Login</Link>
       </div>
+      <hr />
       <div className="op-cadastros">
           <Link href="/ajuda">Ajuda</Link>
           <Link href="/sobre">Sobre</Link>
