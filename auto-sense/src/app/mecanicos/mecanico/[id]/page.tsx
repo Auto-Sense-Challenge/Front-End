@@ -1,9 +1,22 @@
-import React from 'react'
+"use client"
+import { TipoMecanico } from '@/types';
+import React, { useState } from 'react'
 
-export default function page({params}:{params:{id:number}}) {
+export default function Mecanico({params}:{params:{id:number}}) {
+
+  const [mecanico, setMecanico] = useState<TipoMecanico>({
+    id:params.id,
+    telefone: 0,
+    nome: "",
+    endereco:"",
+    avaliacao: 0,
+  });
+
   return (
     <main>
-        <h1>Página do mecânico {params.id}</h1>
+        {/* Essa página é a página que os usuarios veram os dados de um mecânico expecifico*/}
+        
+        
     </main>
   )
-}
+

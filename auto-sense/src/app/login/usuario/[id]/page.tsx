@@ -18,6 +18,9 @@ export default function Usuario({params}:{params:{id:number}}) {
     <main>
         <h1>Página de visualização dos dados do Usuário de Id {usuario.id}</h1>
 
+        {/* Essa página é a página que apenas o mecanico vera, todos os dados */}
+
+
         <h3>Dados:</h3>
         <ul>
           <li>Id: {usuario.id}</li>

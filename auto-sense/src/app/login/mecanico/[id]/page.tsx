@@ -16,6 +16,8 @@ export default function Mecanico({params}:{params:{id:number}}) {
     <main>
         <h1>Página de visualização dos dados do Mecânico de Id {mecanico.id}</h1>
 
+        {/* Essa página é a página que apenas o mecanico vera, todos os dados */}
+        
         <h3>Dados:</h3>
         <ul>
           <li>Id: {mecanico.id}</li>
