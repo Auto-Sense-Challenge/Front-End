@@ -8,7 +8,7 @@
         @apply flex flex-col h-52 bg-bgColor;
 
         & .superior{
-            @apply flex items-center gap-100 p-4 border-b-2 border-borda flex-wrap;
+            @apply flex items-center gap-100 p-4 border-b-2 border-borda;
 
             & .logo{
             
