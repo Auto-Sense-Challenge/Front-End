@@ -14,4 +14,5 @@ export type TipoUsuario = {
     nome: string;
     cpf:number;
     dtNasc: Date;
+    senha:string
 }
