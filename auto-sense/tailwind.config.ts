@@ -11,17 +11,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
         bgColor: "#98C1D9",
         borda: "#752E2B",
         bgGrad: "#6AB2DC",
         bgGrad2: "#A22C29",
-        bgDia: "#6AB2DC"
+        bgInfo: "#393939",
       },
       spacing:{
         '99': '470px',
         '100': '520px',
+        '105': '33vw',
         '110': '40vw',
         '115': '50vw',
         '120': '100vw',
@@ -30,7 +29,10 @@ const config: Config = {
       },
       borderRadius: {
         '4xl': '400px',
-      }
+      },
+      boxShadow: {
+        '3xl': '-10px 20px 5px 10px rgba(106, 178, 220)',
+      },
     },
   },
   plugins: [nextui()],

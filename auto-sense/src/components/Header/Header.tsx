@@ -7,7 +7,6 @@ import AutoLogo from "@/img/auto-logo.png"
 import { TbMenuOrder as Menu, TbArrowBadgeDownFilled as Seta, TbUserFilled as User} from "react-icons/tb";
 import Nav from '../Nav/Nav'
 import Opcoes from '../Opcoes/Opcoes'
-import "@/style/header.css";
 
 export default function Header() {
 

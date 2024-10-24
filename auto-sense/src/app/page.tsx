@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
 import LogoAuto from '@/img/logo-home.png'
-import '@/style/home.css';
 
 export default function Home() {
   return (

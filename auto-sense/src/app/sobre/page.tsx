@@ -8,7 +8,7 @@ import { FaGithub as Github, FaLinkedin as Linkedin, FaInstagram as Instagram} f
 
 export default function Sobre() {
   return (
-    <main>
+    <main className='sobre'>
         <div className="txt">
           <h1>Quem Somos</h1>
           <p>Somos estudantes do primeiro ano do curso Análise e Desenvolvimento de Sistema(ADS) dentro da FIAP. Este sistema chamado de Auto Sense foi criado com o intuito de ajudar na hora que o seu veículo te deixar na mão. Oferecemos um canal digital que conta com velocidade e assertividade no diagnóstico do problema do veículo através de um ChatBot. O tema da problemática que estamos resolvendo foi apresentado pela empresa Porto Seguro.</p>

@@ -3,7 +3,6 @@ import React from 'react'
 import AutoLogo from "@/img/auto-logo.png"
 import Link from 'next/link'
 import { FaGithub as Github} from "react-icons/fa";
-import "@/style/footer.css";
 
 export default function Footer() {
   return (
