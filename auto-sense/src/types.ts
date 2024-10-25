@@ -1,18 +1,21 @@
 export type TipoMecanico = {
 
     id: number;
-    telefone: number;
     nome:string;
+    email: string;
+    senha: string;
+    telefone: number;
     endereco:string;
-    avaliacao:number;
+    linkInsta: string;
+    descricao:string;
 }
 
 export type TipoUsuario = {
 
     id:number;
-    email: string;
-    nome: string;
     cpf:number;
+    nome: string;
+    email: string;
     dtNasc: Date;
-    senha:string
+    senha:string;
 }
