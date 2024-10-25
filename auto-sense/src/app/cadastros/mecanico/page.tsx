@@ -20,35 +20,35 @@ export default function Mecanico() {
 
   const handleSubmit = async (e:React.FormEvent<HTMLFormElement>)=>{
     e.preventDefault();
-    try {
+    // try {
         
-        const response = await fetch("Aqui vem nossa API",{
-            method:"POST",
-            headers:{
-                "Content-Type":"application/json"
-                },
-            body: JSON.stringify(mecanico)
-        });
+    //     const response = await fetch("Aqui vem nossa API",{
+    //         method:"POST",
+    //         headers:{
+    //             "Content-Type":"application/json"
+    //             },
+    //         body: JSON.stringify(mecanico)
+    //     });
 
-        if(response.ok){
-          //Colocar algo para abrir o modal aqui e bla bla bla
-            setMecanico({
-              id:0,
-              nome:"",
-              email:"",
-              senha:"",
-              telefone:0,
-              endereco:"",
-              linkInsta:"",
-              descricao:"",
-                });
-            navigate.push("/mecanicos");
-        }
+    //     if(response.ok){
+    //       //Colocar algo para abrir o modal aqui e bla bla bla
+    //         setMecanico({
+    //           id:0,
+    //           nome:"",
+    //           email:"",
+    //           senha:"",
+    //           telefone:0,
+    //           endereco:"",
+    //           linkInsta:"",
+    //           descricao:"",
+    //             });
+    //         navigate.push("/mecanicos");
+    //     }
 
-    } catch (error) {
-        console.error("Falha no cadastramento de mecânico: ", error);
-        navigate.push("/error");
-    }
+    // } catch (error) {
+    //     console.error("Falha no cadastramento de mecânico: ", error);
+    //     navigate.push("/error");
+    // }
   }
 
   return (
@@ -56,6 +56,7 @@ export default function Mecanico() {
         <div>
           <form onSubmit={handleSubmit} className="formsMecanico">
             <h1>Cadastro Mecânico</h1>
+            <h4>Preencha com seus dados para cadastrar</h4>
             <div>
               <label htmlFor="idNome">Nome</label>
               <input type="text" id="idNome" value={mecanico.nome} onChange={(m)=> setMecanico({...mecanico, nome:m.target.value})} placeholder="Digite o nome da sua oficina" required/>
