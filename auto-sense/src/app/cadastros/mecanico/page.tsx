@@ -73,7 +73,7 @@ export default function Mecanico() {
             </div>
             <div>
               <label htmlFor="idTelefone">Telefone</label>
-              <input type="number" id="idTelefone" value={mecanico.telefone} onChange={(m)=> setMecanico({...mecanico, telefone:m.target.value})} placeholder="Coloque o telefone aqui"/>
+              <input type="number" id="idTelefone" value={mecanico.telefone} onChange={(m)=> setMecanico({...mecanico, telefone:Number(m.target.value)})} placeholder="Coloque o telefone aqui"/>
             </div>
             <div>
               <label htmlFor="idEndereco">Endereco</label>
