@@ -33,6 +33,9 @@ const config: Config = {
       boxShadow: {
         '3xl': '-10px 20px 5px 10px rgba(106, 178, 220)',
       },
+      backgroundImage: {
+        'fundo-img': "url('/logo-home.png')",
+      },
     },
   },
   plugins: [nextui()],

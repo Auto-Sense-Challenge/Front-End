@@ -13,7 +13,7 @@
             & .logo{
             
                 & a{
-                    @apply flex text-4xl w-auto flex-wrap;
+                    @apply flex text-4xl w-auto;
     
                     & image{
                         @apply h-24 w-24;
@@ -155,7 +155,7 @@
         }
 
         & .imagens{
-            @apply grid justify-center gap-20;
+            @apply grid justify-center gap-20 bg-fundo-img;
 
             & figure{
 
@@ -178,6 +178,34 @@
             }
 
             
+        }
+    }
+
+    .cadastroMain{
+        @apply flex flex-col h-auto pb-80 text-white bg-gradient-to-b from-bgGrad to-bgColor gap-10;
+
+        & .tipoCadastro{
+            @apply flex flex-col gap-10 text-center text-2xl;
+
+            & h1{
+                @apply text-black text-4xl;
+            }
+        }
+
+        & .cadastrosMecUser{
+            @apply flex text-center px-80 text-xl gap-64;
+
+            & aside{
+                @apply flex flex-col w-80 gap-10 justify-center items-end;
+
+                & a{
+                    @apply bg-bgGrad2 rounded-lg w-48 text-center mx-14;
+                }
+            }
+        }
+
+        & .cadastroMec{
+            @apply relative top-10;
         }
     }
 
