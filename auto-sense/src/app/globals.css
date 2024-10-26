@@ -209,4 +209,35 @@
         }
     }
 
+    .mainAjuda{
+        @apply flex flex-col pb-80 bg-bgColor px-32 gap-20 text-5xl;
+
+        & h1{
+            @apply text-center border-b-3 border-bgGrad2 pb-5;
+        }
+
+        & .perguntas{
+
+            & .pergunta{
+                @apply flex text-3xl justify-between font-bold border-b-2 border-gray-500;
+
+                & button{
+                    @apply text-5xl text-bgGrad2;
+                }
+            }
+
+            & dialog{
+                @apply relative p-10 rounded-xl bg-gradient-to-r from-bgGrad to-bgGrad2 gap-10 text-2xl w-118;
+
+                & ol{
+                    @apply list-decimal px-10;
+                }
+
+                & ul{
+                    @apply list-disc px-10;
+                }
+            }
+        }
+    }
+
 }
