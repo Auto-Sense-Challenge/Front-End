@@ -57,7 +57,7 @@
     }
 
     .opcoesUser{
-        @apply flex flex-col absolute left-99 bg-bgGrad py-5 h-auto w-80 gap-10 opacity-90;
+        @apply flex flex-col absolute left-99 bg-bgGrad py-5 h-auto w-80 gap-10 opacity-90 z-30;
 
         & .userOp{
             @apply relative left-36 text-5xl p-1 bg-white rounded-3xl;
@@ -227,7 +227,7 @@
             }
 
             & dialog{
-                @apply relative p-10 rounded-xl bg-gradient-to-r from-bgGrad to-bgGrad2 gap-10 text-2xl w-118;
+                @apply relative p-10 rounded-xl bg-gradient-to-r from-bgGrad to-bgGrad2 gap-10 text-2xl w-118 z-20;
 
                 & ol{
                     @apply list-decimal px-10;
