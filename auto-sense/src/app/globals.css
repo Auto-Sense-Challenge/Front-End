@@ -8,7 +8,7 @@
         @apply flex flex-col h-52 bg-bgColor;
 
         & .superior{
-            @apply flex items-center gap-105 p-4 border-b-2 border-borda;
+            @apply flex items-center justify-between p-4 border-b-2 border-borda;
 
             & .logo{
             
@@ -26,10 +26,9 @@
             }
 
             & .abrirMenu{
-                @apply relative right-24;
 
                 & button{
-                    @apply text-6xl text-white border-1 rounded-full border-borda;
+                    @apply text-6xl relative right-20 text-white border-1 rounded-full border-borda;
                 }
             }
 
@@ -52,7 +51,7 @@
         @apply bg-bgColor;
 
         & ul{
-            @apply flex justify-center text-4xl text-white gap-20 w-130 py-3 flex-wrap;
+            @apply flex text-4xl justify-between text-white w-130 py-3 flex-wrap;
         }
     }
 
@@ -84,7 +83,7 @@
         @apply grid gap-8 bg-bgColor;
 
         & .ptCima{
-            @apply flex gap-130;
+            @apply flex justify-between px-10;
 
             & .acima{
                 @apply flex border-b-1 mr-9 w-64;
@@ -119,17 +118,17 @@
     }
 
     .home{
-        @apply flex h-125 gap-96 bg-bgColor;
+        @apply flex h-130 justify-between bg-bgColor;
 
         & .texto{
-            @apply relative right-10 h-125 justify-between items-center bg-gradient-to-r from-bgGrad2 to-bgGrad rounded-r-4xl pl-10 pr-20;
+            @apply relative right-10 h-125 justify-between items-center bg-gradient-to-r from-bgGrad2 to-bgGrad rounded-r-4xl pl-10 pr-20 text-center;
 
             & .titulo{
-                @apply text-center mt-40 text-6xl underline;
+                @apply mt-40 text-6xl underline;
             }
 
             & .intro{
-                @apply text-center mt-20 text-5xl w-99 text-white;
+                @apply mt-20 text-5xl w-99 text-white;
             }
         }
 
@@ -140,22 +139,22 @@
     }
 
     .sobre{
-        @apply flex flex-col bg-bgColor text-center gap-20;
+        @apply flex flex-col bg-bgColor text-center gap-40 pb-40 text-white;
 
         & .txt{
-            @apply flex flex-col px-10 bg-gradient-to-b from-bgGrad to-bgColor gap-10;
+            @apply flex flex-col text-5xl px-10 pt-10 bg-gradient-to-b from-bgGrad to-bgColor gap-10;
 
             & h1{
-                @apply text-5xl;
+                @apply text-black;
             }
 
             & p{
-                @apply text-3xl text-white px-10;
+                @apply text-3xl px-10;
             }
         }
 
         & .imagens{
-            @apply grid justify-center gap-20 bg-fundo-img;
+            @apply grid justify-center gap-40 bg-fundo-img;
 
             & figure{
 
@@ -164,11 +163,7 @@
                 }
     
                 & .informacoes{
-                    @apply flex flex-col bg-bgInfo bg-opacity-85 rounded-2xl relative bottom-24 text-white py-2;
-    
-                    & h5{
-                        @apply text-xl;
-                    }
+                    @apply flex flex-col bg-bgInfo bg-opacity-85 rounded-2xl relative bottom-24 py-2 text-xl;
     
                     & .redesLogos{
                         @apply flex justify-center text-2xl gap-5 py-1;
@@ -182,7 +177,7 @@
     }
 
     .cadastroMain{
-        @apply flex flex-col h-auto pb-80 text-white bg-gradient-to-b from-bgGrad to-bgColor gap-10;
+        @apply flex flex-col h-auto pb-40 pt-10 text-white bg-gradient-to-b from-bgGrad to-bgColor gap-10;
 
         & .tipoCadastro{
             @apply flex flex-col gap-10 text-center text-2xl;
@@ -193,7 +188,7 @@
         }
 
         & .cadastrosMecUser{
-            @apply flex text-center px-80 text-xl gap-64;
+            @apply flex text-center justify-center px-80 text-xl gap-105;
 
             & aside{
                 @apply flex flex-col w-80 gap-10 justify-center items-end;
@@ -210,7 +205,7 @@
     }
 
     .mainAjuda{
-        @apply flex flex-col pb-80 bg-bgColor px-32 gap-20 text-5xl;
+        @apply flex flex-col pb-80 pt-20 bg-bgColor px-32 gap-40 text-5xl;
 
         & h1{
             @apply text-center border-b-3 border-bgGrad2 pb-5;
@@ -219,7 +214,7 @@
         & .perguntas{
 
             & .pergunta{
-                @apply flex text-3xl justify-between font-bold border-b-2 border-gray-500;
+                @apply flex text-3xl justify-between font-bold border-b-2 border-gray-500 ;
 
                 & button{
                     @apply text-5xl text-bgGrad2;

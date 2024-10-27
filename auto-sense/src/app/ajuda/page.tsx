@@ -24,7 +24,7 @@ export default function Perguntas(){
     
     return(        
         <main className="mainAjuda">
-                <h1>Perguntas Frequentes</h1>
+            <h1>Perguntas Frequentes</h1>
         
             <div className="perguntas">
                 <div className="pergunta">
