@@ -29,10 +29,10 @@ export default function Perguntas(){
             <div className="perguntas">
                 <div className="pergunta">
                     <h3>Como faço para criar uma conta?</h3>
-                    <button onClick={()=> mudarModal(1)}><Seta/></button>  
+                    <button onClick={()=> mudarModal(1)} className={`${modaisAbertos[1] ? "aberto": "fechado"}`}><Seta/></button>  
                 </div>
                           
-                <dialog open={modaisAbertos[1]} className={`perguntas-modal ${modaisAbertos[1] ? "aberto": "fechado"}`}>     
+                <dialog open={modaisAbertos[1]} className="perguntas-modal">     
                     <p>Para criar uma conta, apenas siga estes simples passos:</p>
                     <ol>
                         <li>Clique na opção Cadastrar no nosso menu ou na página inicial;</li>
@@ -46,9 +46,9 @@ export default function Perguntas(){
             <div className="perguntas">
                 <div className="pergunta">
                     <h3>O que fazer com a IA de vocês?</h3>
-                    <button onClick={()=> mudarModal(2)}><Seta/></button>        
+                    <button onClick={()=> mudarModal(2)} className={`${modaisAbertos[2] ? "aberto": "fechado"}`}><Seta/></button>        
                 </div>    
-                <dialog open={modaisAbertos[2]} className={`perguntas-modal ${modaisAbertos[2] ? "aberto": "fechado"}`}>     
+                <dialog open={modaisAbertos[2]} className="perguntas-modal">     
                     <p>Nossa Inteligência Artificial funciona de com bases nos problemas que você apresenta para ela, assim ela pode dizer os possiveis problemas:</p>
                     <ul>
                         <li>Você terá que falar para nossa IA o que seu carro está apresentando como falar que o motor aparenta estar mais quente.</li>
@@ -60,10 +60,10 @@ export default function Perguntas(){
             <div className="perguntas">
                 <div className="pergunta">
                     <h3>Como vejo o status do meu veículo?</h3>
-                    <button onClick={()=> mudarModal(3)}><Seta/></button>  
+                    <button onClick={()=> mudarModal(3)} className={`${modaisAbertos[3] ? "aberto": "fechado"}`}><Seta/></button>  
                 </div>
                           
-                <dialog open={modaisAbertos[3]} className={`perguntas-modal ${modaisAbertos[3] ? "aberto": "fechado"}`}>     
+                <dialog open={modaisAbertos[3]} className="perguntas-modal">     
                     <p>Para acompanhar o status do seu veículo, siga esses passos:</p>
                     <ol>
                         <li>Vá para a seção do “meu perfil”;</li>
@@ -76,10 +76,10 @@ export default function Perguntas(){
             <div className="perguntas">
                 <div className="pergunta">
                     <h3>Porque usar a IA de vocês?</h3>
-                    <button onClick={()=> mudarModal(4)}><Seta/></button>    
+                    <button onClick={()=> mudarModal(4)} className={`${modaisAbertos[4] ? "aberto": "fechado"}`}><Seta/></button>    
                 </div>
                         
-                <dialog open={modaisAbertos[4]} className={`perguntas-modal ${modaisAbertos[3] ? "aberto": "fechado"}`}>     
+                <dialog open={modaisAbertos[4]} className="perguntas-modal">     
                     <p>Nossa IA irá lhe apresentar um relatório sobre o seu veículo antes mesmo do veículo parar e assim podendo cuidar do seu carro antes dele te abandonar no meio da estradas</p>
                 </dialog>
             </div>
