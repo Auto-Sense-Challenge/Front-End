@@ -1,11 +1,11 @@
 "use client"
 import { TipoUsuario } from '@/types'
-// import { useRouter } from 'next/router'
+import { useRouter } from 'next/navigation'
 import React, { useState } from 'react'
 
 export default function Cadastro() {
 
-  // const navigate = useRouter();
+  const navegar = useRouter();
 
   const [usuario, setUsuario] = useState<TipoUsuario>({
     id:0,
@@ -28,7 +28,7 @@ export default function Cadastro() {
     //             },
     //         body: JSON.stringify(mecanico)
     //     });
-
+    navegar.push("/membros/login")
     //     if(response.ok){
     //       //Colocar algo para abrir o modal aqui e bla bla bla
     //         setMecanico({

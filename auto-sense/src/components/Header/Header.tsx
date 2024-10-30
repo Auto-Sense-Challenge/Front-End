@@ -39,32 +39,29 @@ export default function Header() {
                 </Link>
             </div>
 
-            <div className='abrirMenu'>
+            <div className={`abrirMenu ${navStatus ? "aberto": "fechado"}`}>
                 <button onClick={() => mudarNav()}>
                     <Menu/>
                 </button>
             </div>
-
             <div className='user'>
                 <div className="fotoUser">
                     <User/>
                 </div>
 
                 <button onClick={() => mudarOpcoes()}>
-                    <Seta /> {/*Caso consiga faz com que o botão fique para baixo acho que é com useState talvez*/}
+                    <Seta className={opcoesStatus ? "aberto": "fechado"}/> 
                 </button>
             </div>
         </div>
         
-        <div className='inferior'>
-            <dialog open={navStatus} className='dialogNav'>
-                <Nav/>
-            </dialog>
+        <dialog open={navStatus} className='dialogNav'>
+            <Nav/>
+        </dialog>
 
-            <dialog open={opcoesStatus} className='dialogOpcoes'>
-                <Opcoes/>
-            </dialog>
-        </div>
+        <dialog open={opcoesStatus} className='dialogOpcoes'>
+            <Opcoes/>
+        </dialog>
 
     </header>
   )

@@ -1,8 +1,11 @@
 "use client"
 import { TipoMecanico } from '@/types'
+import { useRouter } from 'next/navigation'
 import React, { useState } from 'react'
 
 export default function Cadastro() {
+
+  const navegar = useRouter()
 
   const [mecanico, setMecanico] = useState<TipoMecanico>({
     id:0,
@@ -31,7 +34,7 @@ export default function Cadastro() {
     //             },
     //         body: JSON.stringify(mecanico)
     //     });
-
+    navegar.push("/membros/login")
     //     if(response.ok){
     //       //Colocar algo para abrir o modal aqui e bla bla bla
     //         setMecanico({
@@ -99,8 +102,7 @@ export default function Cadastro() {
               </div>
               <div>
                 <label htmlFor="idDescricao">Descrição</label>
-                <input type="text" id="idDescricao" value={mecanico.descricao} maxLength={250} onChange={(m)=> setMecanico({...mecanico, descricao:m.target.value})} placeholder="Coloque aqui sua descrição" required/>
-                <label htmlFor="idDescricao">*Campo Obrigatorio</label>
+                <input type="text" id="idDescricao" value={mecanico.descricao} maxLength={250} onChange={(m)=> setMecanico({...mecanico, descricao:m.target.value})} placeholder="Coloque aqui sua descrição"/>
               </div>
             </div>
             <button type="submit">Enviar</button>
