@@ -55,13 +55,15 @@ export default function Header() {
             </div>
         </div>
         
-        <dialog open={navStatus} className='dialogNav'>
-            <Nav/>
-        </dialog>
+        <div className='inferior'>
+            <dialog open={navStatus} className='dialogNav'>
+                <Nav/>
+            </dialog>
 
-        <dialog open={opcoesStatus} className='dialogOpcoes'>
+            <dialog open={opcoesStatus} className='dialogOpcoes'>
             <Opcoes/>
         </dialog>
+        </div>
 
     </header>
   )

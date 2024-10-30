@@ -30,6 +30,7 @@
                 & button{
                     @apply text-6xl relative right-20 text-white border-1 rounded-full border-borda;
                 }
+
             }
 
             & .user{
@@ -40,7 +41,11 @@
                 }
 
                 & button{
-                    @apply text-white;
+                    @apply text-white delay-100;
+                }
+
+                & .aberto{
+                    @apply rotate-180 delay-100;
                 }
             }
         }
@@ -217,7 +222,11 @@
                 @apply flex text-3xl justify-between font-bold border-b-2 border-gray-500 ;
 
                 & button{
-                    @apply text-5xl text-bgGrad2;
+                    @apply text-5xl -rotate-90 text-bgGrad2;
+                }
+
+                & .aberto{
+                    @apply rotate-1;
                 }
             }
 
