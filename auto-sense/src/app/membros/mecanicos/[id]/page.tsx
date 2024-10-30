@@ -32,6 +32,7 @@ export default function Mecanico({params}:{params:{id:number}}) {
           <li>Cep: {mecanico.endereco.cep}</li>
           <li>Número: {mecanico.endereco.numero}</li>
           <li>Complemento: {mecanico.endereco.complemento}</li>
+          
         </ul>
     </main>
   )
