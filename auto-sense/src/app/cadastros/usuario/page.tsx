@@ -1,11 +1,11 @@
 "use client"
 import { TipoUsuario } from '@/types'
-import { useRouter } from 'next/router'
+// import { useRouter } from 'next/router'
 import React, { useState } from 'react'
 
 export default function Usuario() {
 
-  const navigate = useRouter();
+  // const navigate = useRouter();
 
   const [usuario, setUsuario] = useState<TipoUsuario>({
     id:0,
