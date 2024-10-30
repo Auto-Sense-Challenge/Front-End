@@ -3,7 +3,7 @@ import { TipoUsuario } from '@/types'
 // import { useRouter } from 'next/router'
 import React, { useState } from 'react'
 
-export default function Usuario() {
+export default function Cadastro() {
 
   // const navigate = useRouter();
 

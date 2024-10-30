@@ -26,4 +26,4 @@ export default function Mecanico({params}:{params:{id:number}}) {
         <h6>{mecanico.avaliacao}</h6>
     </main>
   )
-
+}

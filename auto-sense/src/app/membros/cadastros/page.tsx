@@ -12,11 +12,11 @@ export default function Cadastros() {
       <div className='cadastrosMecUser'>
         <aside>
           <p>Caso deseje facilitar na hora da nossa IA passar o sintomas clique no botão abaixo, realizando este cadastro como usuário você não tera que passar seus dados básicos novamente, quando for conversar com nossa Inteligência Artificial</p>
-          <Link href="/cadastros/usuario">Cadastro Usuario</Link>
+          <Link href="/membros/usuario/cadastro">Cadastro Usuario</Link>
         </aside>
         <aside>
           <p>Caso seja uma oficina de mecânico e gostaria de nos ajudar a realize o cadastro de Mecânico clicando no botão abaixo</p>
-          <Link className='cadastroMec' href="/cadastros/mecanico">Cadastro Mecânico</Link>
+          <Link className='cadastroMec' href="/membros/mecanicos/cadastro">Cadastro Mecânico</Link>
         </aside>
       </div>
       
