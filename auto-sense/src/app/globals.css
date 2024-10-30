@@ -244,4 +244,42 @@
         }
     }
 
+    .cadastrar{
+        @apply flex justify-center bg-bgColor py-40;
+
+        & .forms{
+            @apply flex flex-col gap-16 bg-bgGrad rounded-lg p-10 shadow-4xl text-white text-3xl;
+
+            & h1{
+                @apply text-4xl font-bold pt-10;
+            }
+
+            & h1, h4{
+                @apply text-black;
+            }
+
+
+            & .inputs{
+                @apply flex flex-col gap-10;
+
+                & .inputLocal{
+                    @apply flex flex-col gap-2;
+
+                    & input{
+                        @apply text-black rounded-md p-2;
+                    }
+                }
+
+                & .campObg{
+                    @apply text-red-600 text-xl;
+                }
+            }
+
+            & button{
+                @apply mx-60 bg-bgGrad2 rounded-md w-32;
+            }
+            
+        }
+    }
+
 }

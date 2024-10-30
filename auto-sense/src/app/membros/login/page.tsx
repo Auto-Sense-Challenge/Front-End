@@ -62,17 +62,17 @@ export default function Login() {
   }
 
   return (
-    <main>
+    <main className='cadastrar'>
         <div>
-          <form onSubmit={handleSubmit} className="formsMecanico">
+          <form onSubmit={handleSubmit} className="forms">
             <h1>Login</h1>
             <h4>Preencha com seu email e senha para se logar</h4>
             <div className="inputs">
-              <div>
+              <div className='inputLocal'>
                 <label htmlFor="idEmail">Email</label>
                 <input type="email" id="idEmail" value={mecanico.nome} minLength={3} maxLength={50} onChange={(m)=> setMecanico({...mecanico, nome:m.target.value})} placeholder="Coloque o email da sua conta" required/>
               </div>
-              <div>
+              <div className='inputLocal'>
                 <label htmlFor="idSenha">Senha</label>
                 <input type="password" id="idSenha" value={mecanico.senha} maxLength={250} onChange={(m)=> setMecanico({...mecanico, senha:m.target.value})} placeholder="Coloque a senha da sua conta" required/>
               </div>
