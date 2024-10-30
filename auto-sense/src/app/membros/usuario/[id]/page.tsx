@@ -10,7 +10,9 @@ export default function Usuario({params}:{params:{id:number}}) {
     email: "",
     nome: "",
     cpf:0,
-    dtNasc: new Date(),
+    dtNasc: "",
+    senha: "",
+    telefone: 0,
   });
 
 
@@ -27,7 +29,8 @@ export default function Usuario({params}:{params:{id:number}}) {
           <li>Nome: {usuario.nome}</li>
           <li>CPF: {usuario.cpf}</li>
           <li>Email: {usuario.email}</li>
-          <li>Data de Nascimento: {usuario.dtNasc.toLocaleDateString()}</li>
+          <li>Data de Nascimento: {usuario.dtNasc}</li>
+          <li>Telefone: {usuario.telefone}</li>
         </ul>
 
     </main>

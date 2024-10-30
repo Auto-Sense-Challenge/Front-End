@@ -10,13 +10,13 @@ export default function Cadastros() {
       </div>
       
       <div className='cadastrosMecUser'>
-        <aside>
-          <p>Caso deseje facilitar na hora da nossa IA passar o sintomas clique no botão abaixo, realizando este cadastro como usuário você não tera que passar seus dados básicos novamente, quando for conversar com nossa Inteligência Artificial</p>
-          <Link href="/membros/usuario/cadastro">Cadastro Usuario</Link>
+        <aside className='users'>
+          <p>Caso seja uma pessoa que pretende procurar suporte ao seu carro realize nosso cadasro de Usuários</p>
+          <Link href="/membros/usuario/cadastro">Cadastro para usuários</Link>
         </aside>
-        <aside>
+        <aside className='mecs'>
           <p>Caso seja uma oficina de mecânico e gostaria de nos ajudar a realize o cadastro de Mecânico clicando no botão abaixo</p>
-          <Link className='cadastroMec' href="/membros/mecanicos/cadastro">Cadastro Mecânico</Link>
+          <Link href="/membros/mecanicos/cadastro">Cadastro para Oficinas de Mecânica</Link>
         </aside>
       </div>
       

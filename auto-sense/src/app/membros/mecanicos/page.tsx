@@ -9,8 +9,15 @@ export default function Mecanicos() {
     id:0,
     telefone: 0,
     nome: "",
-    endereco:"",
-    avaliacao: 0,
+    senha:"",
+    descricao:"",
+    email:"",
+    linkInsta:"",
+    endereco:{
+      cep:0,
+      numero:0,
+      complemento:"",
+    },
   }])
 
   // Aqui só falta o metado para setar os mecanicos de acordo com a API
@@ -23,11 +30,12 @@ export default function Mecanicos() {
         {mecanicos.map((meca) => (
           <ul key={meca.id}>
             <li>Id: {meca.id}</li>
-            <li>Telefone: {meca.telefone}</li>
             <li>Nome: {meca.nome}</li>
-            <li>Endereço: {meca.endereco}</li>
-            <li>Avaliação: {meca.avaliacao} Estrelas</li>
-            <li><Link href={`/mecanicos/mecanico/${meca.id}`}>Dados deste Mecânicos</Link></li>
+            <li>Telefone: {meca.telefone}</li>
+            <li>Email: {meca.email}</li>
+            <li>Instagram: {meca.linkInsta}</li>
+            <li>Cep: {meca.endereco.cep}</li>
+            <li><Link href={`/memebros/mecanicos/${meca.id}`}>Dados deste Mecânicos</Link></li>
           </ul>
         ))}
     </main>

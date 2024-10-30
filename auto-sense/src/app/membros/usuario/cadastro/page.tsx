@@ -86,7 +86,7 @@ export default function Cadastro() {
               <label htmlFor="idTelefone">*Campo Obrigatorio</label>
             </div>
             <div>
-              <button>Enviar</button>
+              <button type='submit'>Enviar</button>
             </div>
           </form>
         </div>
