@@ -17,9 +17,6 @@ export default function Nav() {
             <li>
                 <Link href="/ajuda">Ajuda</Link>
             </li>
-            <li>
-                <Link href="/veiculos">Veículos</Link>
-            </li>
         </ul>
     </nav>
   )

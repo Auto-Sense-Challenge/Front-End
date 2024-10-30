@@ -10,7 +10,7 @@ export default function Usuario({params}:{params:{id:number}}) {
     email: "",
     nome: "",
     cpf:0,
-    dtNasc: new Date("2000-01-01"),
+    dtNasc: new Date(),
   });
 
 

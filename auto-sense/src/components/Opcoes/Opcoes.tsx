@@ -9,9 +9,8 @@ export default function Opcoes() {
       <User className='userOp'/>
       <h5>Olá, Bem vindo(a)</h5>
       <div className="op-cadastros">
-          <Link href="/cadastros/usuario">Cadastrar Usuário</Link>
-          <Link href="/cadastros/mecanico">Cadastrar Mecânico</Link>
-          <Link href="/login">Login</Link>
+          <Link href="/membros/cadastros">Cadastrar</Link>
+          <Link href="/membros/login">Login</Link>
       </div>
       <hr />
       <div className="op-cadastros">
