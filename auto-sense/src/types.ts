@@ -1,21 +1,46 @@
 export type TipoMecanico = {
 
     id: number;
-    nome:string;
-    email: string;
-    senha: string;
-    telefone: number;
-    endereco:string;
-    linkInsta: string;
-    descricao:string;
+    telefone: number; 
+    nome: string; 
+    senha: string; 
+    descricao: string; // N OBRIGATORIO
+    email: string; 
+    linkInsta: string; // N OBRIGATORIO
+    endereco: TipoEndereco; 
+}
+
+export type TipoEndereco = {
+
+    cep: number; 
+    numero: number;
+    complemento: string; // N obrigatorio
 }
 
 export type TipoUsuario = {
 
     id:number;
-    cpf:number;
-    nome: string;
-    email: string;
-    dtNasc: Date;
-    senha:string;
+    email: string; 
+    nome: string; 
+    cpf: number; 
+    dtNasc: string; // N obrigatorio
+    senha:string; 
+    telefone: number; 
+
+}
+
+export type TipoVeiculo = {
+
+    id: number; 
+    placar: string;
+    cor: string;
+    modelo: string;
+    ano: number;
+}
+
+export type TipoComentario = {
+
+    id:number;
+    comentario: string; // N Obrigatorio
+    qualidade: string;
 }

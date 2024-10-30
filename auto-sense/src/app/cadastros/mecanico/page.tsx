@@ -13,10 +13,15 @@ export default function Mecanico() {
     email:"",
     senha:"",
     telefone:0,
-    endereco:"",
     linkInsta:"",
     descricao:"",
+    endereco:{
+      cep:0,
+      numero:0,
+      complemento:"",
+    },
   })
+
 
   const handleSubmit = async (e:React.FormEvent<HTMLFormElement>)=>{
     e.preventDefault();
@@ -74,11 +79,22 @@ export default function Mecanico() {
             </div>
             <div>
               <label htmlFor="idTelefone">Telefone</label>
-              <input type="number" id="idTelefone" value={mecanico.telefone} onChange={(m)=> setMecanico({...mecanico, telefone:Number(m.target.value)})} placeholder="Coloque o telefone aqui"/>
+              <input type="number" id="idTelefone" value={mecanico.telefone} onChange={(m)=> setMecanico({...mecanico, telefone:Number(m.target.value)})} placeholder="Coloque o telefone aqui" required/>
+              <label htmlFor="idTelefone">*Campo Obrigatorio</label>
             </div>
             <div>
-              <label htmlFor="idEndereco">Endereco</label>
-              <input type="text" id="idEndereco" value={mecanico.endereco} onChange={(m)=> setMecanico({...mecanico, endereco:m.target.value})} placeholder="Digite o endereço da sua oficina"/>
+              <label htmlFor="idCep">CEP</label>
+              <input type="number" id="idCep" value={mecanico.endereco.cep} onChange={(m) =>setMecanico({...mecanico,endereco: {...mecanico.endereco,cep: Number(m.target.value),},})} placeholder="Digite o cep oficina" required/>
+              <label htmlFor="idCep">*Campo Obrigatorio</label>
+            </div>
+            <div>
+              <label htmlFor="idNumero">Número da Ofícina</label>
+              <input type="number" id="idNumero" value={mecanico.endereco.numero} onChange={(m) =>setMecanico({...mecanico,endereco: {...mecanico.endereco,numero: Number(m.target.value),},})} placeholder="Digite o número da sua oficina" required/>
+              <label htmlFor="idNumero">*Campo Obrigatorio</label>
+            </div>
+            <div>
+              <label htmlFor="idComplemento">Complemento</label>
+              <input type="text" id="idComplemento" value={mecanico.endereco.complemento} onChange={(m) =>setMecanico({...mecanico,endereco: {...mecanico.endereco,complemento: m.target.value,},})} placeholder="Digite o complemento da oficina"/>
             </div>
             <div>
               <label htmlFor="idInsta">Instagram</label>
