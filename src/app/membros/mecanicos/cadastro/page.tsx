@@ -34,7 +34,7 @@ export default function Cadastro() {
     //             },
     //         body: JSON.stringify(mecanico)
     //     });
-    navegar.push("/membros/login")
+    // navegar.push("/membros/login")
     //     if(response.ok){
     //       //Colocar algo para abrir o modal aqui e bla bla bla
     //         setMecanico({
