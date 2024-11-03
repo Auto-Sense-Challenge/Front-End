@@ -61,7 +61,7 @@
     }
 
     .opcoesUser{
-        @apply flex flex-col absolute bg-bgGrad py-5 h-auto w-80 gap-10 opacity-90 z-30;
+        @apply flex flex-col relative bg-bgGrad py-5 h-auto w-80 gap-10 opacity-90 z-30;
 
         & .userOp{
             @apply relative left-36 text-5xl p-1 bg-white rounded-3xl;
