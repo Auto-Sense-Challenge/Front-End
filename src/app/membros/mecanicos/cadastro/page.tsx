@@ -1,11 +1,11 @@
 "use client"
 import { TipoMecanico } from '@/types'
-import { useRouter } from 'next/navigation'
+// import { useRouter } from 'next/navigation'
 import React, { useState } from 'react'
 
 export default function Cadastro() {
 
-  const navegar = useRouter()
+  // const navegar = useRouter()
 
   const [mecanico, setMecanico] = useState<TipoMecanico>({
     id:0,

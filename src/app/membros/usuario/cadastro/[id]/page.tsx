@@ -1,11 +1,11 @@
 "use client"
 import { TipoUsuario } from '@/types'
-import { useRouter } from 'next/navigation'
+// import { useRouter } from 'next/navigation'
 import React, { useState } from 'react'
 
 export default function Cadastro({params}:{params:{id:number}}) {
 
-  const navegar = useRouter();
+  // const navegar = useRouter();
 
   const [usuario, setUsuario] = useState<TipoUsuario>({
     id:params.id,

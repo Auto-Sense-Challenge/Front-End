@@ -1,11 +1,11 @@
 "use client"
 import { TipoMecanico } from '@/types';
-import Link from 'next/link';
 import React, { useState } from 'react'
 
 export default function Mecanico({params}:{params:{id:number}}) {
 
-  const [mecanico, setMecanico] = useState<TipoMecanico>({
+  //Tirei o steMecanico pra deploy
+  const [mecanico] = useState<TipoMecanico>({
     id:params.id,
     telefone: 0,
     nome: "",

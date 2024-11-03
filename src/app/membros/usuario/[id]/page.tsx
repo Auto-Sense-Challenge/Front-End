@@ -8,7 +8,9 @@ import { HiOutlinePencilSquare as LapisEditar } from "react-icons/hi2";
 
 export default function Usuario({params}:{params:{id:number}}) {
 
-  const [usuario, setUsuario] = useState<TipoUsuario>({
+    //tirei o setUsuario pra deploy
+
+  const [usuario] = useState<TipoUsuario>({
     id:params.id,
     email: "",
     nome: "",

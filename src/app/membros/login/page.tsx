@@ -1,5 +1,5 @@
 "use client"
-import { TipoMecanico, TipoUsuario } from '@/types'
+import { TipoMecanico } from '@/types'
 import React, { useState } from 'react'
 
 export default function Login() {
@@ -19,15 +19,15 @@ export default function Login() {
     },
   })
 
-  const [usuario, setUsuario] = useState<TipoUsuario>({
-    id:0,
-    email:"",
-    nome:"",
-    cpf:0,
-    dtNasc: "",
-    senha: "",
-    telefone: 0,
-  })
+  // const [usuario, setUsuario] = useState<TipoUsuario>({
+  //   id:0,
+  //   email:"",
+  //   nome:"",
+  //   cpf:0,
+  //   dtNasc: "",
+  //   senha: "",
+  //   telefone: 0,
+  // })
 
   const handleSubmit = async (e:React.FormEvent<HTMLFormElement>)=>{
     e.preventDefault();

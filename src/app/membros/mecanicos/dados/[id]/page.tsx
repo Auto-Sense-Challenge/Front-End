@@ -8,7 +8,8 @@ import { HiOutlinePencilSquare as LapisEditar } from "react-icons/hi2";
 export default function Dados({params}:{params:{id:number}}) {
 
 
-  const [mecanico, setMecanico] = useState<TipoMecanico>({
+  //tirei o setMecanico pra deploy
+  const [mecanico] = useState<TipoMecanico>({
     id: params.id,
     nome:"",
     email:"",

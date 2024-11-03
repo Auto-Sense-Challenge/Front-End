@@ -5,7 +5,8 @@ import Link  from 'next/link';
 
 export default function Mecanicos() {
 
-  const [mecanicos, setMecanicos] = useState<TipoMecanico[]>([{
+    //tirei o setMecanico pra deploy
+  const [mecanicos] = useState<TipoMecanico[]>([{
     id:0,
     telefone: 0,
     nome: "",
