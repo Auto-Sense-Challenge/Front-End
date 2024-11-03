@@ -1,19 +1,20 @@
 "use client"
 import { TipoUsuario } from '@/types'
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/navigation'
 import React, { useState } from 'react'
 
-export default function Usuario() {
+export default function Cadastro({params}:{params:{id:number}}) {
 
-  const navigate = useRouter();
+  const navegar = useRouter();
 
   const [usuario, setUsuario] = useState<TipoUsuario>({
-    id:0,
+    id:params.id,
     cpf:0,
     nome:"",
     email:"",
-    dtNasc: new Date(),
+    dtNasc: "",
     senha:"",
+    telefone: 0,
   })
 
   const handleSubmit = async (e:React.FormEvent<HTMLFormElement>)=>{
@@ -27,7 +28,6 @@ export default function Usuario() {
     //             },
     //         body: JSON.stringify(mecanico)
     //     });
-
     //     if(response.ok){
     //       //Colocar algo para abrir o modal aqui e bla bla bla
     //         setMecanico({
@@ -67,7 +67,8 @@ export default function Usuario() {
             </div>
             <div>
               <label htmlFor="idEmail">Email</label>
-              <input type="email" id="idEmail" value={usuario.email} onChange={(m)=> setUsuario({...usuario, email:m.target.value})} placeholder="Ex: exemplo@gmail.com"/>
+              <input type="email" id="idEmail" value={usuario.email} onChange={(m)=> setUsuario({...usuario, email:m.target.value})} placeholder="Ex: exemplo@gmail.com" required/>
+              <label htmlFor="idEmail">*Campo Obrigatorio</label>
             </div>
             <div>
               <label htmlFor="idSenha">Senha</label>
@@ -76,7 +77,15 @@ export default function Usuario() {
             </div>
             <div>
               <label htmlFor="idData">Data Nascimento</label>
-              <input type="date" id="idData" value={usuario.dtNasc ? usuario.dtNasc.toISOString().substring(0, 10) : ""} onChange={((e) => handleSubmit)} placeholder="Digite o endereço da sua oficina"/>
+              <input type="date" id="idData" value={usuario.dtNasc} onChange={(m) => setUsuario({ ...usuario, dtNasc: m.target.value })} placeholder="Coloque sua data de nascimento"/>
+            </div>
+            <div>
+              <label htmlFor="idTelefone">Telefone</label>
+              <input type="number" id="idTelefone" value={usuario.telefone} onChange={(m) => setUsuario({ ...usuario, telefone:Number(m.target.value)})} placeholder="Digite o endereço da sua oficina" required/>
+              <label htmlFor="idTelefone">*Campo Obrigatorio</label>
+            </div>
+            <div>
+              <button type='submit'>Enviar</button>
             </div>
           </form>
         </div>

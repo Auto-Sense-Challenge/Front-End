@@ -20,11 +20,12 @@ const config: Config = {
       spacing:{
         '99': '470px',
         '100': '520px',
-        '105': '33vw',
+        '105': '40%',
         '110': '40vw',
         '115': '50vw',
+        '118': '100%',
         '120': '100vw',
-        '125': '60vw',
+        '125': '1000px',
         '130': '70vw',
       },
       borderRadius: {
@@ -32,6 +33,10 @@ const config: Config = {
       },
       boxShadow: {
         '3xl': '-10px 20px 5px 10px rgba(106, 178, 220)',
+        '4xl': '30px 20px 5px 5px rgba(86, 147, 183, 31%)',
+      },
+      backgroundImage: {
+        'fundo-img': "url('/logo-home.png')",
       },
     },
   },

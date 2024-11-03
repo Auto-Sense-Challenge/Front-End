@@ -8,12 +8,12 @@
         @apply flex flex-col h-52 bg-bgColor;
 
         & .superior{
-            @apply flex items-center gap-105 p-4 border-b-2 border-borda;
+            @apply flex items-center justify-between p-4 border-b-2 border-borda;
 
             & .logo{
             
                 & a{
-                    @apply flex text-4xl w-auto flex-wrap;
+                    @apply flex text-4xl w-auto;
     
                     & image{
                         @apply h-24 w-24;
@@ -26,11 +26,11 @@
             }
 
             & .abrirMenu{
-                @apply relative right-24;
 
                 & button{
-                    @apply text-6xl text-white border-1 rounded-full border-borda;
+                    @apply text-6xl relative right-20 text-white border-1 rounded-full border-borda sm:right-10 ;
                 }
+
             }
 
             & .user{
@@ -41,7 +41,11 @@
                 }
 
                 & button{
-                    @apply text-white;
+                    @apply text-white delay-100;
+                }
+
+                & .aberto{
+                    @apply rotate-180 delay-100;
                 }
             }
         }
@@ -52,12 +56,12 @@
         @apply bg-bgColor;
 
         & ul{
-            @apply flex justify-center text-4xl text-white gap-20 w-130 py-3 flex-wrap;
+            @apply flex text-4xl justify-between text-white w-130 py-3 flex-wrap;
         }
     }
 
     .opcoesUser{
-        @apply flex flex-col absolute left-99 bg-bgGrad py-5 h-auto w-80 gap-10 opacity-90;
+        @apply flex flex-col relative bg-bgGrad py-5 h-auto w-80 gap-10 opacity-90 z-30;
 
         & .userOp{
             @apply relative left-36 text-5xl p-1 bg-white rounded-3xl;
@@ -84,7 +88,7 @@
         @apply grid gap-8 bg-bgColor;
 
         & .ptCima{
-            @apply flex gap-130;
+            @apply flex justify-between px-10;
 
             & .acima{
                 @apply flex border-b-1 mr-9 w-64;
@@ -119,43 +123,43 @@
     }
 
     .home{
-        @apply flex h-125 gap-96 bg-bgColor;
+        @apply flex h-130 justify-between bg-bgColor sm:max-md:pb-120;
 
         & .texto{
-            @apply relative right-10 h-125 justify-between items-center bg-gradient-to-r from-bgGrad2 to-bgGrad rounded-r-4xl pl-10 pr-20;
+            @apply relative right-10 h-125 justify-between items-center bg-gradient-to-r from-bgGrad2 to-bgGrad rounded-r-4xl pl-10 pr-20 text-center sm:max-md:rounded-none sm:max-md:max-h-max sm:max-md:p-10 sm:max-md:pb-32 sm:max-md:flex sm:max-md:flex-col sm:max-md:justify-center sm:max-md:w-120 sm:max-md:right-0;
 
             & .titulo{
-                @apply text-center mt-40 text-6xl underline;
+                @apply mt-40 text-6xl underline sm:max-md:mt-20 ;
             }
 
             & .intro{
-                @apply text-center mt-20 text-5xl w-99 text-white;
+                @apply mt-20 text-5xl w-99 text-white;
             }
         }
 
         & .imagem{
-            @apply flex items-center ;
+            @apply flex items-center sm:max-md:hidden;
 
         }
     }
 
     .sobre{
-        @apply flex flex-col bg-bgColor text-center gap-20;
+        @apply flex flex-col bg-bgColor text-center gap-40 pb-40 text-white;
 
         & .txt{
-            @apply flex flex-col px-10 bg-gradient-to-b from-bgGrad to-bgColor gap-10;
+            @apply flex flex-col text-5xl px-10 pt-10 bg-gradient-to-b from-bgGrad to-bgColor gap-10;
 
             & h1{
-                @apply text-5xl;
+                @apply text-black;
             }
 
             & p{
-                @apply text-3xl text-white px-10;
+                @apply text-3xl px-10;
             }
         }
 
         & .imagens{
-            @apply grid justify-center gap-20;
+            @apply grid justify-center gap-40 bg-fundo-img;
 
             & figure{
 
@@ -164,11 +168,7 @@
                 }
     
                 & .informacoes{
-                    @apply flex flex-col bg-bgInfo bg-opacity-85 rounded-2xl relative bottom-24 text-white py-2;
-    
-                    & h5{
-                        @apply text-xl;
-                    }
+                    @apply flex flex-col bg-bgInfo bg-opacity-85 rounded-2xl relative bottom-24 py-2 text-xl;
     
                     & .redesLogos{
                         @apply flex justify-center text-2xl gap-5 py-1;
@@ -177,6 +177,107 @@
 
             }
 
+            
+        }
+    }
+
+    .cadastroMain{
+        @apply flex flex-col h-auto pb-40 pt-10 text-white bg-gradient-to-b from-bgGrad to-bgColor gap-10;
+
+        & .tipoCadastro{
+            @apply flex flex-col gap-10 text-center text-2xl;
+
+            & h1{
+                @apply text-black text-4xl;
+            }
+        }
+
+        & .cadastrosMecUser{
+            @apply flex text-center justify-center px-80 text-xl gap-105;
+
+            & aside{
+                @apply flex flex-col w-80 gap-10 justify-center items-end;
+
+                & a{
+                    @apply bg-bgGrad2 rounded-lg w-48 text-center mx-14;
+                }
+            }
+        }
+
+        & .cadastroMec{
+            @apply relative top-10;
+        }
+    }
+
+    .mainAjuda{
+        @apply flex flex-col pb-80 pt-20 bg-bgColor px-32 gap-40 text-5xl;
+
+        & h1{
+            @apply text-center border-b-3 border-bgGrad2 pb-5;
+        }
+
+        & .perguntas{
+
+            & .pergunta{
+                @apply flex text-3xl justify-between font-bold border-b-2 border-gray-500 ;
+
+                & button{
+                    @apply text-5xl -rotate-90 text-bgGrad2;
+                }
+
+                & .aberto{
+                    @apply rotate-1;
+                }
+            }
+
+            & dialog{
+                @apply relative p-10 rounded-xl bg-gradient-to-r from-bgGrad to-bgGrad2 gap-10 text-2xl w-118 z-20;
+
+                & ol{
+                    @apply list-decimal px-10;
+                }
+
+                & ul{
+                    @apply list-disc px-10;
+                }
+            }
+        }
+    }
+
+    .cadastrar{
+        @apply flex justify-center bg-bgColor py-40;
+
+        & .forms{
+            @apply flex flex-col gap-16 bg-bgGrad rounded-lg p-10 shadow-4xl text-white text-3xl;
+
+            & h1{
+                @apply text-4xl font-bold pt-10;
+            }
+
+            & h1, h4{
+                @apply text-black;
+            }
+
+
+            & .inputs{
+                @apply flex flex-col gap-10;
+
+                & .inputLocal{
+                    @apply flex flex-col gap-2;
+
+                    & input{
+                        @apply text-black rounded-md p-2;
+                    }
+                }
+
+                & .campObg{
+                    @apply text-red-600 text-xl;
+                }
+            }
+
+            & button{
+                @apply mx-60 bg-bgGrad2 rounded-md w-32;
+            }
             
         }
     }
