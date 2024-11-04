@@ -38,6 +38,9 @@ const config: Config = {
       backgroundImage: {
         'fundo-img': "url('/logo-home.png')",
       },
+      screens: {
+        'phone': '460px',
+      },
     },
   },
   plugins: [nextui()],

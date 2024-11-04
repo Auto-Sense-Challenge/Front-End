@@ -28,7 +28,7 @@
             & .abrirMenu{
 
                 & button{
-                    @apply text-6xl relative right-20 text-white border-1 rounded-full border-borda sm:right-10 ;
+                    @apply text-6xl relative right-20 text-white border-1 rounded-full border-borda phone:max-md:right-5 ;
                 }
 
             }
@@ -123,13 +123,13 @@
     }
 
     .home{
-        @apply flex h-130 justify-between bg-bgColor sm:max-md:pb-120;
+        @apply flex h-130 justify-between bg-bgColor phone:max-md:pb-125 phone:max-md:pt-110;
 
         & .texto{
-            @apply relative right-10 h-125 justify-between items-center bg-gradient-to-r from-bgGrad2 to-bgGrad rounded-r-4xl pl-10 pr-20 text-center sm:max-md:rounded-none sm:max-md:max-h-max sm:max-md:p-10 sm:max-md:pb-32 sm:max-md:flex sm:max-md:flex-col sm:max-md:justify-center sm:max-md:w-120 sm:max-md:right-0;
+            @apply relative right-10 h-125 justify-between items-center bg-gradient-to-r from-bgGrad2 to-bgGrad rounded-r-4xl pl-10 pr-20 text-center phone:max-md:rounded-none phone:max-md:max-h-max phone:max-md:p-10 phone:max-md:pb-32 phone:max-md:flex phone:max-md:flex-col phone:max-md:justify-center phone:max-md:w-120 phone:max-md:right-0;
 
             & .titulo{
-                @apply mt-40 text-6xl underline sm:max-md:mt-20 ;
+                @apply mt-40 text-6xl underline phone:max-md:mt-20 ;
             }
 
             & .intro{
@@ -138,7 +138,7 @@
         }
 
         & .imagem{
-            @apply flex items-center sm:max-md:hidden;
+            @apply flex items-center phone:max-md:hidden;
 
         }
     }
@@ -147,14 +147,14 @@
         @apply flex flex-col bg-bgColor text-center gap-40 pb-40 text-white;
 
         & .txt{
-            @apply flex flex-col text-5xl px-10 pt-10 bg-gradient-to-b from-bgGrad to-bgColor gap-10;
+            @apply flex flex-col text-5xl px-10 pt-10 bg-gradient-to-b from-bgGrad to-bgColor gap-10 phone:max-md:text-4xl;
 
             & h1{
                 @apply text-black;
             }
 
             & p{
-                @apply text-3xl px-10;
+                @apply text-3xl px-10 phone:max-md:text-2xl;
             }
         }
 
@@ -164,11 +164,11 @@
             & figure{
 
                 & Img{
-                    @apply  rounded-2xl shadow-3xl;
+                    @apply  rounded-2xl shadow-3xl phone:max-md:w-60;
                 }
     
                 & .informacoes{
-                    @apply flex flex-col bg-bgInfo bg-opacity-85 rounded-2xl relative bottom-24 py-2 text-xl;
+                    @apply flex flex-col bg-bgInfo bg-opacity-85 rounded-2xl relative bottom-24 py-2 text-xl phone:max-md:w-60 phone:max-md:text-lg;
     
                     & .redesLogos{
                         @apply flex justify-center text-2xl gap-5 py-1;
