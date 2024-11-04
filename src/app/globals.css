@@ -282,4 +282,8 @@
         }
     }
 
+    .Found{
+        @apply bg-bgColor text-white flex flex-col text-center justify-center  h-100 text-2xl;
+    }
+
 }

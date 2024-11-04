@@ -2,7 +2,7 @@ import Spinner from "@/components/Spinner/Spinner";
 
 export default function Loading() {
   return (
-    <div>
+    <div className='Found'>
         <Spinner/>
     </div>
   )
