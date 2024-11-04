@@ -248,10 +248,10 @@
         @apply flex justify-center bg-bgColor py-40;
 
         & .forms{
-            @apply flex flex-col gap-16 bg-bgGrad rounded-lg p-10 shadow-4xl text-white text-3xl;
+            @apply flex flex-col gap-16 bg-bgGrad rounded-lg p-10 shadow-4xl text-white text-3xl phone:max-md:text-2xl phone:max-md:w-99;
 
             & h1{
-                @apply text-4xl font-bold pt-10;
+                @apply text-4xl font-bold pt-10 phone:max-md:text-3xl;
             }
 
             & h1, h4{
@@ -271,12 +271,12 @@
                 }
 
                 & .campObg{
-                    @apply text-red-600 text-xl;
+                    @apply text-red-600 text-xl phone:max-md:text-lg;
                 }
             }
 
             & button{
-                @apply mx-60 bg-bgGrad2 rounded-md w-32;
+                @apply mx-60 bg-bgGrad2 rounded-md w-32 phone:max-md:mx-32;
             }
             
         }
