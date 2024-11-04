@@ -193,7 +193,7 @@
         }
 
         & .cadastrosMecUser{
-            @apply flex text-center justify-center px-80 text-xl gap-105;
+            @apply flex text-center justify-center px-80 text-xl gap-105 phone:max-md:grid phone:max-md:px-0;
 
             & aside{
                 @apply flex flex-col w-80 gap-10 justify-center items-end;
