@@ -21,12 +21,12 @@ Link do video - <a href="https://youtu.be/c2sKq0G0fag">Clique aqui para ver</a>
 ---
 
 #### Vercel
-Link do video - <a href="https://autosense-sprint4-cyi0ok86a-ffukurous-projects.vercel.app/">Clique aqui para ver o site pela vercel</a>
+Link do vercel - <a href="https://autosense-sprint4-cyi0ok86a-ffukurous-projects.vercel.app/">Clique aqui para ver o site pela vercel</a>
 
 ---
 
 #### Java
-Link do video - <a href="https://github.com/Auto-Sense-Challenge/Java">Clique aqui para ver o site pela vercel</a>
+Link do java repositório - <a href="https://github.com/Auto-Sense-Challenge/Java">Clique aqui para ver o site pela vercel</a>
 
 ---
 
