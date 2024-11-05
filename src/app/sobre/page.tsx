@@ -21,13 +21,13 @@ export default function Sobre() {
               <h5>Erick Alves Xavier dos Santos</h5>
               <p>1TDSPM / RM556862</p>
               <div className="redesLogos">
-                <a href="https://github.com/Erick0105">
+                <a href="https://github.com/Erick0105" target="_blank">
                   <Github/>
                 </a>
-                <a href="https://www.instagram.com/erick_0105_/">
+                <a href="https://www.instagram.com/erick_0105_/" target="_blank">
                   <Instagram/>
                 </a>
-                <a href="https://www.linkedin.com/in/erick-alves-295180235/">
+                <a href="https://www.linkedin.com/in/erick-alves-295180235/" target="_blank">
                   <Linkedin/>
                 </a>
               </div>
@@ -40,13 +40,13 @@ export default function Sobre() {
               <h5>Luiz Henrique Neri Reimberg</h5>
               <p>1TDSPM / RM556864</p>
               <div className="redesLogos">
-                <a href="https://github.com/LuizHNR">
+                <a href="https://github.com/LuizHNR" target="_blank">
                   <Github/>
                 </a>
-                <a href="https://instagram.com/loren_lhnr">
+                <a href="https://instagram.com/loren_lhnr" target="_blank">
                   <Instagram/>
                 </a>
-                <a href="https://www.linkedin.com/in/luiz-henrique-neri-reimberg-6ab0032b8/">
+                <a href="https://www.linkedin.com/in/luiz-henrique-neri-reimberg-6ab0032b8/" target="_blank">
                   <Linkedin/>
                 </a>
               </div>
@@ -59,13 +59,13 @@ export default function Sobre() {
               <h5>Vicenzo Massao de Oliveira</h5>
               <p>1TDSPM / RM554833</p>
               <div className="redesLogos">
-                <a href="https://github.com/fFukurou">
+                <a href="https://github.com/fFukurou" target="_blank">
                   <Github/>
                 </a>
-                <a href="https://instagram.com/ffukurou_">
+                <a href="https://instagram.com/ffukurou_" target="_blank">
                   <Instagram/>
                 </a>
-                <a href="https://www.linkedin.com/in/vicenzo-massao-de-oliveira-2a8b35109/">
+                <a href="https://www.linkedin.com/in/vicenzo-massao-de-oliveira-2a8b35109/" target="_blank">
                   <Linkedin/>
                 </a>
               </div>
