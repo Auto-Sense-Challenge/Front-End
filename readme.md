@@ -16,7 +16,7 @@ Neste repositório está presente o desenvolvimento da entrega do challenge de 2
 
 ---
 #### Video
-Link do video - <a href="https://youtu.be/3Nl6MMSSagE">Clique aqui para ver</a>
+Link do video - <a href="https://youtu.be/c2sKq0G0fag">Clique aqui para ver</a>
 
 ---
 
